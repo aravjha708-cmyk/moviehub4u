@@ -10,459 +10,464 @@
 </head>
 <body>
   
+  <!-- Header (HDHub4u Signature Dual-Tier) -->
   <header class="site-header" role="banner">
-    <div class="container header-inner">
-      <a href="../index.html" class="brand" aria-label="CineStatic Home">
-        <img src="../assets/images/logo.svg" alt="CineStatic Logo" class="brand-logo" width="160" height="32" />
-      </a>
-
-      <nav class="nav-desktop" aria-label="Primary Navigation">
-        <a href="../index.html" class="nav-link ">Home</a>
-        <a href="../movies.html" class="nav-link ">All Movies</a>
-        <a href="../category/south-indian.html" class="nav-link ">South Indian</a>
-        <a href="../category/hindi-dubbed.html" class="nav-link ">Hindi Dubbed</a>
-        <a href="../category/action.html" class="nav-link ">Action</a>
-        <a href="../category/bollywood.html" class="nav-link ">Bollywood</a>
-        <a href="../category/hollywood.html" class="nav-link ">Hollywood</a>
-      </nav>
-
-      <div class="header-actions">
-        <a href="../search.html" class="search-trigger-btn" aria-label="Search movies">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-          </svg>
-          <span>Search</span>
+    <div class="container header-top">
+      <div class="brand-wrap">
+        <a href="../index.html" aria-label="MovieHub4u Home">
+          <img src="../assets/images/logo.svg" alt="MovieHub4u Logo" class="brand-logo" width="165" height="38" />
         </a>
-        <button class="mobile-menu-toggle" aria-label="Open Mobile Menu" aria-expanded="false">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </button>
       </div>
+
+      <form class="header-search-bar" action="../search.html" method="get" role="search">
+        <input 
+          type="search" 
+          name="q" 
+          class="header-search-input" 
+          placeholder="Search South Hindi, 4K, 1080p, Actors..." 
+          aria-label="Search movies"
+          autocomplete="off"
+        />
+        <button type="submit" class="header-search-btn" aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+      </form>
+
+      <button class="mobile-menu-toggle" aria-label="Open Mobile Menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <!-- Category Nav Strip -->
+    <nav class="nav-strip" aria-label="Primary Navigation">
+      <div class="container nav-strip-inner">
+        <a href="../index.html" class="nav-strip-link ">⚡ Home</a>
+        <a href="../movies.html" class="nav-strip-link ">All Movies</a>
+        <a href="../category/south-indian.html" class="nav-strip-link ">South Hindi</a>
+        <a href="../category/hindi-dubbed.html" class="nav-strip-link ">Hindi Dubbed</a>
+        <a href="../category/action.html" class="nav-strip-link ">Action</a>
+        <a href="../category/thriller.html" class="nav-strip-link ">Thriller</a>
+        <a href="../category/bollywood.html" class="nav-strip-link ">Bollywood</a>
+        <a href="../category/hollywood.html" class="nav-strip-link ">Hollywood</a>
+        <a href="../category/web-series.html" class="nav-strip-link ">Web Series</a>
+        <a href="../search.html" class="nav-strip-link ">🔍 Search</a>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav-drawer" role="dialog" aria-label="Mobile Navigation">
+      <a href="../index.html">⚡ Home</a>
+      <a href="../movies.html">All Movies</a>
+      <a href="../search.html">🔍 Search &amp; Filters</a>
+      <a href="../category/south-indian.html">South Hindi</a>
+      <a href="../category/hindi-dubbed.html">Hindi Dubbed</a>
+      <a href="../category/action.html">Action</a>
+      <a href="../category/thriller.html">Thriller</a>
+      <a href="../category/bollywood.html">Bollywood</a>
+      <a href="../category/hollywood.html">Hollywood</a>
+      <a href="../category/web-series.html">Web Series</a>
     </div>
   </header>
 
-  <!-- Mobile Drawer -->
-  <div class="mobile-nav-drawer" role="dialog" aria-label="Mobile Navigation">
-    <a href="../index.html" class="nav-link ">Home</a>
-    <a href="../movies.html" class="nav-link ">All Movies</a>
-    <a href="../search.html" class="nav-link ">Search & Filters</a>
-    <a href="../category/south-indian.html" class="nav-link ">South Indian</a>
-    <a href="../category/hindi-dubbed.html" class="nav-link ">Hindi Dubbed</a>
-    <a href="../category/action.html" class="nav-link ">Action</a>
-    <a href="../category/bollywood.html" class="nav-link ">Bollywood</a>
-    <a href="../category/hollywood.html" class="nav-link ">Hollywood</a>
+  <!-- HDHub4u Signature Announcement Ribbon -->
+  <div class="notice-ribbon" role="region" aria-label="Announcement">
+    <div class="container">
+      ⚡ <strong>Official MovieHub4u:</strong> Download South Indian Hindi Dubbed Movies &bull; Pure Fast Direct Links &bull; 4K &bull; 1080p &bull; No Ads &bull; No Popups!
+    </div>
   </div>
 
 
   <main class="main-content" id="main-content">
     <div class="container">
       <!-- Breadcrumbs -->
-      <nav class="breadcrumbs" aria-label="Breadcrumbs">
+      <nav class="breadcrumbs-bar" aria-label="Breadcrumbs">
         <a href="../index.html">Home</a>
-        <span class="separator">/</span>
+        <span>&raquo;</span>
         <a href="../movies.html">Categories</a>
-        <span class="separator">/</span>
-        <span class="current">Drama</span>
+        <span>&raquo;</span>
+        <span>Drama</span>
       </nav>
 
-      <div class="section-header">
-        <div>
-          <h1 class="section-title">Drama Collection</h1>
-          <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 6px;">
-            Emotionally moving stories, character studies, and human triumphs. (12 titles)
-          </p>
-        </div>
-        <a href="../search.html?category=drama" class="section-link">Filter Category &rarr;</a>
+      <div class="section-title-bar" style="margin-top: 14px;">
+        <h1 class="section-title-text">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
+          Drama Collection (12 Titles)
+        </h1>
+        <a href="../search.html?category=drama" style="font-size: 0.85rem; color: var(--accent-red); font-weight: 700;">Filter Category &rarr;</a>
       </div>
 
       
-        <div class="movies-grid">
+        <div class="movies-grid-hub">
           
-    <article class="movie-card" data-id="mov-003">
-      <a href="../movies/pradhama-drishtiya-kuttakkar-2026.html" class="card-poster-link" aria-label="View details for Pradhama Drishtiya Kuttakkar">
-        <span class="card-badge-top-left">Hindi Dubbed</span>
-        <span class="card-badge-top-right">1080p</span>
+    <article class="hub-card movie-card" data-id="mov-003">
+      <a href="../movies/pradhama-drishtiya-kuttakkar-2026.html" class="hub-card-poster" aria-label="Download Pradhama Drishtiya Kuttakkar">
+        <span class="badge-audio">Hindi Dubbed</span>
+        <span class="badge-quality">1080p</span>
         
-          <span class="card-rating-badge">
-            <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
+          <span class="badge-rating">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
             7.8
           </span>
         
         <img 
           src="https://image.tmdb.org/t/p/w342/plDdL5IWMbNOf3ul4Yd34LzOqEs.jpg" 
           alt="Pradhama Drishtiya Kuttakkar Poster" 
-          class="card-poster-img" 
+          class="hub-card-img" 
           loading="lazy" 
           width="300" 
           height="450"
           onerror="window.handleImageError && window.handleImageError(this, '../assets/images/default-poster.svg')"
         />
       </a>
-      <div class="card-body">
-        <h3 class="card-title">
+      <div class="hub-card-caption">
+        <h3 class="hub-card-title">
           <a href="../movies/pradhama-drishtiya-kuttakkar-2026.html">Pradhama Drishtiya Kuttakkar</a>
         </h3>
-        <div class="card-meta">
+        <div class="hub-card-footer">
           <span>2026</span>
           <span>145 min</span>
         </div>
-        <div class="card-genres">Crime | Drama | Mystery | Thriller</div>
       </div>
     </article>
   
-    <article class="movie-card" data-id="mov-004">
-      <a href="../movies/eyes-season-1-ds4k-web-dl-hindi-dd5-1-malayalam-4k-1080p-720p-480p-dual-audio-x264-10bit-hevc-full-series-2024.html" class="card-poster-link" aria-label="View details for Eyes (Season 1) DS4K WEB DL [Hindi (DD5.1) &amp; Malayalam] 4K 1080p 720p &amp; 480p Dual Audio [x264/10Bit HEVC] | Full Series">
-        <span class="card-badge-top-left">Hindi Dubbed</span>
-        <span class="card-badge-top-right card-badge-4k">4K UHD</span>
+    <article class="hub-card movie-card" data-id="mov-004">
+      <a href="../movies/eyes-season-1-ds4k-web-dl-hindi-dd5-1-malayalam-4k-1080p-720p-480p-dual-audio-x264-10bit-hevc-full-series-2024.html" class="hub-card-poster" aria-label="Download Eyes (Season 1) DS4K WEB DL [Hindi (DD5.1) &amp; Malayalam] 4K 1080p 720p &amp; 480p Dual Audio [x264/10Bit HEVC] | Full Series">
+        <span class="badge-audio">Hindi Dubbed</span>
+        <span class="badge-quality badge-quality-4k">4K UHD</span>
         
-          <span class="card-rating-badge">
-            <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
+          <span class="badge-rating">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
             7.5
           </span>
         
         <img 
           src="https://image.tmdb.org/t/p/w342/oHhLK5Dxi1Jpe4weMF9iuRp5cHL.jpg" 
           alt="Eyes (Season 1) DS4K WEB DL [Hindi (DD5.1) &amp; Malayalam] 4K 1080p 720p &amp; 480p Dual Audio [x264/10Bit HEVC] | Full Series Poster" 
-          class="card-poster-img" 
+          class="hub-card-img" 
           loading="lazy" 
           width="300" 
           height="450"
           onerror="window.handleImageError && window.handleImageError(this, '../assets/images/default-poster.svg')"
         />
       </a>
-      <div class="card-body">
-        <h3 class="card-title">
+      <div class="hub-card-caption">
+        <h3 class="hub-card-title">
           <a href="../movies/eyes-season-1-ds4k-web-dl-hindi-dd5-1-malayalam-4k-1080p-720p-480p-dual-audio-x264-10bit-hevc-full-series-2024.html">Eyes (Season 1) DS4K WEB DL [Hindi (DD5.1) &amp; Malayalam] 4K 1080p 720p &amp; 480p Dual Audio [x264/10Bit HEVC] | Full Series</a>
         </h3>
-        <div class="card-meta">
+        <div class="hub-card-footer">
           <span>2024</span>
           <span>145 min</span>
         </div>
-        <div class="card-genres">Action, Drama</div>
       </div>
     </article>
   
-    <article class="movie-card" data-id="mov-006">
-      <a href="../movies/epic-first-semester-2026.html" class="card-poster-link" aria-label="View details for Epic First Semester">
-        <span class="card-badge-top-left">Hindi Dubbed</span>
-        <span class="card-badge-top-right card-badge-4k">4K UHD</span>
+    <article class="hub-card movie-card" data-id="mov-006">
+      <a href="../movies/epic-first-semester-2026.html" class="hub-card-poster" aria-label="Download Epic First Semester">
+        <span class="badge-audio">Hindi Dubbed</span>
+        <span class="badge-quality badge-quality-4k">4K UHD</span>
         
-          <span class="card-rating-badge">
-            <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
+          <span class="badge-rating">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
             6.8
           </span>
         
         <img 
           src="https://image.tmdb.org/t/p/w342/pXf3VlwaCgxvS7kvQlQ3QBwjZpy.jpg" 
           alt="Epic First Semester Poster" 
-          class="card-poster-img" 
+          class="hub-card-img" 
           loading="lazy" 
           width="300" 
           height="450"
           onerror="window.handleImageError && window.handleImageError(this, '../assets/images/default-poster.svg')"
         />
       </a>
-      <div class="card-body">
-        <h3 class="card-title">
+      <div class="hub-card-caption">
+        <h3 class="hub-card-title">
           <a href="../movies/epic-first-semester-2026.html">Epic First Semester</a>
         </h3>
-        <div class="card-meta">
+        <div class="hub-card-footer">
           <span>2026</span>
           <span>145 min</span>
         </div>
-        <div class="card-genres">Romance | Drama</div>
       </div>
     </article>
   
-    <article class="movie-card" data-id="mov-007">
-      <a href="../movies/mandaadi-2026.html" class="card-poster-link" aria-label="View details for Mandaadi">
-        <span class="card-badge-top-left">Hindi Dubbed</span>
-        <span class="card-badge-top-right card-badge-4k">4K UHD</span>
+    <article class="hub-card movie-card" data-id="mov-007">
+      <a href="../movies/mandaadi-2026.html" class="hub-card-poster" aria-label="Download Mandaadi">
+        <span class="badge-audio">Hindi Dubbed</span>
+        <span class="badge-quality badge-quality-4k">4K UHD</span>
         
-          <span class="card-rating-badge">
-            <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
+          <span class="badge-rating">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
             8.9
           </span>
         
         <img 
           src="https://image.tmdb.org/t/p/w342/xRIsVUcCBRVGh2pt9VgzRIw2tK5.jpg" 
           alt="Mandaadi Poster" 
-          class="card-poster-img" 
+          class="hub-card-img" 
           loading="lazy" 
           width="300" 
           height="450"
           onerror="window.handleImageError && window.handleImageError(this, '../assets/images/default-poster.svg')"
         />
       </a>
-      <div class="card-body">
-        <h3 class="card-title">
+      <div class="hub-card-caption">
+        <h3 class="hub-card-title">
           <a href="../movies/mandaadi-2026.html">Mandaadi</a>
         </h3>
-        <div class="card-meta">
+        <div class="hub-card-footer">
           <span>2026</span>
           <span>145 min</span>
         </div>
-        <div class="card-genres">Action | Drama | Sport</div>
       </div>
     </article>
   
-    <article class="movie-card" data-id="mov-008">
-      <a href="../movies/vadala-2026.html" class="card-poster-link" aria-label="View details for Vadala">
-        <span class="card-badge-top-left">Hindi Dubbed</span>
-        <span class="card-badge-top-right">1080p</span>
+    <article class="hub-card movie-card" data-id="mov-008">
+      <a href="../movies/vadala-2026.html" class="hub-card-poster" aria-label="Download Vadala">
+        <span class="badge-audio">Hindi Dubbed</span>
+        <span class="badge-quality">1080p</span>
         
-          <span class="card-rating-badge">
-            <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
+          <span class="badge-rating">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
             7.5
           </span>
         
         <img 
           src="https://image.tmdb.org/t/p/w342/fK8TdIPdyJaaFMHlUV3JEZKFONJ.jpg" 
           alt="Vadala Poster" 
-          class="card-poster-img" 
+          class="hub-card-img" 
           loading="lazy" 
           width="300" 
           height="450"
           onerror="window.handleImageError && window.handleImageError(this, '../assets/images/default-poster.svg')"
         />
       </a>
-      <div class="card-body">
-        <h3 class="card-title">
+      <div class="hub-card-caption">
+        <h3 class="hub-card-title">
           <a href="../movies/vadala-2026.html">Vadala</a>
         </h3>
-        <div class="card-meta">
+        <div class="hub-card-footer">
           <span>2026</span>
           <span>145 min</span>
         </div>
-        <div class="card-genres">Drama | Thriller</div>
       </div>
     </article>
   
-    <article class="movie-card" data-id="mov-009">
-      <a href="../movies/drishyam-the-conclusion-2026.html" class="card-poster-link" aria-label="View details for Drishyam: The Conclusion">
-        <span class="card-badge-top-left">Hindi Dubbed</span>
-        <span class="card-badge-top-right">1080p</span>
+    <article class="hub-card movie-card" data-id="mov-009">
+      <a href="../movies/drishyam-the-conclusion-2026.html" class="hub-card-poster" aria-label="Download Drishyam: The Conclusion">
+        <span class="badge-audio">Hindi Dubbed</span>
+        <span class="badge-quality">1080p</span>
         
-          <span class="card-rating-badge">
-            <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
+          <span class="badge-rating">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
             7.5
           </span>
         
         <img 
           src="https://image.tmdb.org/t/p/w342/ebcCpMzanQHN4VeiyH3wBtm635G.jpg" 
           alt="Drishyam: The Conclusion Poster" 
-          class="card-poster-img" 
+          class="hub-card-img" 
           loading="lazy" 
           width="300" 
           height="450"
           onerror="window.handleImageError && window.handleImageError(this, '../assets/images/default-poster.svg')"
         />
       </a>
-      <div class="card-body">
-        <h3 class="card-title">
+      <div class="hub-card-caption">
+        <h3 class="hub-card-title">
           <a href="../movies/drishyam-the-conclusion-2026.html">Drishyam: The Conclusion</a>
         </h3>
-        <div class="card-meta">
+        <div class="hub-card-footer">
           <span>2026</span>
           <span>145 min</span>
         </div>
-        <div class="card-genres">Crime | Drama | Mystery | Thriller</div>
       </div>
     </article>
   
-    <article class="movie-card" data-id="mov-013">
-      <a href="../movies/toxic-2026.html" class="card-poster-link" aria-label="View details for Toxic">
-        <span class="card-badge-top-left">Hindi Dubbed</span>
-        <span class="card-badge-top-right">1080p</span>
+    <article class="hub-card movie-card" data-id="mov-013">
+      <a href="../movies/toxic-2026.html" class="hub-card-poster" aria-label="Download Toxic">
+        <span class="badge-audio">Hindi Dubbed</span>
+        <span class="badge-quality">1080p</span>
         
-          <span class="card-rating-badge">
-            <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
+          <span class="badge-rating">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
             4.1
           </span>
         
         <img 
           src="https://image.tmdb.org/t/p/w342/hSBE52IVDp6Pf6RWTSUOx6bX5kl.jpg" 
           alt="Toxic Poster" 
-          class="card-poster-img" 
+          class="hub-card-img" 
           loading="lazy" 
           width="300" 
           height="450"
           onerror="window.handleImageError && window.handleImageError(this, '../assets/images/default-poster.svg')"
         />
       </a>
-      <div class="card-body">
-        <h3 class="card-title">
+      <div class="hub-card-caption">
+        <h3 class="hub-card-title">
           <a href="../movies/toxic-2026.html">Toxic</a>
         </h3>
-        <div class="card-meta">
+        <div class="hub-card-footer">
           <span>2026</span>
           <span>145 min</span>
         </div>
-        <div class="card-genres">Action | Crime | Drama | Thriller</div>
       </div>
     </article>
   
-    <article class="movie-card" data-id="mov-014">
-      <a href="../movies/paradha-2025.html" class="card-poster-link" aria-label="View details for Paradha">
-        <span class="card-badge-top-left">Hindi Dubbed</span>
-        <span class="card-badge-top-right card-badge-4k">4K UHD</span>
+    <article class="hub-card movie-card" data-id="mov-014">
+      <a href="../movies/paradha-2025.html" class="hub-card-poster" aria-label="Download Paradha">
+        <span class="badge-audio">Hindi Dubbed</span>
+        <span class="badge-quality badge-quality-4k">4K UHD</span>
         
-          <span class="card-rating-badge">
-            <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
+          <span class="badge-rating">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
             5.7
           </span>
         
         <img 
           src="https://image.tmdb.org/t/p/w342/wOOxDIhZCUmWkEPxBajQwmKVm8l.jpg" 
           alt="Paradha Poster" 
-          class="card-poster-img" 
+          class="hub-card-img" 
           loading="lazy" 
           width="300" 
           height="450"
           onerror="window.handleImageError && window.handleImageError(this, '../assets/images/default-poster.svg')"
         />
       </a>
-      <div class="card-body">
-        <h3 class="card-title">
+      <div class="hub-card-caption">
+        <h3 class="hub-card-title">
           <a href="../movies/paradha-2025.html">Paradha</a>
         </h3>
-        <div class="card-meta">
+        <div class="hub-card-footer">
           <span>2025</span>
           <span>145 min</span>
         </div>
-        <div class="card-genres">Drama</div>
       </div>
     </article>
   
-    <article class="movie-card" data-id="mov-017">
-      <a href="../movies/pooja-meri-jaan-2026.html" class="card-poster-link" aria-label="View details for Pooja Meri Jaan">
-        <span class="card-badge-top-left">Hindi Dubbed</span>
-        <span class="card-badge-top-right card-badge-4k">4K UHD</span>
+    <article class="hub-card movie-card" data-id="mov-017">
+      <a href="../movies/pooja-meri-jaan-2026.html" class="hub-card-poster" aria-label="Download Pooja Meri Jaan">
+        <span class="badge-audio">Hindi Dubbed</span>
+        <span class="badge-quality badge-quality-4k">4K UHD</span>
         
-          <span class="card-rating-badge">
-            <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
+          <span class="badge-rating">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
             7.5
           </span>
         
         <img 
           src="https://image.tmdb.org/t/p/w342/nh2UoBEmP00qQKb1b9pIrLcGIsT.jpg" 
           alt="Pooja Meri Jaan Poster" 
-          class="card-poster-img" 
+          class="hub-card-img" 
           loading="lazy" 
           width="300" 
           height="450"
           onerror="window.handleImageError && window.handleImageError(this, '../assets/images/default-poster.svg')"
         />
       </a>
-      <div class="card-body">
-        <h3 class="card-title">
+      <div class="hub-card-caption">
+        <h3 class="hub-card-title">
           <a href="../movies/pooja-meri-jaan-2026.html">Pooja Meri Jaan</a>
         </h3>
-        <div class="card-meta">
+        <div class="hub-card-footer">
           <span>2026</span>
           <span>145 min</span>
         </div>
-        <div class="card-genres">Drama | Romance | Thriller</div>
       </div>
     </article>
   
-    <article class="movie-card" data-id="mov-019">
-      <a href="../movies/bethlehem-kudumba-unit-2026.html" class="card-poster-link" aria-label="View details for Bethlehem Kudumba Unit">
-        <span class="card-badge-top-left">Hindi Dubbed</span>
-        <span class="card-badge-top-right card-badge-4k">4K UHD</span>
+    <article class="hub-card movie-card" data-id="mov-019">
+      <a href="../movies/bethlehem-kudumba-unit-2026.html" class="hub-card-poster" aria-label="Download Bethlehem Kudumba Unit">
+        <span class="badge-audio">Hindi Dubbed</span>
+        <span class="badge-quality badge-quality-4k">4K UHD</span>
         
-          <span class="card-rating-badge">
-            <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
+          <span class="badge-rating">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
             7.5
           </span>
         
         <img 
           src="https://image.tmdb.org/t/p/w342/35ugTVgk8UpGSgTPUFD1CEOooIe.jpg" 
           alt="Bethlehem Kudumba Unit Poster" 
-          class="card-poster-img" 
+          class="hub-card-img" 
           loading="lazy" 
           width="300" 
           height="450"
           onerror="window.handleImageError && window.handleImageError(this, '../assets/images/default-poster.svg')"
         />
       </a>
-      <div class="card-body">
-        <h3 class="card-title">
+      <div class="hub-card-caption">
+        <h3 class="hub-card-title">
           <a href="../movies/bethlehem-kudumba-unit-2026.html">Bethlehem Kudumba Unit</a>
         </h3>
-        <div class="card-meta">
+        <div class="hub-card-footer">
           <span>2026</span>
           <span>145 min</span>
         </div>
-        <div class="card-genres">Romance | Comedy | Drama</div>
       </div>
     </article>
   
-    <article class="movie-card" data-id="mov-020">
-      <a href="../movies/the-paradise-2026.html" class="card-poster-link" aria-label="View details for The Paradise">
-        <span class="card-badge-top-left">Hindi Dubbed</span>
-        <span class="card-badge-top-right">1080p</span>
+    <article class="hub-card movie-card" data-id="mov-020">
+      <a href="../movies/the-paradise-2026.html" class="hub-card-poster" aria-label="Download The Paradise">
+        <span class="badge-audio">Hindi Dubbed</span>
+        <span class="badge-quality">1080p</span>
         
-          <span class="card-rating-badge">
-            <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
+          <span class="badge-rating">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
             6.7
           </span>
         
         <img 
           src="https://image.tmdb.org/t/p/w342/smghVMoMWSIFi5dgIz4w1UIcEcY.jpg" 
           alt="The Paradise Poster" 
-          class="card-poster-img" 
+          class="hub-card-img" 
           loading="lazy" 
           width="300" 
           height="450"
           onerror="window.handleImageError && window.handleImageError(this, '../assets/images/default-poster.svg')"
         />
       </a>
-      <div class="card-body">
-        <h3 class="card-title">
+      <div class="hub-card-caption">
+        <h3 class="hub-card-title">
           <a href="../movies/the-paradise-2026.html">The Paradise</a>
         </h3>
-        <div class="card-meta">
+        <div class="hub-card-footer">
           <span>2026</span>
           <span>145 min</span>
         </div>
-        <div class="card-genres">Action | Adventure | Drama | Thriller</div>
       </div>
     </article>
   
-    <article class="movie-card" data-id="mov-021">
-      <a href="../movies/irumudi-2026.html" class="card-poster-link" aria-label="View details for Irumudi">
-        <span class="card-badge-top-left">Hindi Dubbed</span>
-        <span class="card-badge-top-right card-badge-4k">4K UHD</span>
+    <article class="hub-card movie-card" data-id="mov-021">
+      <a href="../movies/irumudi-2026.html" class="hub-card-poster" aria-label="Download Irumudi">
+        <span class="badge-audio">Hindi Dubbed</span>
+        <span class="badge-quality badge-quality-4k">4K UHD</span>
         
-          <span class="card-rating-badge">
-            <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
+          <span class="badge-rating">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
             7.2
           </span>
         
         <img 
           src="https://image.tmdb.org/t/p/w342/y0huHbMUwEkp0ETChWLOD8MriNr.jpg" 
           alt="Irumudi Poster" 
-          class="card-poster-img" 
+          class="hub-card-img" 
           loading="lazy" 
           width="300" 
           height="450"
           onerror="window.handleImageError && window.handleImageError(this, '../assets/images/default-poster.svg')"
         />
       </a>
-      <div class="card-body">
-        <h3 class="card-title">
+      <div class="hub-card-caption">
+        <h3 class="hub-card-title">
           <a href="../movies/irumudi-2026.html">Irumudi</a>
         </h3>
-        <div class="card-meta">
+        <div class="hub-card-footer">
           <span>2026</span>
           <span>145 min</span>
         </div>
-        <div class="card-genres">Action | Drama | Family</div>
       </div>
     </article>
   
@@ -472,51 +477,26 @@
   </main>
 
   
-  <footer class="site-footer" role="contentinfo">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <a href="../index.html">
-            <img src="../assets/images/logo.svg" alt="CineStatic Logo" width="150" height="30" />
-          </a>
-          <p>
-            CineStatic is an ultra-fast, lightweight movie discovery portal providing verified multi-audio downloads, real screenshots, and comprehensive film details.
-          </p>
-        </div>
-        <div>
-          <h4 class="footer-heading">Categories</h4>
-          <ul class="footer-links">
-            <li><a href="../category/south-indian.html">South Indian</a></li>
-            <li><a href="../category/hindi-dubbed.html">Hindi Dubbed</a></li>
-            <li><a href="../category/bollywood.html">Bollywood</a></li>
-            <li><a href="../category/hollywood.html">Hollywood</a></li>
-            <li><a href="../category/web-series.html">Web Series</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="footer-heading">Genres</h4>
-          <ul class="footer-links">
-            <li><a href="../category/action.html">Action</a></li>
-            <li><a href="../category/thriller.html">Thriller</a></li>
-            <li><a href="../category/drama.html">Drama</a></li>
-            <li><a href="../category/comedy.html">Comedy</a></li>
-            <li><a href="../category/sci-fi.html">Sci-Fi</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="footer-heading">Information</h4>
-          <ul class="footer-links">
-            <li><a href="../about.html">About Us</a></li>
-            <li><a href="../contact.html">Contact</a></li>
-            <li><a href="../privacy.html">Privacy Policy</a></li>
-            <li><a href="../disclaimer.html">Disclaimer & DMCA</a></li>
-          </ul>
-        </div>
+  <!-- Footer (HDHub4u Clean Style) -->
+  <footer class="site-footer-hub" role="contentinfo">
+    <div class="container footer-hub-content">
+      <a href="../index.html" aria-label="MovieHub4u Home">
+        <img src="../assets/images/logo.svg" alt="MovieHub4u Logo" width="160" height="38" />
+      </a>
+      <div class="footer-nav-hub">
+        <a href="../index.html">Home</a>
+        <a href="../movies.html">All Movies</a>
+        <a href="../category/south-indian.html">South Indian</a>
+        <a href="../category/hindi-dubbed.html">Hindi Dubbed</a>
+        <a href="../category/action.html">Action</a>
+        <a href="../about.html">About Us</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../privacy.html">Privacy Policy</a>
+        <a href="../disclaimer.html">Disclaimer &amp; DMCA</a>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 CineStatic. Built for high performance on GitHub Pages.</p>
-        <p>Pure Static HTML5 &bull; No Server Runtime &bull; Fast Delivery</p>
-      </div>
+      <p class="footer-copy">
+        &copy; 2026 MovieHub4u &bull; Pure Static High Performance &bull; Hosted on GitHub Pages &bull; No Annoying Ads &bull; Fast Delivery
+      </p>
     </div>
   </footer>
   <div class="toast-notice" id="toast" role="status" aria-live="polite"></div>
