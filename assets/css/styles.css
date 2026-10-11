@@ -1469,3 +1469,32 @@ button {
     font-size: 0.72rem;
   }
 }
+
+/* ==========================================================================
+   PERMANENTLY HIDE NETLIFY BADGE & CARDS
+   ========================================================================== */
+.nl-wrap,
+#nl-card,
+#nl-badge,
+.nl-card,
+.nl-badge,
+.netlify-badge,
+[class*="nl-wrap"],
+[id*="nl-card"],
+[id*="nl-badge"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  max-width: 0 !important;
+  max-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  clip: rect(0, 0, 0, 0) !important;
+  position: absolute !important;
+  z-index: -999999 !important;
+}
+

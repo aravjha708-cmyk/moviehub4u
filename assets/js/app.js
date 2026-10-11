@@ -104,4 +104,24 @@
     }
   });
 
+  // --- Netlify Badge Auto-Remover ---
+  function removeNetlifyBadge() {
+    const badges = document.querySelectorAll('.nl-wrap, #nl-card, #nl-badge, .nl-card, .nl-badge, .netlify-badge');
+    badges.forEach(function (el) {
+      el.remove();
+    });
+  }
+
+  removeNetlifyBadge();
+  document.addEventListener('DOMContentLoaded', removeNetlifyBadge);
+  window.addEventListener('load', removeNetlifyBadge);
+
+  if (window.MutationObserver) {
+    const nlObserver = new MutationObserver(function () {
+      removeNetlifyBadge();
+    });
+    nlObserver.observe(document.documentElement, { childList: true, subtree: true });
+  }
+
 })();
+
