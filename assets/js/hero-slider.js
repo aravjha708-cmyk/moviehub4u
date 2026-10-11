@@ -1,166 +1,106 @@
 /**
- * CineStatic - Hero Movie Slider
- * Smooth, Hardware-Accelerated, Touch-Enabled Sliding for Latest Releases
+ * CineStatic - Multi-Card Horizontal Hero Carousel
+ * Smooth, Proper Card-Sized Multiple Cards Scrolling in Line
  */
 
 (function () {
   'use strict';
 
-  function initHeroSlider() {
-    const slider = document.getElementById('heroSlider');
-    const track = document.getElementById('sliderTrack');
-    const prevBtn = document.getElementById('sliderPrev');
-    const nextBtn = document.getElementById('sliderNext');
-    const pagination = document.getElementById('sliderPagination');
+  function initHeroCarousel() {
+    const track = document.getElementById('heroTrack');
+    if (!track) return;
 
-    if (!slider || !track) return;
+    const prevBtns = [
+      document.getElementById('heroPrevBtn'),
+      document.getElementById('floatPrevBtn')
+    ].filter(Boolean);
 
-    const slides = Array.from(track.querySelectorAll('.slider-slide'));
-    const totalSlides = slides.length;
-    if (totalSlides <= 1) return;
+    const nextBtns = [
+      document.getElementById('heroNextBtn'),
+      document.getElementById('floatNextBtn')
+    ].filter(Boolean);
 
-    const dots = pagination ? Array.from(pagination.querySelectorAll('.slider-dot')) : [];
-    let currentIndex = 0;
-    let autoPlayTimer = null;
-    const AUTO_PLAY_DELAY = 5000;
-
-    function updateSlider(index) {
-      currentIndex = (index + totalSlides) % totalSlides;
-      track.style.transform = 'translate3d(-' + (currentIndex * 100) + '%, 0, 0)';
-
-      slides.forEach(function (slide, i) {
-        if (i === currentIndex) {
-          slide.classList.add('active');
-          slide.setAttribute('aria-hidden', 'false');
-        } else {
-          slide.classList.remove('active');
-          slide.setAttribute('aria-hidden', 'true');
-        }
-      });
-
-      dots.forEach(function (dot, i) {
-        if (i === currentIndex) {
-          dot.classList.add('active');
-          dot.setAttribute('aria-selected', 'true');
-        } else {
-          dot.classList.remove('active');
-          dot.setAttribute('aria-selected', 'false');
-        }
-      });
+    function getScrollDistance() {
+      // Scroll by 70% of visible container width
+      return Math.max(track.clientWidth * 0.72, 220);
     }
 
-    function nextSlide() {
-      updateSlider(currentIndex + 1);
-    }
-
-    function prevSlide() {
-      updateSlider(currentIndex - 1);
-    }
-
-    function startAutoPlay() {
-      stopAutoPlay();
-      autoPlayTimer = setInterval(nextSlide, AUTO_PLAY_DELAY);
-    }
-
-    function stopAutoPlay() {
-      if (autoPlayTimer) {
-        clearInterval(autoPlayTimer);
-        autoPlayTimer = null;
+    function scrollNext() {
+      const maxScroll = track.scrollWidth - track.clientWidth;
+      if (track.scrollLeft >= maxScroll - 15) {
+        track.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        track.scrollBy({ left: getScrollDistance(), behavior: 'smooth' });
       }
     }
 
-    function restartAutoPlay() {
-      stopAutoPlay();
-      startAutoPlay();
+    function scrollPrev() {
+      if (track.scrollLeft <= 15) {
+        track.scrollTo({ left: track.scrollWidth - track.clientWidth, behavior: 'smooth' });
+      } else {
+        track.scrollBy({ left: -getScrollDistance(), behavior: 'smooth' });
+      }
     }
 
-    // Controls
-    if (prevBtn) {
-      prevBtn.addEventListener('click', function (e) {
-        e.preventDefault();
-        prevSlide();
-        restartAutoPlay();
-      });
+    let autoScrollTimer = null;
+    const AUTO_DELAY = 4500;
+
+    function startAutoScroll() {
+      stopAutoScroll();
+      autoScrollTimer = setInterval(scrollNext, AUTO_DELAY);
     }
 
-    if (nextBtn) {
-      nextBtn.addEventListener('click', function (e) {
-        e.preventDefault();
-        nextSlide();
-        restartAutoPlay();
-      });
+    function stopAutoScroll() {
+      if (autoScrollTimer) {
+        clearInterval(autoScrollTimer);
+        autoScrollTimer = null;
+      }
     }
 
-    // Dot indicators
-    dots.forEach(function (dot) {
-      dot.addEventListener('click', function (e) {
+    // Attach click handlers
+    prevBtns.forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
         e.preventDefault();
-        const targetIndex = parseInt(dot.getAttribute('data-slide'), 10);
-        if (!isNaN(targetIndex)) {
-          updateSlider(targetIndex);
-          restartAutoPlay();
-        }
+        scrollPrev();
+        stopAutoScroll();
+        startAutoScroll();
       });
     });
 
-    // Pause on Hover & Focus
-    slider.addEventListener('mouseenter', stopAutoPlay);
-    slider.addEventListener('mouseleave', startAutoPlay);
-    slider.addEventListener('focusin', stopAutoPlay);
-    slider.addEventListener('focusout', startAutoPlay);
+    nextBtns.forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        scrollNext();
+        stopAutoScroll();
+        startAutoScroll();
+      });
+    });
 
-    // Keyboard Navigation
-    slider.addEventListener('keydown', function (e) {
-      if (e.key === 'ArrowLeft') {
-        prevSlide();
-        restartAutoPlay();
-      } else if (e.key === 'ArrowRight') {
-        nextSlide();
-        restartAutoPlay();
+    // Pause auto-scroll on user interaction
+    track.addEventListener('mouseenter', stopAutoScroll);
+    track.addEventListener('mouseleave', startAutoScroll);
+    track.addEventListener('touchstart', stopAutoScroll, { passive: true });
+    track.addEventListener('touchend', startAutoScroll, { passive: true });
+    track.addEventListener('focusin', stopAutoScroll);
+    track.addEventListener('focusout', startAutoScroll);
+
+    // Keyboard navigation when track is focused
+    track.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowRight') {
+        scrollNext();
+        stopAutoScroll();
+      } else if (e.key === 'ArrowLeft') {
+        scrollPrev();
+        stopAutoScroll();
       }
     });
 
-    // Touch Swipe Support for Mobile & Tablets
-    let startX = 0;
-    let startY = 0;
-    let isSwiping = false;
-
-    track.addEventListener('touchstart', function (e) {
-      if (e.touches && e.touches.length === 1) {
-        startX = e.touches[0].clientX;
-        startY = e.touches[0].clientY;
-        isSwiping = true;
-        stopAutoPlay();
-      }
-    }, { passive: true });
-
-    track.addEventListener('touchend', function (e) {
-      if (!isSwiping) return;
-      isSwiping = false;
-      if (e.changedTouches && e.changedTouches.length === 1) {
-        const diffX = startX - e.changedTouches[0].clientX;
-        const diffY = startY - e.changedTouches[0].clientY;
-        // Check horizontal swipe gesture (more horizontal than vertical, over 40px)
-        if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 40) {
-          if (diffX > 0) {
-            nextSlide();
-          } else {
-            prevSlide();
-          }
-        }
-      }
-      startAutoPlay();
-    }, { passive: true });
-
-    // Initialize state
-    updateSlider(0);
-    startAutoPlay();
+    startAutoScroll();
   }
 
-  // Ensure DOM is ready
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initHeroSlider);
+    document.addEventListener('DOMContentLoaded', initHeroCarousel);
   } else {
-    initHeroSlider();
+    initHeroCarousel();
   }
 })();
