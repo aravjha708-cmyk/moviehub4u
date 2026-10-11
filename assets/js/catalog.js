@@ -1,5 +1,5 @@
 /**
- * CineStatic - Catalog Filtering & Sorting
+ * MoviesHouse4u - Catalog Filtering & Sorting
  * Client-Side Enhancement for movies.html
  */
 

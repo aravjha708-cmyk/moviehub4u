@@ -1,8 +1,8 @@
-# CineStatic 🎬⚡
+# MoviesHouse4u 🎬⚡
 
 > **A Lightning-Fast Static Movie Discovery Website Built for GitHub Pages**
 
-CineStatic is a pure static entertainment website built exclusively with **HTML5, modern CSS3, and Vanilla JavaScript**. Designed for speed, privacy, and zero server maintenance, it hosts curated collections of Bollywood, Hollywood, South Indian, Hindi Dubbed cinema, and acclaimed web series.
+MoviesHouse4u is a pure static entertainment website built exclusively with **HTML5, modern CSS3, and Vanilla JavaScript**. Designed for speed, privacy, and zero server maintenance, it hosts curated collections of Bollywood, Hollywood, South Indian, Hindi Dubbed cinema, and acclaimed web series.
 
 ---
 

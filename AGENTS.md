@@ -1,6 +1,6 @@
 # AGENTS.md - Antigravity Content Update Protocol
 
-This document defines the exact workflow and rules for AI coding assistants (such as Antigravity) when adding, editing, or deleting movies on CineStatic.
+This document defines the exact workflow and rules for AI coding assistants (such as Antigravity) when adding, editing, or deleting movies on MoviesHouse4u.
 
 ---
 
@@ -73,7 +73,7 @@ Append a new JSON object adhering strictly to the schema:
   "tags": ["Hrithik Roshan", "IAF", "Air Force", "Siddharth Anand"],
   "featured": false,
   "publishedAt": "2024-03-25T10:00:00Z",
-  "seoTitle": "Fighter (2024) - Watch & Download Hindi Movie in 4K & 1080p | CineStatic",
+  "seoTitle": "Fighter (2024) - Watch & Download Hindi Movie in 4K & 1080p | MoviesHouse4u",
   "seoDescription": "Download and watch Fighter (2024) starring Hrithik Roshan and Deepika Padukone in 4K UHD and 1080p."
 }
 ```

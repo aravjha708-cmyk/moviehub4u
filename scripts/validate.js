@@ -1,5 +1,5 @@
 /**
- * CineStatic - Comprehensive Static Site & Data Validator
+ * MoviesHouse4u - Comprehensive Static Site & Data Validator
  * Validates JSON integrity, slugs, IDs, static HTML pages, internal links, and sitemap.
  */
 
@@ -29,7 +29,7 @@ function warn(message) {
 }
 
 console.log('====================================================');
-console.log('   CINESTATIC VALIDATION SUITE');
+console.log('   MOVIESHOUSE4U VALIDATION SUITE');
 console.log('====================================================\n');
 
 // 1. Validate data/movies.json

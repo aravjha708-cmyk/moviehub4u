@@ -1,5 +1,5 @@
 /**
- * CineStatic - Static Site Generator
+ * MoviesHouse4u - Static Site Generator
  * Generates pre-rendered HTML for all movie pages, category pages, index.html, movies.html, and sitemap.xml.
  * Pure Node.js Standard Library - No external npm dependencies.
  */
@@ -40,8 +40,8 @@ function getHeaderHtml(activeTab, depth) {
   return `
   <header class="site-header" role="banner">
     <div class="container header-inner">
-      <a href="${prefix}index.html" class="brand" aria-label="CineStatic Home">
-        <img src="${prefix}assets/images/logo.svg" alt="CineStatic Logo" class="brand-logo" width="160" height="32" />
+      <a href="${prefix}index.html" class="brand" aria-label="MoviesHouse4u Home">
+        <img src="${prefix}assets/images/logo.svg" alt="MoviesHouse4u Logo" class="brand-logo" width="160" height="32" />
       </a>
 
       <nav class="nav-desktop" aria-label="Primary Navigation">
@@ -97,10 +97,10 @@ function getFooterHtml(depth) {
       <div class="footer-top">
         <div class="footer-brand">
           <a href="${prefix}index.html">
-            <img src="${prefix}assets/images/logo.svg" alt="CineStatic Logo" width="150" height="30" />
+            <img src="${prefix}assets/images/logo.svg" alt="MoviesHouse4u Logo" width="150" height="30" />
           </a>
           <p>
-            CineStatic is an ultra-fast, lightweight movie discovery portal providing verified multi-audio downloads, real screenshots, and comprehensive film details.
+            MoviesHouse4u is an ultra-fast, lightweight movie discovery portal providing verified multi-audio downloads, real screenshots, and comprehensive film details.
           </p>
         </div>
         <div>
@@ -134,10 +134,10 @@ function getFooterHtml(depth) {
         </div>
       </div>
       <div class="footer-disclaimer">
-        <p><strong>Disclaimer:</strong> CineStatic does not host, upload, or store any media files, videos, or copyrighted content on our servers. All links, videos, and images displayed on this website are aggregated from freely accessible third-party and public domain sources across the Internet. We are not the owners of any hosted content and only index publicly available links. If you have any copyright inquiries or wish to request link removals, please consult our <a href="${prefix}disclaimer.html">DMCA / Disclaimer</a> policy or <a href="${prefix}contact.html">Contact Us</a>.</p>
+        <p><strong>Disclaimer:</strong> MoviesHouse4u does not host, upload, or store any media files, videos, or copyrighted content on our servers. All links, videos, and images displayed on this website are aggregated from freely accessible third-party and public domain sources across the Internet. We are not the owners of any hosted content and only index publicly available links. If you have any copyright inquiries or wish to request link removals, please consult our <a href="${prefix}disclaimer.html">DMCA / Disclaimer</a> policy or <a href="${prefix}contact.html">Contact Us</a>.</p>
       </div>
       <div class="footer-bottom">
-        <p>&copy; ${year} CineStatic. Built for high performance on GitHub Pages.</p>
+        <p>&copy; ${year} MoviesHouse4u. Built for high performance on GitHub Pages.</p>
         <p>Pure Static HTML5 &bull; No Server Runtime &bull; Fast Delivery</p>
       </div>
     </div>
@@ -258,7 +258,7 @@ movies.forEach(movie => {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${escapeHtml(movie.seoTitle || `${movie.title} (${movie.releaseYear}) - Download | CineStatic`)}</title>
+  <title>${escapeHtml(movie.seoTitle || `${movie.title} (${movie.releaseYear}) - Download | MoviesHouse4u`)}</title>
   <meta name="description" content="${escapeHtml(movie.seoDescription || movie.synopsis || `Download ${movie.title} in HD and 4K.`)}">
   <link rel="canonical" href="movies/${encodeURIComponent(movie.slug)}.html">
   
@@ -419,13 +419,13 @@ movies.forEach(movie => {
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
           <span>Copy Link</span>
         </button>
-        <a href="https://api.whatsapp.com/send?text=${encodeURIComponent(`${movie.title} (${movie.releaseYear}) on CineStatic`)}" target="_blank" rel="noopener noreferrer" class="share-btn">
+        <a href="https://api.whatsapp.com/send?text=${encodeURIComponent(`${movie.title} (${movie.releaseYear}) on MoviesHouse4u`)}" target="_blank" rel="noopener noreferrer" class="share-btn">
           <span>WhatsApp</span>
         </a>
-        <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(`Check out ${movie.title} (${movie.releaseYear}) on CineStatic`)}" target="_blank" rel="noopener noreferrer" class="share-btn">
+        <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(`Check out ${movie.title} (${movie.releaseYear}) on MoviesHouse4u`)}" target="_blank" rel="noopener noreferrer" class="share-btn">
           <span>X / Twitter</span>
         </a>
-        <a href="https://t.me/share/url?url=&text=${encodeURIComponent(`${movie.title} (${movie.releaseYear}) on CineStatic`)}" target="_blank" rel="noopener noreferrer" class="share-btn">
+        <a href="https://t.me/share/url?url=&text=${encodeURIComponent(`${movie.title} (${movie.releaseYear}) on MoviesHouse4u`)}" target="_blank" rel="noopener noreferrer" class="share-btn">
           <span>Telegram</span>
         </a>
       </div>
@@ -474,7 +474,7 @@ categories.forEach(cat => {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${escapeHtml(cat.seoTitle || `${cat.name} Movies - Download | CineStatic`)}</title>
+  <title>${escapeHtml(cat.seoTitle || `${cat.name} Movies - Download | MoviesHouse4u`)}</title>
   <meta name="description" content="${escapeHtml(cat.seoDescription || cat.description || `Browse the best ${cat.name} movies with dual audio and full HD downloads.`)}">
   <link rel="canonical" href="category/${encodeURIComponent(cat.slug)}.html">
   <link rel="stylesheet" href="../assets/css/styles.css">
@@ -540,13 +540,13 @@ const indexHtml = `<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CineStatic - South Hindi Dubbed Movies Download | 4K & 1080p</title>
+  <title>MoviesHouse4u - South Hindi Dubbed Movies Download | 4K & 1080p</title>
   <meta name="description" content="Discover and download the latest South Indian Hindi dubbed movies, dual audio releases, and blockbusters with screenshots and direct download links.">
   <link rel="canonical" href="index.html">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="CineStatic - South Hindi Dubbed Movies">
+  <meta property="og:title" content="MoviesHouse4u - South Hindi Dubbed Movies">
   <meta property="og:description" content="Direct high-speed downloads, real screenshots, dual audio South Hindi films.">
   <meta property="og:image" content="${firstMovie.poster}">
   <meta name="twitter:card" content="summary_large_image">
@@ -643,7 +643,7 @@ const moviesHtml = `<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>All Movies - Explore Our Complete Catalog | CineStatic</title>
+  <title>All Movies - Explore Our Complete Catalog | MoviesHouse4u</title>
   <meta name="description" content="Browse our complete collection of South Indian Hindi Dubbed movies. Filter by quality (4K, 1080p), audio, and genre.">
   <link rel="canonical" href="movies.html">
   <link rel="stylesheet" href="assets/css/styles.css">

@@ -1,5 +1,5 @@
 /**
- * CineStatic - Search & Local Indexing Logic
+ * MoviesHouse4u - Search & Local Indexing Logic
  * Lightweight, Instant, Zero Dependencies
  */
 

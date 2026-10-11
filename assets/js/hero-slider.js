@@ -1,5 +1,5 @@
 /**
- * CineStatic - Multi-Card Horizontal Hero Carousel
+ * MoviesHouse4u - Multi-Card Horizontal Hero Carousel
  * Smooth, Proper Card-Sized Multiple Cards Scrolling in Line
  */
 

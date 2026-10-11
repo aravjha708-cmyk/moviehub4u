@@ -1,5 +1,5 @@
 /**
- * CineStatic - Main Application Logic
+ * MoviesHouse4u - Main Application Logic
  * Pure Vanilla JavaScript - Zero Dependencies
  */
 
