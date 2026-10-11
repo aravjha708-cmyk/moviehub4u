@@ -1,645 +1,2574 @@
 [
   {
     "id": "mov-001",
-    "slug": "interstellar",
-    "title": "Interstellar",
+    "slug": "adbhut-2024",
+    "title": "Adbhut",
     "originalTitle": null,
-    "releaseYear": 2014,
-    "poster": "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
-    "thumbnail": "https://image.tmdb.org/t/p/w300/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/rAiYTua5qEG9eTQvkqeRAeoGN9G.jpg",
-    "language": "English",
-    "languagesAvailable": ["English", "Hindi Dubbed"],
-    "categories": ["hollywood", "sci-fi", "drama", "hindi-dubbed"],
-    "genres": ["Sci-Fi", "Adventure", "Drama"],
-    "country": "United States",
-    "runtime": "169 min",
-    "director": "Christopher Nolan",
-    "cast": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain", "Michael Caine", "Matt Damon"],
-    "synopsis": "When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft along with a team of researchers to find a new planet for humans.",
-    "description": "In Earth's future, a global crop blight and second Dust Bowl are slowly rendering the planet uninhabitable. Professor Brand, a brilliant NASA physicist, is working on plans to save mankind by transporting Earth's population to a new home via a wormhole. But first, Brand must send former NASA pilot Cooper and a team of researchers through the wormhole and across the galaxy to discover which of three planets could be mankind's new home.",
-    "rating": 8.7,
+    "releaseYear": 2024,
+    "poster": "http://image.tmdb.org/t/p/w500/mEZ7QSnF5VjDITgQ17zU52WUt8K.jpg",
+    "thumbnail": "http://image.tmdb.org/t/p/w500/mEZ7QSnF5VjDITgQ17zU52WUt8K.jpg",
+    "backdrop": "https://catimages.org/images/2026/10/10/vlcsnap-2026-10-09-22h01m47s456-1.th.jpg",
+    "language": "Hindi Dubbed",
+    "languagesAvailable": [
+      "Hindi Dubbed"
+    ],
+    "categories": [
+      "south-indian",
+      "hindi-dubbed",
+      "action"
+    ],
+    "genres": [
+      "Horror | Thriller"
+    ],
+    "country": "India",
+    "runtime": "145 min",
+    "director": "Sabbir Khan",
+    "cast": [
+      "Nawazuddin Siddiqui",
+      "Shreya Dhanwanthary",
+      "Diana Penty"
+    ],
+    "synopsis": "Adbhut keeps you hooked till the end with its suspense and mystery. Nawazuddin Siddiqui delivers a top-class performance, carrying the film with ease. The horror elements are handled nicely - you keep wondering till the last moment why the spirit is haunting them. A gripping and watchable supernatural thriller.",
+    "description": "Adbhut keeps you hooked till the end with its suspense and mystery. Nawazuddin Siddiqui delivers a top-class performance, carrying the film with ease. The horror elements are handled nicely - you keep wondering till the last moment why the spirit is haunting them. A gripping and watchable supernatural thriller.",
+    "rating": 5.2,
     "ratingSource": "IMDb",
-    "qualities": ["480p", "720p", "1080p", "4K UHD"],
+    "qualities": [
+      "480p",
+      "720p",
+      "1080p"
+    ],
     "fileSizes": {
-      "480p": "480 MB",
-      "720p": "1.2 GB",
-      "1080p": "2.8 GB",
-      "4K UHD": "8.4 GB"
+      "480p": "400MB",
+      "720p": "1GB",
+      "1080p": "2.6GB"
     },
-    "formats": ["MKV", "MP4"],
-    "subtitles": ["English", "Hindi", "Spanish", "French"],
+    "formats": [
+      "MKV",
+      "MP4"
+    ],
+    "subtitles": [
+      "English"
+    ],
     "screenshots": [
-      "https://image.tmdb.org/t/p/w780/rAiYTua5qEG9eTQvkqeRAeoGN9G.jpg",
-      "https://image.tmdb.org/t/p/w780/xJHokMbljvjADYdit5fK5VQsXEG.jpg"
+      "https://catimages.org/images/2026/10/10/vlcsnap-2026-10-09-22h01m47s456-1.th.jpg",
+      "https://catimages.org/images/2026/10/10/vlcsnap-2026-10-09-22h04m07s716-1.th.jpg",
+      "https://catimages.org/images/2026/10/10/vlcsnap-2026-10-09-22h04m41s101-1.th.jpg",
+      "https://catimages.org/images/2026/10/10/vlcsnap-2026-10-09-22h06m01s004-1.th.jpg",
+      "https://catimages.org/images/2026/10/10/vlcsnap-2026-10-09-22h07m00s678-1.th.jpg",
+      "https://catimages.org/images/2026/10/10/vlcsnap-2026-10-09-22h07m09s442-1.th.jpg"
     ],
     "links": [
       {
-        "label": "Stream on Prime Video",
-        "type": "official",
-        "quality": "4K UHD",
-        "url": "https://www.primevideo.com/detail/0S34T2P26R7QW88"
-      },
-      {
-        "label": "Download 1080p Dual Audio",
+        "label": "Download 480p (400MB)",
         "type": "download",
-        "quality": "1080p",
-        "size": "2.8 GB",
-        "url": "https://archive.org/details/interstellar_2014_preview"
+        "quality": "480p",
+        "size": "400MB",
+        "url": "https://hubcdn.club/file/OuOQaATCjUOnLCqGXgwz73Qsf"
       },
       {
-        "label": "Download 720p Dual Audio",
+        "label": "Download 720p (690MB)",
         "type": "download",
         "quality": "720p",
-        "size": "1.2 GB",
-        "url": "https://archive.org/details/interstellar_2014_preview"
+        "size": "690MB",
+        "url": "https://hubdrive.pics/file/2188078990"
+      },
+      {
+        "label": "Download 720p (1GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "1GB",
+        "url": "https://greenmotors.club/?id=RFZkT01ZN3N5N0tyNEJjeEpXMHcrSFhDdXNVUWVRZmU0VEtsa1VBclluT2FNOW10cVdPRzNSZjJqam9hYlIxNHEwWGRHRjNUSU1hS0d4VnBRZHNCSVJwbHI2QXlFTGpiRVpkSnVCQnNDRXc9"
+      },
+      {
+        "label": "Download 1080p (2.3GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "2.3GB",
+        "url": "https://greenmotors.club/?id=RFZkT01ZN3N5N0tyNEJjeEpXMHcrSFhDdXNVUWVRZmU0VEtsa1VBclluT2FNOW10cVdPRzNSZjJqam9hYlIxNFhIMi9UVGRQc01KQ0VhNEJCdnlVWTM0aXEvRkk0OE43Z0tWN3pDRWJwdkE9"
+      },
+      {
+        "label": "Download 1080p (2.6GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "2.6GB",
+        "url": "https://hubdrive.pics/file/2193884272"
       }
     ],
-    "tags": ["Space", "Wormhole", "Black Hole", "Christopher Nolan", "Hans Zimmer", "Sci-Fi Masterpiece"],
+    "tags": [
+      "Adbhut",
+      "South Movie",
+      "Hindi Dubbed",
+      "Horror | Thriller",
+      "Hindi Dubbed"
+    ],
     "featured": true,
-    "publishedAt": "2024-01-10T12:00:00Z",
-    "seoTitle": "Interstellar (2014) - Dual Audio Hindi & English 4K UHD & 1080p | CineStatic",
-    "seoDescription": "Watch and download Interstellar (2014) directed by Christopher Nolan. Available in 4K UHD, 1080p, and 720p with Hindi dubbed audio and English subtitles."
+    "publishedAt": "2026-10-11T09:28:31.586Z",
+    "seoTitle": "Adbhut (2024) Hindi Dubbed Movie Download in 4K & 1080p | CineStatic",
+    "seoDescription": "Download Adbhut (2024) in dual audio Hindi and original South language. High quality 4K UHD, 1080p, 720p downloads."
   },
   {
     "id": "mov-002",
-    "slug": "rrr",
-    "title": "RRR",
-    "originalTitle": "Roudram Ranam Rudhiram",
-    "releaseYear": 2022,
-    "poster": "https://image.tmdb.org/t/p/w500/wE0noFUYuuw0q9QwhWWipPtjuTe.jpg",
-    "thumbnail": "https://image.tmdb.org/t/p/w300/wE0noFUYuuw0q9QwhWWipPtjuTe.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/7c49vM36T0x2m2t08LdYwzK9bC2.jpg",
-    "language": "Telugu",
-    "languagesAvailable": ["Telugu", "Hindi Dubbed", "Tamil", "Malayalam", "Kannada"],
-    "categories": ["south-indian", "action", "drama", "hindi-dubbed"],
-    "genres": ["Action", "Drama", "History"],
+    "slug": "rony-the-ruler-2024",
+    "title": "Rony The Ruler",
+    "originalTitle": null,
+    "releaseYear": 2024,
+    "poster": "https://image.tmdb.org/t/p/w342/6kZfckIY8DIT9SkqKZfsRgmisEJ.jpg",
+    "thumbnail": "https://image.tmdb.org/t/p/w342/6kZfckIY8DIT9SkqKZfsRgmisEJ.jpg",
+    "backdrop": "https://catimages.org/images/2026/10/10/Vlcsnap.mkv-frame018981.th.jpg",
+    "language": "Hindi Dubbed",
+    "languagesAvailable": [
+      "Hindi Dubbed"
+    ],
+    "categories": [
+      "south-indian",
+      "hindi-dubbed",
+      "action"
+    ],
+    "genres": [
+      "Action"
+    ],
     "country": "India",
-    "runtime": "187 min",
-    "director": "S. S. Rajamouli",
-    "cast": ["N. T. Rama Rao Jr.", "Ram Charan", "Ajay Devgn", "Alia Bhatt", "Shriya Saran"],
-    "synopsis": "A fearless revolutionary and an officer in the British force, who once shared a deep bond, decide to join forces and chart out an inspiring path of freedom against the despotic British rulers.",
-    "description": "Set in 1920, RRR is an exhilarating fictional tale of two real-life legendary Indian revolutionaries—Alluri Sitarama Raju and Komaram Bheem. After forming a deep, unsuspecting friendship, the duo embarks on an extraordinary battle of wits, courage, and monumental action sequences to defy the ruthless British empire.",
-    "rating": 7.8,
+    "runtime": "145 min",
+    "director": "Gururaj Shetty",
+    "cast": [
+      "Dharmanna Kadur",
+      "Surya Kundapura",
+      "Ugrram Manju"
+    ],
+    "synopsis": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "description": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "rating": 8.2,
     "ratingSource": "IMDb",
-    "qualities": ["480p", "720p", "1080p", "4K UHD"],
+    "qualities": [
+      "480p",
+      "720p",
+      "1080p",
+      "4K UHD"
+    ],
     "fileSizes": {
-      "480p": "550 MB",
-      "720p": "1.4 GB",
-      "1080p": "3.2 GB",
-      "4K UHD": "9.1 GB"
+      "480p": "580MB",
+      "720p": "1.4GB",
+      "1080p": "3.1GB",
+      "4K UHD": "2160p SDR WEB-DL – 2.3GB"
     },
-    "formats": ["MKV", "MP4"],
-    "subtitles": ["English", "Hindi"],
+    "formats": [
+      "MKV",
+      "MP4"
+    ],
+    "subtitles": [
+      "English"
+    ],
     "screenshots": [
-      "https://image.tmdb.org/t/p/w780/7c49vM36T0x2m2t08LdYwzK9bC2.jpg"
+      "https://catimages.org/images/2026/10/10/Vlcsnap.mkv-frame018981.th.jpg",
+      "https://catimages.org/images/2026/10/10/Vlcsnap.mkv-frame056942.th.jpg",
+      "https://catimages.org/images/2026/10/10/Vlcsnap.mkv-frame113885.th.jpg",
+      "https://catimages.org/images/2026/10/10/Vlcsnap.mkv-frame132866.th.jpg",
+      "https://catimages.org/images/2026/10/10/Vlcsnap.mkv-frame164501.th.jpg",
+      "https://catimages.org/images/2026/10/10/Vlcsnap.mkv-frame215116.th.jpg"
     ],
     "links": [
       {
-        "label": "Stream on Netflix",
-        "type": "official",
-        "quality": "4K UHD",
-        "url": "https://www.netflix.com/title/81476453"
+        "label": "Download 480p (580MB)",
+        "type": "download",
+        "quality": "480p",
+        "size": "580MB",
+        "url": "https://hubcdn.club/file/qManAnYuKahRHBR8hdtHePG7u"
       },
       {
-        "label": "Stream on ZEE5 (South Audio)",
-        "type": "official",
-        "quality": "1080p",
-        "url": "https://www.zee5.com/movies/details/rrr/0-0-1z5146522"
+        "label": "Download 720p (1.4GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "1.4GB",
+        "url": "https://greenmotors.club/?id=SXFWR2hWWlZQNnR5NHlzMDNLaW5RVFJkR0QxSkczTmhibFltYzB2QVhKWTZBTTAvSHF5MG5xYnk0d0JVbWVnUTZkK05rN3VMYm9yZTFvdmlUcWl3dDFTMWhFcWFIK21FSE9GU2tMUzNndk09"
       },
       {
-        "label": "Download 1080p Multi-Audio",
+        "label": "Download 1080p (3.1GB)",
         "type": "download",
         "quality": "1080p",
-        "size": "3.2 GB",
-        "url": "https://archive.org/details/rrr_2022_film"
+        "size": "3.1GB",
+        "url": "https://greenmotors.club/?id=SXFWR2hWWlZQNnR5NHlzMDNLaW5RVFJkR0QxSkczTmhibFltYzB2QVhKWTZBTTAvSHF5MG5xYnk0d0JVbWVnUURoVzhwMktPLzZiQ3Y2aXVSRXNEWUJIeXFZNEhjWHRFbG13VVdtaXFITGs9"
+      },
+      {
+        "label": "Download 4K UHD (2160p SDR WEB-DL – 2.3GB)",
+        "type": "download",
+        "quality": "4K UHD",
+        "size": "2160p SDR WEB-DL – 2.3GB",
+        "url": "https://hubdrive.pics/file/2451419668"
       }
     ],
-    "tags": ["Rajamouli", "NTR Jr", "Ram Charan", "Oscar Winner", "Naatu Naatu", "Period Action"],
+    "tags": [
+      "Rony The Ruler",
+      "South Movie",
+      "Hindi Dubbed",
+      "Action",
+      "Hindi Dubbed"
+    ],
     "featured": true,
-    "publishedAt": "2024-01-15T09:00:00Z",
-    "seoTitle": "RRR (2022) - Multi Audio (Telugu & Hindi) Full HD & 4K | CineStatic",
-    "seoDescription": "Watch S.S. Rajamouli's Oscar-winning spectacle RRR (2022) featuring NTR Jr and Ram Charan. 4K UHD and 1080p downloads with Telugu and Hindi audio."
+    "publishedAt": "2026-10-10T09:28:31.634Z",
+    "seoTitle": "Rony The Ruler (2024) Hindi Dubbed Movie Download in 4K & 1080p | CineStatic",
+    "seoDescription": "Download Rony The Ruler (2024) in dual audio Hindi and original South language. High quality 4K UHD, 1080p, 720p downloads."
   },
   {
     "id": "mov-003",
-    "slug": "3-idiots",
-    "title": "3 Idiots",
+    "slug": "pradhama-drishtiya-kuttakkar-2026",
+    "title": "Pradhama Drishtiya Kuttakkar",
     "originalTitle": null,
-    "releaseYear": 2009,
-    "poster": "https://image.tmdb.org/t/p/w500/66A9MqXOyVFCssoloscw79z8OtQ.jpg",
-    "thumbnail": "https://image.tmdb.org/t/p/w300/66A9MqXOyVFCssoloscw79z8OtQ.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/u7kuU39GJWv0GvPq66T748eF6u.jpg",
-    "language": "Hindi",
-    "languagesAvailable": ["Hindi"],
-    "categories": ["bollywood", "comedy", "drama"],
-    "genres": ["Comedy", "Drama"],
+    "releaseYear": 2026,
+    "poster": "https://image.tmdb.org/t/p/w342/plDdL5IWMbNOf3ul4Yd34LzOqEs.jpg",
+    "thumbnail": "https://image.tmdb.org/t/p/w342/plDdL5IWMbNOf3ul4Yd34LzOqEs.jpg",
+    "backdrop": "https://catimages.org/images/2026/10/10/Vlcsnap.mkv-frame024673.th.jpg",
+    "language": "Hindi Dubbed",
+    "languagesAvailable": [
+      "Hindi Dubbed"
+    ],
+    "categories": [
+      "south-indian",
+      "hindi-dubbed",
+      "action"
+    ],
+    "genres": [
+      "Crime | Drama | Mystery | Thriller"
+    ],
     "country": "India",
-    "runtime": "170 min",
-    "director": "Rajkumar Hirani",
-    "cast": ["Aamir Khan", "R. Madhavan", "Sharman Joshi", "Kareena Kapoor", "Boman Irani"],
-    "synopsis": "Two friends are searching for their long lost companion. They revisit their college days and recall the memories of their friend who inspired them to think differently.",
-    "description": "In college, Farhan and Raju form a great bond with the free-spirited Rancho, whose positive outlook on life and unorthodox approach to engineering challenges the oppressive educational system steered by director Dr. Viru Sahastrabuddhe.",
-    "rating": 8.4,
+    "runtime": "145 min",
+    "director": "Shahad Nilambur",
+    "cast": [
+      "Parvathy Thiruvothu",
+      "Vinay Forrt",
+      "Mathew Thomas"
+    ],
+    "synopsis": "N/A Please Watch And Give Reviews in The Comment Section",
+    "description": "N/A Please Watch And Give Reviews in The Comment Section",
+    "rating": 7.8,
     "ratingSource": "IMDb",
-    "qualities": ["480p", "720p", "1080p"],
+    "qualities": [
+      "480p",
+      "720p",
+      "1080p"
+    ],
     "fileSizes": {
-      "480p": "450 MB",
-      "720p": "1.1 GB",
-      "1080p": "2.5 GB"
+      "480p": "560MB",
+      "720p": "1.3GB",
+      "1080p": "6.2GB"
     },
-    "formats": ["MKV", "MP4"],
-    "subtitles": ["English"],
-    "screenshots": [],
+    "formats": [
+      "MKV",
+      "MP4"
+    ],
+    "subtitles": [
+      "English"
+    ],
+    "screenshots": [
+      "https://catimages.org/images/2026/10/10/Vlcsnap.mkv-frame024673.th.jpg",
+      "https://catimages.org/images/2026/10/10/Vlcsnap.mkv-frame031993.th.jpg",
+      "https://catimages.org/images/2026/10/10/Vlcsnap.mkv-frame102845.th.jpg",
+      "https://catimages.org/images/2026/10/10/Vlcsnap.mkv-frame108169.th.jpg",
+      "https://catimages.org/images/2026/10/10/Vlcsnap.mkv-frame109991.th.jpg",
+      "https://catimages.org/images/2026/10/10/Vlcsnap.mkv-frame194103.th.jpg"
+    ],
     "links": [
       {
-        "label": "Stream on Prime Video",
-        "type": "official",
-        "quality": "1080p",
-        "url": "https://www.primevideo.com/detail/0NDP4J4R8VROB66X"
+        "label": "Download 480p (560MB)",
+        "type": "download",
+        "quality": "480p",
+        "size": "560MB",
+        "url": "https://hubcdn.club/file/Kd4VVF7sWboGL98olCw6O4LGd"
       },
       {
-        "label": "Download 1080p Remastered",
+        "label": "Download 720p (920MB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "920MB",
+        "url": "https://hubdrive.pics/file/1834515390"
+      },
+      {
+        "label": "Download 720p (1.3GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "1.3GB",
+        "url": "https://greenmotors.club/?id=aTVtK0gzbElteDd5L1Awcmx6QmM4TkRqRnU4eE45Sk1ma3E1dW9VZmlUNHo4bS9Kcnp2dUI4cE5uY044cUY3OEhIL1JDUWpmQnAxSVdMZDBlcCsyYllJbVVWNUtBa1pubUhRemplZFBvcGM9"
+      },
+      {
+        "label": "Download 1080p (2GB)",
         "type": "download",
         "quality": "1080p",
-        "size": "2.5 GB",
-        "url": "https://archive.org/details/3_idiots_bollywood"
+        "size": "2GB",
+        "url": "https://hubdrive.pics/file/2750608517"
+      },
+      {
+        "label": "Download 1080p (3.1GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "3.1GB",
+        "url": "https://greenmotors.club/?id=aTVtK0gzbElteDd5L1Awcmx6QmM4TkRqRnU4eE45Sk1ma3E1dW9VZmlUNHo4bS9Kcnp2dUI4cE5uY044cUY3OGNIM2tZSTJRV3hlQ3JRSVlXcGVVMjMrRCtYa1FNMGpWZDNzRmdlM2hZL1U9"
+      },
+      {
+        "label": "Download 1080p (6.2GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "6.2GB",
+        "url": "https://hubdrive.pics/file/6572624541"
       }
     ],
-    "tags": ["Aamir Khan", "College", "Rajkumar Hirani", "Engineering", "Bollywood Classic", "Comedy"],
-    "featured": false,
-    "publishedAt": "2024-01-20T10:30:00Z",
-    "seoTitle": "3 Idiots (2009) - Bollywood Hindi Film 1080p Full HD | CineStatic",
-    "seoDescription": "Download & stream 3 Idiots (2009) starring Aamir Khan, R. Madhavan, and Sharman Joshi. High-definition 1080p and 720p with English subtitles."
+    "tags": [
+      "Pradhama Drishtiya Kuttakkar",
+      "South Movie",
+      "Hindi Dubbed",
+      "Crime | Drama | Mystery | Thriller",
+      "Hindi Dubbed"
+    ],
+    "featured": true,
+    "publishedAt": "2026-10-09T09:28:31.685Z",
+    "seoTitle": "Pradhama Drishtiya Kuttakkar (2026) Hindi Dubbed Movie Download in 4K & 1080p | CineStatic",
+    "seoDescription": "Download Pradhama Drishtiya Kuttakkar (2026) in dual audio Hindi and original South language. High quality 4K UHD, 1080p, 720p downloads."
   },
   {
     "id": "mov-004",
-    "slug": "oppenheimer",
-    "title": "Oppenheimer",
+    "slug": "eyes-season-1-ds4k-web-dl-hindi-dd5-1-malayalam-4k-1080p-720p-480p-dual-audio-x264-10bit-hevc-full-series-2024",
+    "title": "Eyes (Season 1) DS4K WEB DL [Hindi (DD5.1) & Malayalam] 4K 1080p 720p & 480p Dual Audio [x264/10Bit HEVC] | Full Series",
     "originalTitle": null,
-    "releaseYear": 2023,
-    "poster": "https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
-    "thumbnail": "https://image.tmdb.org/t/p/w300/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/fm6K9vYgn3M0g08xV91k1356v0u.jpg",
-    "language": "English",
-    "languagesAvailable": ["English", "Hindi Dubbed"],
-    "categories": ["hollywood", "drama", "thriller", "hindi-dubbed"],
-    "genres": ["Biography", "Drama", "History"],
-    "country": "United States",
-    "runtime": "180 min",
-    "director": "Christopher Nolan",
-    "cast": ["Cillian Murphy", "Emily Blunt", "Matt Damon", "Robert Downey Jr.", "Florence Pugh"],
-    "synopsis": "The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb during World War II.",
-    "description": "During World War II, Lt. Gen. Leslie Groves Jr. appoints physicist J. Robert Oppenheimer to work on the secret Manhattan Project. Oppenheimer and a team of scientists spend years developing and designing the atomic bomb. Their work comes to fruition on July 16, 1945, witnessing the world's first nuclear explosion, forever altering the course of human history.",
-    "rating": 8.9,
+    "releaseYear": 2024,
+    "poster": "https://image.tmdb.org/t/p/w342/oHhLK5Dxi1Jpe4weMF9iuRp5cHL.jpg",
+    "thumbnail": "https://image.tmdb.org/t/p/w342/oHhLK5Dxi1Jpe4weMF9iuRp5cHL.jpg",
+    "backdrop": "https://catimages.org/images/2026/10/09/Vlcsnap.mkv-frame002239.th.jpg",
+    "language": "Hindi Dubbed",
+    "languagesAvailable": [
+      "Hindi Dubbed"
+    ],
+    "categories": [
+      "south-indian",
+      "hindi-dubbed",
+      "action"
+    ],
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "country": "India",
+    "runtime": "145 min",
+    "director": "N/A",
+    "cast": [
+      "Leading Ensemble Cast"
+    ],
+    "synopsis": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "description": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "rating": 7.5,
     "ratingSource": "IMDb",
-    "qualities": ["480p", "720p", "1080p", "4K UHD"],
+    "qualities": [
+      "480p",
+      "720p",
+      "1080p",
+      "4K UHD"
+    ],
     "fileSizes": {
-      "480p": "520 MB",
-      "720p": "1.3 GB",
-      "1080p": "3.1 GB",
-      "4K UHD": "8.8 GB"
+      "480p": "1.3GB",
+      "720p": "3.4GB",
+      "1080p": "11GB",
+      "4K UHD": "2160p SDR MULTi WEB-DL PACK – 23.1GB"
     },
-    "formats": ["MKV", "MP4"],
-    "subtitles": ["English", "Hindi", "French"],
-    "screenshots": [],
+    "formats": [
+      "MKV",
+      "MP4"
+    ],
+    "subtitles": [
+      "English"
+    ],
+    "screenshots": [
+      "https://catimages.org/images/2026/10/09/Vlcsnap.mkv-frame002239.th.jpg",
+      "https://catimages.org/images/2026/10/09/Vlcsnap.mkv-frame033587.th.jpg",
+      "https://catimages.org/images/2026/10/09/Vlcsnap.mkv-frame038065.th.jpg",
+      "https://catimages.org/images/2026/10/09/Vlcsnap.mkv-frame044782.th.jpg",
+      "https://catimages.org/images/2026/10/09/Vlcsnap.mkv-frame053160.th.jpg",
+      "https://catimages.org/images/2026/10/09/Vlcsnap.mkv-frame067173.th.jpg"
+    ],
     "links": [
       {
-        "label": "Stream on JioCinema",
-        "type": "official",
-        "quality": "4K UHD",
-        "url": "https://www.jiocinema.com/movies/oppenheimer"
+        "label": "Download 480p (1.3GB)",
+        "type": "download",
+        "quality": "480p",
+        "size": "1.3GB",
+        "url": "https://greenmotors.club/?id=UXRNUHJSUTVZbHNhdXVwOGRhWUw5elRMN2d0Y2xqOVFBMnh3YmUyUjdUU0h0Tmg2NFFJNVJGL0Zhc2g4cVF6WHR2OHBYaWFMRXJaL0NaQ0ZhL3JSWGZkWERuZmJHdVdrN3B3d281Y1VWNkk9"
       },
       {
-        "label": "Download 1080p IMAX Web-DL",
+        "label": "Download 720p (2.6GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "2.6GB",
+        "url": "https://hubdrive.pics/file/2694355957"
+      },
+      {
+        "label": "Download 720p (3.4GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "3.4GB",
+        "url": "https://greenmotors.club/?id=UXRNUHJSUTVZbHNhdXVwOGRhWUw5elRMN2d0Y2xqOVFBMnh3YmUyUjdUU0h0Tmg2NFFJNVJGL0Zhc2g4cVF6WGhoM2h3VTdzRG9BY1N6K2tjSDJjTjBINVEyZExhVHRkanhhNHg4SFdBWXM9"
+      },
+      {
+        "label": "Download 1080p (7.4GB)",
         "type": "download",
         "quality": "1080p",
-        "size": "3.1 GB",
-        "url": "https://archive.org/details/oppenheimer_preview"
+        "size": "7.4GB",
+        "url": "https://greenmotors.club/?id=UXRNUHJSUTVZbHNhdXVwOGRhWUw5elRMN2d0Y2xqOVFBMnh3YmUyUjdUU0h0Tmg2NFFJNVJGL0Zhc2g4cVF6WCtKNUhnY3BtSXkxSkhiKzMyRjJKdlhNcG9LRXppWHo3ekVyK0VIRWhJbWM9"
+      },
+      {
+        "label": "Download 1080p (11GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "11GB",
+        "url": "https://hubdrive.pics/file/12287966377"
+      },
+      {
+        "label": "Download 4K UHD (2160p SDR MULTi WEB-DL PACK – 23.1GB)",
+        "type": "download",
+        "quality": "4K UHD",
+        "size": "2160p SDR MULTi WEB-DL PACK – 23.1GB",
+        "url": "https://hubdrive.pics/file/22327524756"
       }
     ],
-    "tags": ["Christopher Nolan", "Cillian Murphy", "Atomic Bomb", "Oscar Winner", "Manhattan Project", "IMAX"],
+    "tags": [
+      "Eyes (Season 1) DS4K WEB DL [Hindi (DD5.1) & Malayalam] 4K 1080p 720p & 480p Dual Audio [x264/10Bit HEVC] | Full Series",
+      "South Movie",
+      "Hindi Dubbed",
+      "Action",
+      "Drama",
+      "Hindi Dubbed"
+    ],
     "featured": true,
-    "publishedAt": "2024-02-01T14:00:00Z",
-    "seoTitle": "Oppenheimer (2023) - 4K UHD & 1080p IMAX Dual Audio | CineStatic",
-    "seoDescription": "Watch Christopher Nolan's Academy Award-winning masterpiece Oppenheimer (2023). Available in 4K UHD, 1080p IMAX Dual Audio Hindi and English."
+    "publishedAt": "2026-10-08T09:28:31.748Z",
+    "seoTitle": "Eyes (Season 1) DS4K WEB DL [Hindi (DD5.1) & Malayalam] 4K 1080p 720p & 480p Dual Audio [x264/10Bit HEVC] | Full Series (2024) Hindi Dubbed Movie Download in 4K & 1080p | CineStatic",
+    "seoDescription": "Download Eyes (Season 1) DS4K WEB DL [Hindi (DD5.1) & Malayalam] 4K 1080p 720p & 480p Dual Audio [x264/10Bit HEVC] | Full Series (2024) in dual audio Hindi and original South language. High quality 4K UHD, 1080p, 720p downloads."
   },
   {
     "id": "mov-005",
-    "slug": "jawan",
-    "title": "Jawan",
+    "slug": "khalifa-2026",
+    "title": "Khalifa",
     "originalTitle": null,
-    "releaseYear": 2023,
-    "poster": "https://image.tmdb.org/t/p/w500/jYW3k0tM4a984mXU8k0q3Y0L4T.jpg",
-    "thumbnail": "https://image.tmdb.org/t/p/w300/jYW3k0tM4a984mXU8k0q3Y0L4T.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/bckxqd9OvgW7v4t6m6y8k3q3n01.jpg",
-    "language": "Hindi",
-    "languagesAvailable": ["Hindi", "Tamil", "Telugu"],
-    "categories": ["bollywood", "action", "thriller"],
-    "genres": ["Action", "Thriller"],
+    "releaseYear": 2026,
+    "poster": "https://image.tmdb.org/t/p/w342/3HOC3omTbl7lB9gxKu7uCEpOtuC.jpg",
+    "thumbnail": "https://image.tmdb.org/t/p/w342/3HOC3omTbl7lB9gxKu7uCEpOtuC.jpg",
+    "backdrop": "https://catimages.org/images/2026/10/09/vlcsnap-2026-10-08-12h06m59s761.th.jpg",
+    "language": "Hindi Dubbed",
+    "languagesAvailable": [
+      "Hindi Dubbed"
+    ],
+    "categories": [
+      "south-indian",
+      "hindi-dubbed",
+      "action"
+    ],
+    "genres": [
+      "Action | Crime | Thriller"
+    ],
     "country": "India",
-    "runtime": "169 min",
-    "director": "Atlee",
-    "cast": ["Shah Rukh Khan", "Nayanthara", "Vijay Sethupathi", "Deepika Padukone", "Sanya Malhotra"],
-    "synopsis": "A high-octane action thriller outlining the emotional journey of a man who is set to rectify the wrongs in society driven by a personal vendetta.",
-    "description": "Vikram Rathore, a wounded soldier, is nursed back to health by a remote tribe. Decades later, Azad, the jailer of a women's prison in Mumbai, orchestrates daring heists and hijackings alongside a group of inmate women to demand accountability from corrupt tycoons and politicians.",
-    "rating": 7.0,
+    "runtime": "145 min",
+    "director": "Vysakh",
+    "cast": [
+      "Prithviraj Sukumaran",
+      "Mohanlal",
+      "Malvika Sharma"
+    ],
+    "synopsis": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "description": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "rating": 6.7,
     "ratingSource": "IMDb",
-    "qualities": ["480p", "720p", "1080p", "4K UHD"],
+    "qualities": [
+      "480p",
+      "720p",
+      "1080p",
+      "4K UHD"
+    ],
     "fileSizes": {
-      "480p": "490 MB",
-      "720p": "1.2 GB",
-      "1080p": "2.9 GB",
-      "4K UHD": "7.9 GB"
+      "480p": "600MB",
+      "720p": "1.5GB",
+      "1080p": "13.6GB",
+      "4K UHD": "2160p SDR MULTi WEB-DL – 19.9GB"
     },
-    "formats": ["MKV", "MP4"],
-    "subtitles": ["English"],
-    "screenshots": [],
+    "formats": [
+      "MKV",
+      "MP4"
+    ],
+    "subtitles": [
+      "English"
+    ],
+    "screenshots": [
+      "https://catimages.org/images/2026/10/09/vlcsnap-2026-10-08-12h06m59s761.th.jpg",
+      "https://catimages.org/images/2026/10/09/vlcsnap-2026-10-08-12h07m13s556.th.jpg",
+      "https://catimages.org/images/2026/10/09/vlcsnap-2026-10-08-12h07m43s971.th.jpg",
+      "https://catimages.org/images/2026/10/09/vlcsnap-2026-10-08-12h08m04s987.th.jpg",
+      "https://catimages.org/images/2026/10/09/vlcsnap-2026-10-08-12h07m55s049.th.jpg",
+      "https://catimages.org/images/2026/10/09/vlcsnap-2026-10-08-12h08m28s693.th.jpg"
+    ],
     "links": [
       {
-        "label": "Stream on Netflix (Extended Cut)",
-        "type": "official",
-        "quality": "4K UHD",
-        "url": "https://www.netflix.com/title/81695252"
+        "label": "Download 480p (600MB)",
+        "type": "download",
+        "quality": "480p",
+        "size": "600MB",
+        "url": "https://hubcdn.club/file/CNgl5cL5cyMW1KMULscOfvzYl"
       },
       {
-        "label": "Download 1080p Extended Cut",
+        "label": "Download 720p (1GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "1GB",
+        "url": "https://hubdrive.pics/file/2849701603"
+      },
+      {
+        "label": "Download 720p (1.2GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "1.2GB",
+        "url": "https://greenmotors.club/?id=ZTNDY1JpaURkNEVUbGR0eVNITU5rZjVQM1dlMVhmcC9JRCtmTmt1cEtYT1lOTmhYcTZlUVE1RDdKSUVXejB4a3lBMkl3bmp6U1lvMitxbGM2L2V4YXpONktwbmtXdGwyUFh6NFVjT0RubkE9"
+      },
+      {
+        "label": "Download 720p (1.5GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "1.5GB",
+        "url": "https://greenmotors.club/?id=ZTNDY1JpaURkNEVUbGR0eVNITU5rZjVQM1dlMVhmcC9JRCtmTmt1cEtYT1lOTmhYcTZlUVE1RDdKSUVXejB4a0pWN0ZvN1Q3U291RmpyMUV5WFdPT1VaYXcrZFNnclgxeGQwczhSZzRScGc9"
+      },
+      {
+        "label": "Download 1080p (2.2GB)",
         "type": "download",
         "quality": "1080p",
-        "size": "2.9 GB",
-        "url": "https://archive.org/details/jawan_film_2023"
+        "size": "2.2GB",
+        "url": "https://hubdrive.pics/file/3756826339"
+      },
+      {
+        "label": "Download 1080p (2.6GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "2.6GB",
+        "url": "https://greenmotors.club/?id=ZTNDY1JpaURkNEVUbGR0eVNITU5rZjVQM1dlMVhmcC9JRCtmTmt1cEtYT1lOTmhYcTZlUVE1RDdKSUVXejB4a0hjSzhBOUREK3FFM3FSZ0lWT0ZPVndZbmVnYnNQSFBQdFhDNUN6R3ViekU9"
+      },
+      {
+        "label": "Download 1080p (3.4GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "3.4GB",
+        "url": "https://greenmotors.club/?id=ZTNDY1JpaURkNEVUbGR0eVNITU5rZjVQM1dlMVhmcC9JRCtmTmt1cEtYT1lOTmhYcTZlUVE1RDdKSUVXejB4a1Zrbmh3ZnNSR25tRXNjeWh4R3ZpMjQ2eWpBQ1hZZnZhcUhzMEUzd2xmclU9"
+      },
+      {
+        "label": "Download 1080p (13.6GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "13.6GB",
+        "url": "https://hubdrive.pics/file/8045050180"
+      },
+      {
+        "label": "Download 4K UHD (2160p SDR MULTi WEB-DL – 19.9GB)",
+        "type": "download",
+        "quality": "4K UHD",
+        "size": "2160p SDR MULTi WEB-DL – 19.9GB",
+        "url": "https://hubdrive.pics/file/6564757211"
       }
     ],
-    "tags": ["Shah Rukh Khan", "Atlee", "Action", "Bollywood Blockbuster", "Anirudh", "SRK"],
+    "tags": [
+      "Khalifa",
+      "South Movie",
+      "Hindi Dubbed",
+      "Action | Crime | Thriller",
+      "Hindi Dubbed"
+    ],
     "featured": false,
-    "publishedAt": "2024-02-10T16:20:00Z",
-    "seoTitle": "Jawan (2023) - Shah Rukh Khan Action Thriller 1080p & 4K | CineStatic",
-    "seoDescription": "Download and watch Jawan (2023) directed by Atlee starring Shah Rukh Khan and Nayanthara. Full HD 1080p and 4K UHD download links available."
+    "publishedAt": "2026-10-07T09:28:31.785Z",
+    "seoTitle": "Khalifa (2026) Hindi Dubbed Movie Download in 4K & 1080p | CineStatic",
+    "seoDescription": "Download Khalifa (2026) in dual audio Hindi and original South language. High quality 4K UHD, 1080p, 720p downloads."
   },
   {
     "id": "mov-006",
-    "slug": "kgf-chapter-2",
-    "title": "K.G.F: Chapter 2",
+    "slug": "epic-first-semester-2026",
+    "title": "Epic First Semester",
     "originalTitle": null,
-    "releaseYear": 2022,
-    "poster": "https://image.tmdb.org/t/p/w500/kh0uvbA9sWk0v0n8k3k9k1p5g3j.jpg",
-    "thumbnail": "https://image.tmdb.org/t/p/w300/kh0uvbA9sWk0v0n8k3k9k1p5g3j.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/9g9y0h9t3d2m1p0q7b7f8g9k0l1.jpg",
-    "language": "Kannada",
-    "languagesAvailable": ["Kannada", "Hindi Dubbed", "Telugu", "Tamil", "Malayalam"],
-    "categories": ["south-indian", "action", "thriller", "hindi-dubbed"],
-    "genres": ["Action", "Crime", "Drama"],
+    "releaseYear": 2026,
+    "poster": "https://image.tmdb.org/t/p/w342/pXf3VlwaCgxvS7kvQlQ3QBwjZpy.jpg",
+    "thumbnail": "https://image.tmdb.org/t/p/w342/pXf3VlwaCgxvS7kvQlQ3QBwjZpy.jpg",
+    "backdrop": "https://catimages.org/images/2026/10/09/vlcsnap-2026-10-08-16h01m08s033.th.jpg",
+    "language": "Hindi Dubbed",
+    "languagesAvailable": [
+      "Hindi Dubbed"
+    ],
+    "categories": [
+      "south-indian",
+      "hindi-dubbed",
+      "action"
+    ],
+    "genres": [
+      "Romance | Drama"
+    ],
     "country": "India",
-    "runtime": "168 min",
-    "director": "Prashanth Neel",
-    "cast": ["Yash", "Sanjay Dutt", "Raveena Tandon", "Srinidhi Shetty", "Prakash Raj"],
-    "synopsis": "The blood-soaked land of Kolar Gold Fields has a new overlord now - Rocky, whose name strikes fear into the heart of his foes. His allies look up to him as their savior.",
-    "description": "In the blood-drenched Kolar Gold Fields, Rocky's name commands terror and admiration. As he consolidates absolute control over the mining empire, he faces menacing challenges from the ruthless Adheera and prime minister Ramika Sen, leading to an apocalyptic conflict for supremacy.",
-    "rating": 8.2,
+    "runtime": "145 min",
+    "director": "Aditya Hasan",
+    "cast": [
+      "Anand Deverakonda",
+      "Vaishnavi Chaitanya",
+      "Sivaji Sontineni"
+    ],
+    "synopsis": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "description": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "rating": 6.8,
     "ratingSource": "IMDb",
-    "qualities": ["480p", "720p", "1080p", "4K UHD"],
+    "qualities": [
+      "480p",
+      "720p",
+      "1080p",
+      "4K UHD"
+    ],
     "fileSizes": {
-      "480p": "500 MB",
-      "720p": "1.3 GB",
-      "1080p": "3.0 GB",
-      "4K UHD": "8.2 GB"
+      "480p": "560MB",
+      "720p": "1.4GB",
+      "1080p": "8.3GB",
+      "4K UHD": "2160p SDR MULTi WEB-DL – 26.7GB"
     },
-    "formats": ["MKV", "MP4"],
-    "subtitles": ["English", "Hindi"],
-    "screenshots": [],
+    "formats": [
+      "MKV",
+      "MP4"
+    ],
+    "subtitles": [
+      "English"
+    ],
+    "screenshots": [
+      "https://catimages.org/images/2026/10/09/vlcsnap-2026-10-08-16h01m08s033.th.jpg",
+      "https://catimages.org/images/2026/10/09/vlcsnap-2026-10-08-16h02m06s897.th.jpg",
+      "https://catimages.org/images/2026/10/09/vlcsnap-2026-10-08-16h02m33s061.th.jpg",
+      "https://catimages.org/images/2026/10/09/vlcsnap-2026-10-08-16h03m16s206.th.jpg",
+      "https://catimages.org/images/2026/10/09/vlcsnap-2026-10-08-16h03m31s466.th.jpg",
+      "https://catimages.org/images/2026/10/09/vlcsnap-2026-10-08-16h03m40s760.th.jpg"
+    ],
     "links": [
       {
-        "label": "Stream on Prime Video",
-        "type": "official",
-        "quality": "4K UHD",
-        "url": "https://www.primevideo.com/detail/0O92X7M8Q54B"
+        "label": "Download 480p (560MB)",
+        "type": "download",
+        "quality": "480p",
+        "size": "560MB",
+        "url": "https://hubcdn.club/file/3eyA7J7n071NypMQjxglYbdEv"
       },
       {
-        "label": "Download 1080p Multi-Audio",
+        "label": "Download 720p (940MB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "940MB",
+        "url": "https://hubdrive.pics/file/2735512305"
+      },
+      {
+        "label": "Download 720p (1.1GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "1.1GB",
+        "url": "https://greenmotors.club/?id=ckVUdEd0VkptSnQzbVRoR3lPV1pWa1B4bzNpczB4YkJGN0M3dERqMS9PS3dmVEUya2dOaWphOEVmcXl4Ly9aVUo2MFJSaHlISlAvRDB3MzJMK2wyRUx6MSs1alVrbURJaGxoRGo0cVlJRWM9"
+      },
+      {
+        "label": "Download 720p (1.4GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "1.4GB",
+        "url": "https://greenmotors.club/?id=ckVUdEd0VkptSnQzbVRoR3lPV1pWa1B4bzNpczB4YkJGN0M3dERqMS9PS3dmVEUya2dOaWphOEVmcXl4Ly9aVWR6V3dGR05OVks1MXJONXh2V3FDVVYxUHFMdWdxMTBraTBweG4veXI0RlE9"
+      },
+      {
+        "label": "Download 1080p (2GB)",
         "type": "download",
         "quality": "1080p",
-        "size": "3.0 GB",
-        "url": "https://archive.org/details/kgf2_kannada_hindi"
+        "size": "2GB",
+        "url": "https://hubdrive.pics/file/2188897473"
+      },
+      {
+        "label": "Download 1080p (2.4GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "2.4GB",
+        "url": "https://greenmotors.club/?id=ckVUdEd0VkptSnQzbVRoR3lPV1pWa1B4bzNpczB4YkJGN0M3dERqMS9PS3dmVEUya2dOaWphOEVmcXl4Ly9aVWpzeWZxL0JsNHRGblJVTVdlWlBwWlRsc1ExVUdMQzE2VVZOMms2TW8xZ2s9"
+      },
+      {
+        "label": "Download 1080p (3.1GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "3.1GB",
+        "url": "https://greenmotors.club/?id=ckVUdEd0VkptSnQzbVRoR3lPV1pWa1B4bzNpczB4YkJGN0M3dERqMS9PS3dmVEUya2dOaWphOEVmcXl4Ly9aVW9DRW1Hdnl1MDROREZBT3JaczNGTG9TY3VZbC91bmhWc0V4UkFicmxMckk9"
+      },
+      {
+        "label": "Download 1080p (8.3GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "8.3GB",
+        "url": "https://hubdrive.pics/file/4657491183"
+      },
+      {
+        "label": "Download 4K UHD (2160p SDR MULTi WEB-DL – 26.7GB)",
+        "type": "download",
+        "quality": "4K UHD",
+        "size": "2160p SDR MULTi WEB-DL – 26.7GB",
+        "url": "https://hubdrive.pics/file/2812363758"
       }
     ],
-    "tags": ["Yash", "Rocky Bhai", "Prashanth Neel", "KGF", "Action Epic", "Sanjay Dutt"],
+    "tags": [
+      "Epic First Semester",
+      "South Movie",
+      "Hindi Dubbed",
+      "Romance | Drama",
+      "Hindi Dubbed"
+    ],
     "featured": false,
-    "publishedAt": "2024-02-15T11:00:00Z",
-    "seoTitle": "K.G.F: Chapter 2 (2022) - Hindi Dubbed & Kannada 4K / 1080p | CineStatic",
-    "seoDescription": "Experience Rocky Bhai's reign in KGF Chapter 2. Watch and download in 4K UHD and 1080p with Hindi dubbed and Kannada original audio."
+    "publishedAt": "2026-10-06T09:28:31.825Z",
+    "seoTitle": "Epic First Semester (2026) Hindi Dubbed Movie Download in 4K & 1080p | CineStatic",
+    "seoDescription": "Download Epic First Semester (2026) in dual audio Hindi and original South language. High quality 4K UHD, 1080p, 720p downloads."
   },
   {
     "id": "mov-007",
-    "slug": "inception",
-    "title": "Inception",
+    "slug": "mandaadi-2026",
+    "title": "Mandaadi",
     "originalTitle": null,
-    "releaseYear": 2010,
-    "poster": "https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg",
-    "thumbnail": "https://image.tmdb.org/t/p/w300/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/s3TBrRGB1iav7gFOCNx3H31MoES.jpg",
-    "language": "English",
-    "languagesAvailable": ["English", "Hindi Dubbed"],
-    "categories": ["hollywood", "sci-fi", "action", "thriller", "hindi-dubbed"],
-    "genres": ["Action", "Sci-Fi", "Adventure"],
-    "country": "United States",
-    "runtime": "148 min",
-    "director": "Christopher Nolan",
-    "cast": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page", "Tom Hardy", "Ken Watanabe", "Marion Cotillard"],
-    "synopsis": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
-    "description": "Dom Cobb is a skilled thief, the absolute best in the dangerous art of extraction, stealing valuable secrets from deep within the subconscious during the dream state. Cobb's rare ability has made him a coveted player in this treacherous new world of corporate espionage, but it has also made him an international fugitive.",
-    "rating": 8.8,
+    "releaseYear": 2026,
+    "poster": "https://image.tmdb.org/t/p/w342/xRIsVUcCBRVGh2pt9VgzRIw2tK5.jpg",
+    "thumbnail": "https://image.tmdb.org/t/p/w342/xRIsVUcCBRVGh2pt9VgzRIw2tK5.jpg",
+    "backdrop": "https://catimages.org/images/2026/10/08/vlcsnap-2026-10-07-14h21m51s633.th.jpg",
+    "language": "Hindi Dubbed",
+    "languagesAvailable": [
+      "Hindi Dubbed"
+    ],
+    "categories": [
+      "south-indian",
+      "hindi-dubbed",
+      "action"
+    ],
+    "genres": [
+      "Action | Drama | Sport"
+    ],
+    "country": "India",
+    "runtime": "145 min",
+    "director": "Mathimaran Pugazhendhi",
+    "cast": [
+      "Soori",
+      "Suhas",
+      "Mahima Nambiar"
+    ],
+    "synopsis": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "description": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "rating": 8.9,
     "ratingSource": "IMDb",
-    "qualities": ["480p", "720p", "1080p", "4K UHD"],
+    "qualities": [
+      "480p",
+      "720p",
+      "1080p",
+      "4K UHD"
+    ],
     "fileSizes": {
-      "480p": "460 MB",
-      "720p": "1.1 GB",
-      "1080p": "2.6 GB",
-      "4K UHD": "7.5 GB"
+      "480p": "590MB",
+      "720p": "1.4GB",
+      "1080p": "8.8GB",
+      "4K UHD": "2160p SDR MULTi WEB-DL – 20.4GB"
     },
-    "formats": ["MKV", "MP4"],
-    "subtitles": ["English", "Hindi", "Spanish"],
-    "screenshots": [],
+    "formats": [
+      "MKV",
+      "MP4"
+    ],
+    "subtitles": [
+      "English"
+    ],
+    "screenshots": [
+      "https://catimages.org/images/2026/10/08/vlcsnap-2026-10-07-14h21m51s633.th.jpg",
+      "https://catimages.org/images/2026/10/08/vlcsnap-2026-10-07-14h22m18s852.th.jpg",
+      "https://catimages.org/images/2026/10/08/vlcsnap-2026-10-07-14h23m32s164.th.jpg",
+      "https://catimages.org/images/2026/10/08/vlcsnap-2026-10-07-14h24m48s221.th.jpg",
+      "https://catimages.org/images/2026/10/08/vlcsnap-2026-10-07-14h24m51s115.th.jpg",
+      "https://catimages.org/images/2026/10/08/vlcsnap-2026-10-07-14h25m00s473.th.jpg"
+    ],
     "links": [
       {
-        "label": "Stream on Netflix",
-        "type": "official",
-        "quality": "4K UHD",
-        "url": "https://www.netflix.com/title/70131314"
+        "label": "Download 480p (590MB)",
+        "type": "download",
+        "quality": "480p",
+        "size": "590MB",
+        "url": "https://hubcdn.club/file/SWgHw3brY7dZug44EpcCeKTyI"
       },
       {
-        "label": "Download 1080p Dual Audio",
+        "label": "Download 720p (980MB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "980MB",
+        "url": "https://hubdrive.pics/file/2632680887"
+      },
+      {
+        "label": "Download 720p (1.1GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "1.1GB",
+        "url": "https://greenmotors.club/?id=eXNicnN4WlcrOTB5QmVkMW0rNW5ubTNlS3VvSkNlbDRkaHRzUVBYV2tiQ3U2cVpQejVuOEgrcTJNYmx6VmtqOCs1aUZiUHlTa0xaUmJqU1BxelBuWi9SOGtKUkRVL3llbElrTjBnci9XUG89"
+      },
+      {
+        "label": "Download 720p (1.4GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "1.4GB",
+        "url": "https://greenmotors.club/?id=eXNicnN4WlcrOTB5QmVkMW0rNW5ubTNlS3VvSkNlbDRkaHRzUVBYV2tiQ3U2cVpQejVuOEgrcTJNYmx6VmtqODBVMzRlK3ZDYmJxTk5RenJlWVptcld0dDlYU3pDZnA5MjAvbk1FTWhYbjQ9"
+      },
+      {
+        "label": "Download 1080p (2.1GB)",
         "type": "download",
         "quality": "1080p",
-        "size": "2.6 GB",
-        "url": "https://archive.org/details/inception_hd_dual"
+        "size": "2.1GB",
+        "url": "https://hubdrive.pics/file/3625150309"
+      },
+      {
+        "label": "Download 1080p (2.6GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "2.6GB",
+        "url": "https://greenmotors.club/?id=eXNicnN4WlcrOTB5QmVkMW0rNW5ubTNlS3VvSkNlbDRkaHRzUVBYV2tiQ3U2cVpQejVuOEgrcTJNYmx6VmtqOFRzdjhLZGJ6Q3pEdk43dzdrZ0NhYnkveTdUTGY5UDRzSDNXZ3ZvakR5bVU9"
+      },
+      {
+        "label": "Download 1080p (3.3GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "3.3GB",
+        "url": "https://greenmotors.club/?id=eXNicnN4WlcrOTB5QmVkMW0rNW5ubTNlS3VvSkNlbDRkaHRzUVBYV2tiQ3U2cVpQejVuOEgrcTJNYmx6VmtqOGpyWm53MXkxM1MxMGxqVmtnelo5RExHWjlSWGtyL2JEeFpOUnEwTlFnaFU9"
+      },
+      {
+        "label": "Download 1080p (8.8GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "8.8GB",
+        "url": "https://hubdrive.pics/file/8193246731"
+      },
+      {
+        "label": "Download 4K UHD (2160p SDR MULTi WEB-DL – 20.4GB)",
+        "type": "download",
+        "quality": "4K UHD",
+        "size": "2160p SDR MULTi WEB-DL – 20.4GB",
+        "url": "https://hubdrive.pics/file/21994180427"
       }
     ],
-    "tags": ["Christopher Nolan", "Leonardo DiCaprio", "Dreams", "Mind Bending", "Sci-Fi Classic", "Hans Zimmer"],
-    "featured": true,
-    "publishedAt": "2024-02-20T08:45:00Z",
-    "seoTitle": "Inception (2010) - Dual Audio Hindi & English 1080p / 4K UHD | CineStatic",
-    "seoDescription": "Download & watch Inception (2010) directed by Christopher Nolan starring Leonardo DiCaprio. High quality 4K and 1080p with Hindi dubbing."
+    "tags": [
+      "Mandaadi",
+      "South Movie",
+      "Hindi Dubbed",
+      "Action | Drama | Sport",
+      "Hindi Dubbed"
+    ],
+    "featured": false,
+    "publishedAt": "2026-10-05T09:28:31.862Z",
+    "seoTitle": "Mandaadi (2026) Hindi Dubbed Movie Download in 4K & 1080p | CineStatic",
+    "seoDescription": "Download Mandaadi (2026) in dual audio Hindi and original South language. High quality 4K UHD, 1080p, 720p downloads."
   },
   {
     "id": "mov-008",
-    "slug": "panchayat",
-    "title": "Panchayat",
+    "slug": "vadala-2026",
+    "title": "Vadala",
     "originalTitle": null,
-    "releaseYear": 2020,
-    "poster": "https://image.tmdb.org/t/p/w500/yV1p475L6jL7Q8r2k5u3m8y8s0p.jpg",
-    "thumbnail": "https://image.tmdb.org/t/p/w300/yV1p475L6jL7Q8r2k5u3m8y8s0p.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/w9x4u7j2v9s0q1m3k5p7y9r2t4u.jpg",
-    "language": "Hindi",
-    "languagesAvailable": ["Hindi"],
-    "categories": ["web-series", "comedy", "drama"],
-    "genres": ["Comedy", "Drama"],
+    "releaseYear": 2026,
+    "poster": "https://image.tmdb.org/t/p/w342/fK8TdIPdyJaaFMHlUV3JEZKFONJ.jpg",
+    "thumbnail": "https://image.tmdb.org/t/p/w342/fK8TdIPdyJaaFMHlUV3JEZKFONJ.jpg",
+    "backdrop": "https://catimages.org/images/2026/10/08/vlcsnap-2026-10-07-13h22m15s931.th.jpg",
+    "language": "Hindi Dubbed",
+    "languagesAvailable": [
+      "Hindi Dubbed"
+    ],
+    "categories": [
+      "south-indian",
+      "hindi-dubbed",
+      "action"
+    ],
+    "genres": [
+      "Drama | Thriller"
+    ],
     "country": "India",
-    "runtime": "Season 1-3 (24 Episodes)",
-    "director": "Deepak Kumar Mishra",
-    "cast": ["Jitendra Kumar", "Neena Gupta", "Raghubir Yadav", "Faisal Malik", "Chandan Roy"],
-    "synopsis": "A comedy-drama, which captures the journey of an engineering graduate Abhishek, who for lack of a better job option joins as secretary of a Panchayat office in a remote village of Uttar Pradesh.",
-    "description": "Stuck in the rural hamlet of Phulera, engineering graduate Abhishek Tripathi navigates rural politics, quirky village traditions, uncooperative solar lights, and preparation for the CAT examination while developing unexpected affection for the villagers.",
-    "rating": 8.9,
+    "runtime": "145 min",
+    "director": "Vamsi Krishna Akella",
+    "cast": [
+      "Jagapati Babu",
+      "Laya",
+      "Hrithika Srinivas"
+    ],
+    "synopsis": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "description": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "rating": 7.5,
     "ratingSource": "IMDb",
-    "qualities": ["720p", "1080p"],
+    "qualities": [
+      "480p",
+      "720p",
+      "1080p"
+    ],
     "fileSizes": {
-      "720p": "2.8 GB (Complete Pack)",
-      "1080p": "6.2 GB (Complete Pack)"
+      "480p": "400MB",
+      "720p": "1GB",
+      "1080p": "7GB"
     },
-    "formats": ["MKV"],
-    "subtitles": ["English"],
-    "screenshots": [],
+    "formats": [
+      "MKV",
+      "MP4"
+    ],
+    "subtitles": [
+      "English"
+    ],
+    "screenshots": [
+      "https://catimages.org/images/2026/10/08/vlcsnap-2026-10-07-13h22m15s931.th.jpg",
+      "https://catimages.org/images/2026/10/08/vlcsnap-2026-10-07-13h22m26s172.th.jpg",
+      "https://catimages.org/images/2026/10/08/vlcsnap-2026-10-07-13h22m34s089.th.jpg",
+      "https://catimages.org/images/2026/10/08/vlcsnap-2026-10-07-13h23m14s066.th.jpg",
+      "https://catimages.org/images/2026/10/08/vlcsnap-2026-10-07-13h23m30s741.th.jpg",
+      "https://catimages.org/images/2026/10/08/vlcsnap-2026-10-07-13h23m49s804.th.jpg"
+    ],
     "links": [
       {
-        "label": "Stream on Prime Video",
-        "type": "official",
-        "quality": "1080p",
-        "url": "https://www.primevideo.com/detail/0KGBF5Z8VREO"
+        "label": "Download 480p (400MB)",
+        "type": "download",
+        "quality": "480p",
+        "size": "400MB",
+        "url": "https://hubcdn.club/file/xgkZdeeFtBPynaHN1yQpVPF2y"
       },
       {
-        "label": "Download 1080p All Seasons",
+        "label": "Download 720p (770MB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "770MB",
+        "url": "https://hubdrive.pics/file/1898900458"
+      },
+      {
+        "label": "Download 720p (1GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "1GB",
+        "url": "https://greenmotors.club/?id=eXNicnN4WlcrOTB5QmVkMW0rNW5ubTNlS3VvSkNlbDRkaHRzUVBYV2tiQ3U2cVpQejVuOEgrcTJNYmx6VmtqODJjNGpqckQxTXVOSzJTcHRXUjB1Y0RSZWN5bStTUVJQQ215L1MzUVFVREE9"
+      },
+      {
+        "label": "Download 1080p (1.7GB)",
         "type": "download",
         "quality": "1080p",
-        "size": "6.2 GB",
-        "url": "https://archive.org/details/panchayat_tvf_series"
+        "size": "1.7GB",
+        "url": "https://hubdrive.pics/file/3282958434"
+      },
+      {
+        "label": "Download 1080p (2.2GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "2.2GB",
+        "url": "https://greenmotors.club/?id=eXNicnN4WlcrOTB5QmVkMW0rNW5ubTNlS3VvSkNlbDRkaHRzUVBYV2tiQ3U2cVpQejVuOEgrcTJNYmx6VmtqOG9VOG53SUdjR09MamhPcWhmOGRxdSt1MkQ3VWhCSEVBbVZkZ3FYZDluYUE9"
+      },
+      {
+        "label": "Download 1080p (7GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "7GB",
+        "url": "https://hubdrive.pics/file/5289589025"
       }
     ],
-    "tags": ["TVF", "Jitendra Kumar", "Sachiv Ji", "Phulera", "Panchayat", "Web Series", "Comedy"],
-    "featured": true,
-    "publishedAt": "2024-03-01T15:00:00Z",
-    "seoTitle": "Panchayat Web Series (All Seasons) - Watch Online & Download 1080p | CineStatic",
-    "seoDescription": "Stream and download all episodes of TVF's acclaimed comedy-drama series Panchayat starring Jitendra Kumar and Neena Gupta in 1080p Full HD."
+    "tags": [
+      "Vadala",
+      "South Movie",
+      "Hindi Dubbed",
+      "Drama | Thriller",
+      "Hindi Dubbed"
+    ],
+    "featured": false,
+    "publishedAt": "2026-10-04T09:28:31.899Z",
+    "seoTitle": "Vadala (2026) Hindi Dubbed Movie Download in 4K & 1080p | CineStatic",
+    "seoDescription": "Download Vadala (2026) in dual audio Hindi and original South language. High quality 4K UHD, 1080p, 720p downloads."
   },
   {
     "id": "mov-009",
-    "slug": "farzi",
-    "title": "Farzi",
+    "slug": "drishyam-the-conclusion-2026",
+    "title": "Drishyam: The Conclusion",
     "originalTitle": null,
-    "releaseYear": 2023,
-    "poster": "https://image.tmdb.org/t/p/w500/m60m6Q1t2v8n3v8b4k9m3q1t0p9.jpg",
-    "thumbnail": "https://image.tmdb.org/t/p/w300/m60m6Q1t2v8n3v8b4k9m3q1t0p9.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/8t7b6v4m2k0q3n5v8r1p4m7n9k2.jpg",
-    "language": "Hindi",
-    "languagesAvailable": ["Hindi", "Tamil", "Telugu", "Malayalam"],
-    "categories": ["web-series", "thriller", "drama", "action"],
-    "genres": ["Crime", "Thriller", "Drama"],
+    "releaseYear": 2026,
+    "poster": "https://image.tmdb.org/t/p/w342/ebcCpMzanQHN4VeiyH3wBtm635G.jpg",
+    "thumbnail": "https://image.tmdb.org/t/p/w342/ebcCpMzanQHN4VeiyH3wBtm635G.jpg",
+    "backdrop": "https://catimages.org/images/2026/10/03/vlcsnap-2026-10-02-22h48m30s907.jpg",
+    "language": "Hindi Dubbed",
+    "languagesAvailable": [
+      "Hindi Dubbed"
+    ],
+    "categories": [
+      "south-indian",
+      "hindi-dubbed",
+      "action"
+    ],
+    "genres": [
+      "Crime | Drama | Mystery | Thriller"
+    ],
     "country": "India",
-    "runtime": "Season 1 (8 Episodes)",
-    "director": "Raj & DK",
-    "cast": ["Shahid Kapoor", "Vijay Sethupathi", "Kay Kay Menon", "Raashii Khanna", "Bhuvan Arora"],
-    "synopsis": "An artist who gets pulled into the murky high stakes of a con job and a fiery task force officer on the mission to rid the country of his menaces in a fast-paced, edgy one-of-a-kind thriller.",
-    "description": "Sunny, a brilliant but disillusioned artist, designs the ultimate counterfeit banknote to rescue his grandfather's vintage printing press. When his flawless fake currency infiltrates the financial market, unhinged task force officer Michael Vedanayagam launches an all-out manhunt.",
-    "rating": 8.4,
+    "runtime": "145 min",
+    "director": "Abhishek Pathak",
+    "cast": [
+      "Ajay Devgn",
+      "Shriya Saran",
+      "Tabu",
+      "Jaideep Ahlawat"
+    ],
+    "synopsis": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "description": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "rating": 7.5,
     "ratingSource": "IMDb",
-    "qualities": ["720p", "1080p", "4K UHD"],
+    "qualities": [
+      "480p",
+      "720p",
+      "1080p"
+    ],
     "fileSizes": {
-      "720p": "2.4 GB",
-      "1080p": "5.6 GB",
-      "4K UHD": "14.2 GB"
+      "480p": "500MB",
+      "720p": "1.3GB",
+      "1080p": "19.4GB"
     },
-    "formats": ["MKV", "MP4"],
-    "subtitles": ["English"],
-    "screenshots": [],
+    "formats": [
+      "MKV",
+      "MP4"
+    ],
+    "subtitles": [
+      "English"
+    ],
+    "screenshots": [
+      "https://catimages.org/images/2026/10/03/vlcsnap-2026-10-02-22h48m30s907.jpg",
+      "https://catimages.org/images/2026/10/03/vlcsnap-2026-10-02-22h45m29s134.jpg",
+      "https://catimages.org/images/2026/10/03/vlcsnap-2026-10-02-22h46m33s241.jpg",
+      "https://catimages.org/images/2026/10/03/vlcsnap-2026-10-02-22h46m53s501.jpg",
+      "https://catimages.org/images/2026/10/03/vlcsnap-2026-10-02-22h47m57s193.jpg",
+      "https://catimages.org/images/2026/10/03/vlcsnap-2026-10-02-22h48m38s622.jpg"
+    ],
     "links": [
       {
-        "label": "Stream on Prime Video",
-        "type": "official",
-        "quality": "4K UHD",
-        "url": "https://www.primevideo.com/detail/0T92V7X9"
+        "label": "Download 480p (500MB)",
+        "type": "download",
+        "quality": "480p",
+        "size": "500MB",
+        "url": "https://hubcdn.club/file/ARBJCiQ3rhjzEqPFHLwksHvsM"
       },
       {
-        "label": "Download 1080p Complete Season",
+        "label": "Download 720p (860MB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "860MB",
+        "url": "https://hubdrive.pics/file/2394692085"
+      },
+      {
+        "label": "Download 720p (1.3GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "1.3GB",
+        "url": "https://greenmotors.club/?id=akJSZm1xZ0hCRVQzZHVTdGQrL3ByVXlKN2ViR2hjRU0xdzJCdXBTL0xjSCtBRkZYT3dNM2ZRZWozYmtzMzRZQStXYWN6bXM1Sit3amhNSU1tOVpDeDd4QjBnWlgzN1hZeWk5QVRSbjF0TGM9"
+      },
+      {
+        "label": "Download 1080p (2GB)",
         "type": "download",
         "quality": "1080p",
-        "size": "5.6 GB",
-        "url": "https://archive.org/details/farzi_season_1_webdl"
+        "size": "2GB",
+        "url": "https://hubdrive.pics/file/3099486109"
+      },
+      {
+        "label": "Download 1080p (2.9GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "2.9GB",
+        "url": "https://greenmotors.club/?id=akJSZm1xZ0hCRVQzZHVTdGQrL3ByVXlKN2ViR2hjRU0xdzJCdXBTL0xjSCtBRkZYT3dNM2ZRZWozYmtzMzRZQThLWUV6UGVUeDNpMFdyZnYzc2JURW11djIvSHBVMmd0MG9FTDdHaFFXTkU9"
+      },
+      {
+        "label": "Download 1080p (10GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "10GB",
+        "url": "https://hubdrive.pics/file/10105757270"
+      },
+      {
+        "label": "Download 1080p (19.4GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "19.4GB",
+        "url": "https://hubdrive.pics/file/3540532684"
       }
     ],
-    "tags": ["Shahid Kapoor", "Vijay Sethupathi", "Raj and DK", "Counterfeiting", "Crime Thriller", "Farzi"],
+    "tags": [
+      "Drishyam: The Conclusion",
+      "South Movie",
+      "Hindi Dubbed",
+      "Crime | Drama | Mystery | Thriller",
+      "Hindi Dubbed"
+    ],
     "featured": false,
-    "publishedAt": "2024-03-05T12:00:00Z",
-    "seoTitle": "Farzi (Season 1) - Shahid Kapoor Crime Thriller Series 1080p & 4K | CineStatic",
-    "seoDescription": "Watch and download Raj & DK's hit crime series Farzi starring Shahid Kapoor and Vijay Sethupathi. Full Season in 1080p and 4K UHD with English subs."
+    "publishedAt": "2026-10-03T09:28:31.972Z",
+    "seoTitle": "Drishyam: The Conclusion (2026) Hindi Dubbed Movie Download in 4K & 1080p | CineStatic",
+    "seoDescription": "Download Drishyam: The Conclusion (2026) in dual audio Hindi and original South language. High quality 4K UHD, 1080p, 720p downloads."
   },
   {
     "id": "mov-010",
-    "slug": "kantara",
-    "title": "Kantara",
-    "originalTitle": "Kantara: A Legend",
-    "releaseYear": 2022,
-    "poster": "https://image.tmdb.org/t/p/w500/h6g6B2m3y8k2t4p5m7n8k9l0p1q.jpg",
-    "thumbnail": "https://image.tmdb.org/t/p/w300/h6g6B2m3y8k2t4p5m7n8k9l0p1q.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/9m8k7b6v4c2x1z0p5m7n9k2l4t.jpg",
-    "language": "Kannada",
-    "languagesAvailable": ["Kannada", "Hindi Dubbed", "Telugu", "Tamil", "Malayalam"],
-    "categories": ["south-indian", "action", "thriller", "drama", "hindi-dubbed"],
-    "genres": ["Action", "Adventure", "Drama", "Thriller"],
+    "slug": "jailer-2023",
+    "title": "Jailer",
+    "originalTitle": null,
+    "releaseYear": 2023,
+    "poster": "https://image.tmdb.org/t/p/w342/glutrqowinFQEVVJodKW7s8as4i.jpg",
+    "thumbnail": "https://image.tmdb.org/t/p/w342/glutrqowinFQEVVJodKW7s8as4i.jpg",
+    "backdrop": "https://catimages.org/images/2026/10/06/vlcsnap-2026-10-06-03h11m32s429.th.jpg",
+    "language": "Hindi Dubbed",
+    "languagesAvailable": [
+      "Hindi Dubbed"
+    ],
+    "categories": [
+      "south-indian",
+      "hindi-dubbed",
+      "action"
+    ],
+    "genres": [
+      "Action | Comedy | Crime | Thriller"
+    ],
     "country": "India",
-    "runtime": "148 min",
-    "director": "Rishab Shetty",
-    "cast": ["Rishab Shetty", "Sapthami Gowda", "Kishore", "Achyuth Kumar", "Pramod Shetty"],
-    "synopsis": "When greed paves the way for betrayal, scheming and murder, a young tribal man reluctantly dons the traditions of his ancestors to seek justice.",
-    "description": "Set in the coastal forests of Karnataka, Kantara explores the divine folklore of Bhoota Kola and human greed. Shiva, a rebellious Kambala champion, clashes with upright forest officer Murali, igniting ancient spiritual wrath and ancestral vengeance.",
-    "rating": 8.2,
+    "runtime": "145 min",
+    "director": "Nelson Dilipkumar",
+    "cast": [
+      "Rajinikanth",
+      "Vinayakan",
+      "Vasanth Ravi"
+    ],
+    "synopsis": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "description": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "rating": 7.3,
     "ratingSource": "IMDb",
-    "qualities": ["480p", "720p", "1080p", "4K UHD"],
+    "qualities": [
+      "480p",
+      "720p",
+      "1080p",
+      "4K UHD"
+    ],
     "fileSizes": {
-      "480p": "480 MB",
-      "720p": "1.2 GB",
-      "1080p": "2.7 GB",
-      "4K UHD": "7.8 GB"
+      "480p": "630MB",
+      "720p": "1.5GB",
+      "1080p": "13.1GB",
+      "4K UHD": "2160p SDR MULTi WEB-DL – 26.4GB"
     },
-    "formats": ["MKV", "MP4"],
-    "subtitles": ["English", "Hindi"],
-    "screenshots": [],
+    "formats": [
+      "MKV",
+      "MP4"
+    ],
+    "subtitles": [
+      "English"
+    ],
+    "screenshots": [
+      "https://catimages.org/images/2026/10/06/vlcsnap-2026-10-06-03h11m32s429.th.jpg",
+      "https://catimages.org/images/2026/10/06/vlcsnap-2026-10-06-03h12m06s954.th.jpg",
+      "https://catimages.org/images/2026/10/06/vlcsnap-2026-10-06-03h12m53s719.th.jpg",
+      "https://catimages.org/images/2026/10/06/vlcsnap-2026-10-06-03h14m29s372.th.jpg",
+      "https://catimages.org/images/2026/10/06/vlcsnap-2026-10-06-03h16m47s943.th.jpg",
+      "https://catimages.org/images/2026/10/06/vlcsnap-2026-10-06-03h13m51s569.th.jpg"
+    ],
     "links": [
       {
-        "label": "Stream on Netflix (Hindi Dubbed)",
-        "type": "official",
-        "quality": "4K UHD",
-        "url": "https://www.netflix.com/title/81656709"
+        "label": "Download 480p (630MB)",
+        "type": "download",
+        "quality": "480p",
+        "size": "630MB",
+        "url": "https://hubcdn.club/file/xwSGUYExianZ4W8zTr7Fdkq8G"
       },
       {
-        "label": "Stream on Prime Video (Original Kannada)",
-        "type": "official",
-        "quality": "4K UHD",
-        "url": "https://www.primevideo.com/detail/0R4B9V"
+        "label": "Download 720p (1GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "1GB",
+        "url": "https://hubdrive.pics/file/2095709801"
       },
       {
-        "label": "Download 1080p Dual Audio",
+        "label": "Download 720p (1.2GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "1.2GB",
+        "url": "https://greenmotors.club/?id=bE41N2xVR3FtR2JWQm9HRktmZWtpRkxMTVhTMHBVcHZDc3ZLR1IwdExEWHR4Kzd0RXRSeWZnd1dKUnZuY0ZPUVJyOHpsVlNpR0lYeGhuRGZOd2o3UTRKSlY0MVhySVJYODVDbjBveU9pdmM9"
+      },
+      {
+        "label": "Download 720p (1.5GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "1.5GB",
+        "url": "https://greenmotors.club/?id=bE41N2xVR3FtR2JWQm9HRktmZWtpRkxMTVhTMHBVcHZDc3ZLR1IwdExEWHR4Kzd0RXRSeWZnd1dKUnZuY0ZPUWNLY1dGMzlQK09oZzFDTjhMN0c5c1JlWlNGbG9meGg1VndMQmRGYmx5Ukk9"
+      },
+      {
+        "label": "Download 1080p (2.3GB)",
         "type": "download",
         "quality": "1080p",
-        "size": "2.7 GB",
-        "url": "https://archive.org/details/kantara_legend_2022"
+        "size": "2.3GB",
+        "url": "https://hubdrive.pics/file/2092841001"
+      },
+      {
+        "label": "Download 1080p (2.7GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "2.7GB",
+        "url": "https://greenmotors.club/?id=bE41N2xVR3FtR2JWQm9HRktmZWtpRkxMTVhTMHBVcHZDc3ZLR1IwdExEWHR4Kzd0RXRSeWZnd1dKUnZuY0ZPUTBHaGt2QVJ0ZVV1c0xDaTRienR3U3pWRnFZZy9vWkNXWDBkaVpSdWJ6NlE9"
+      },
+      {
+        "label": "Download 1080p (3.6GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "3.6GB",
+        "url": "https://greenmotors.club/?id=bE41N2xVR3FtR2JWQm9HRktmZWtpRkxMTVhTMHBVcHZDc3ZLR1IwdExEWHR4Kzd0RXRSeWZnd1dKUnZuY0ZPUVJwcm1wNHZ6dTJOMTVmTjAxcy9mbG9yRkMyUzFiNTZFVk5LUVE2eGlxbFU9"
+      },
+      {
+        "label": "Download 1080p (13.1GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "13.1GB",
+        "url": "https://hubdrive.pics/file/12500381774"
+      },
+      {
+        "label": "Download 4K UHD (2160p SDR MULTi WEB-DL – 26.4GB)",
+        "type": "download",
+        "quality": "4K UHD",
+        "size": "2160p SDR MULTi WEB-DL – 26.4GB",
+        "url": "https://hubdrive.pics/file/8747721783"
       }
     ],
-    "tags": ["Rishab Shetty", "Bhoota Kola", "Divine", "Folklore", "South Indian", "Action"],
+    "tags": [
+      "Jailer",
+      "South Movie",
+      "Hindi Dubbed",
+      "Action | Comedy | Crime | Thriller",
+      "Hindi Dubbed"
+    ],
     "featured": false,
-    "publishedAt": "2024-03-10T14:30:00Z",
-    "seoTitle": "Kantara (2022) - Hindi Dubbed & Kannada 1080p / 4K UHD | CineStatic",
-    "seoDescription": "Download & watch Rishab Shetty's Kantara: A Legend. Available in 4K UHD and 1080p with Hindi dubbed audio and English subtitles."
+    "publishedAt": "2026-10-02T09:28:32.025Z",
+    "seoTitle": "Jailer (2023) Hindi Dubbed Movie Download in 4K & 1080p | CineStatic",
+    "seoDescription": "Download Jailer (2023) in dual audio Hindi and original South language. High quality 4K UHD, 1080p, 720p downloads."
   },
   {
     "id": "mov-011",
-    "slug": "dangal",
-    "title": "Dangal",
+    "slug": "doraemon-the-movie-nobita-and-the-castle-of-undersea-devil-2026",
+    "title": "Doraemon the Movie: Nobita and the Castle of Undersea Devil",
     "originalTitle": null,
-    "releaseYear": 2016,
-    "poster": "https://image.tmdb.org/t/p/w500/5v6y7x8w9k0l1m2n3o4p5q6r7s8.jpg",
-    "thumbnail": "https://image.tmdb.org/t/p/w300/5v6y7x8w9k0l1m2n3o4p5q6r7s8.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/4u3v2w1x0y9z8a7b6c5d4e3f2g1.jpg",
-    "language": "Hindi",
-    "languagesAvailable": ["Hindi", "Tamil", "Telugu"],
-    "categories": ["bollywood", "drama", "action"],
-    "genres": ["Biography", "Drama", "Sport"],
+    "releaseYear": 2026,
+    "poster": "https://image.tmdb.org/t/p/w342/gdllrWFb9ffvGkCDQAflrdnTaAg.jpg",
+    "thumbnail": "https://image.tmdb.org/t/p/w342/gdllrWFb9ffvGkCDQAflrdnTaAg.jpg",
+    "backdrop": "https://catimages.org/images/2026/10/04/Vlcsnap.mkv-frame020934.th.jpg",
+    "language": "Hindi Dubbed",
+    "languagesAvailable": [
+      "Hindi Dubbed"
+    ],
+    "categories": [
+      "south-indian",
+      "hindi-dubbed",
+      "action"
+    ],
+    "genres": [
+      "Animation | Adventure | Fantasy | Family"
+    ],
     "country": "India",
-    "runtime": "161 min",
-    "director": "Nitesh Tiwari",
-    "cast": ["Aamir Khan", "Fatima Sana Shaikh", "Sanya Malhotra", "Sakshi Tanwar", "Aparshakti Khurana"],
-    "synopsis": "Former wrestler Mahavir Singh Phogat and his two wrestler daughters struggle towards glory at the Commonwealth Games in the face of societal oppression.",
-    "description": "Mahavir Singh Phogat, an amateur wrestler, is forced to give up his passion for lack of financial support. Vowing that his unborn son will win a gold medal for India, he is blessed with four daughters instead. Soon discovering his daughters' natural fighting instincts, he coaches Geeta and Babita to triumph on the world stage.",
-    "rating": 8.3,
+    "runtime": "145 min",
+    "director": "Tetsuo Yajima",
+    "cast": [
+      "Wasabi Mizuta",
+      "Megumi Oohara",
+      "Yumi Kakazu"
+    ],
+    "synopsis": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "description": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "rating": 7.1,
     "ratingSource": "IMDb",
-    "qualities": ["480p", "720p", "1080p"],
+    "qualities": [
+      "480p",
+      "720p",
+      "1080p"
+    ],
     "fileSizes": {
-      "480p": "480 MB",
-      "720p": "1.2 GB",
-      "1080p": "2.8 GB"
+      "480p": "440MB",
+      "720p": "1.1GB",
+      "1080p": "25.6GB"
     },
-    "formats": ["MKV", "MP4"],
-    "subtitles": ["English"],
-    "screenshots": [],
+    "formats": [
+      "MKV",
+      "MP4"
+    ],
+    "subtitles": [
+      "English"
+    ],
+    "screenshots": [
+      "https://catimages.org/images/2026/10/04/Vlcsnap.mkv-frame020934.th.jpg",
+      "https://catimages.org/images/2026/10/04/Vlcsnap.mkv-frame066988.th.jpg",
+      "https://catimages.org/images/2026/10/04/Vlcsnap.mkv-frame075361.th.jpg",
+      "https://catimages.org/images/2026/10/04/Vlcsnap.mkv-frame083735.th.jpg",
+      "https://catimages.org/images/2026/10/04/Vlcsnap.mkv-frame100482.th.jpg",
+      "https://catimages.org/images/2026/10/04/Vlcsnap.mkv-frame121416.th.jpg"
+    ],
     "links": [
       {
-        "label": "Stream on Apple TV",
-        "type": "official",
-        "quality": "1080p",
-        "url": "https://tv.apple.com/movie/dangal/umc.cmc.2m26t8u2k6z0"
+        "label": "Download 480p (440MB)",
+        "type": "download",
+        "quality": "480p",
+        "size": "440MB",
+        "url": "https://hubcdn.club/file/NcHAQIrPiL54mEBNaBZnSa74q"
       },
       {
-        "label": "Download 1080p Remastered",
+        "label": "Download 720p (840MB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "840MB",
+        "url": "https://hubdrive.pics/file/2445660507"
+      },
+      {
+        "label": "Download 720p (1.1GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "1.1GB",
+        "url": "https://greenmotors.club/?id=VTRHUGMvbFBxNnQzaTVyby9RT3VWZmhBRE9SbUN6anYyTUwrSCtGZk4zSWZwaHBxRFR5Tkp6RjBpbGZoaVVyb1pSSytLU3VvNzJGeFZ0WHFQbDFMTks2RWJ3NTdJcEphNXBWS0lSQndLb0U9"
+      },
+      {
+        "label": "Download 1080p (1.8GB)",
         "type": "download",
         "quality": "1080p",
-        "size": "2.8 GB",
-        "url": "https://archive.org/details/dangal_2016_full"
+        "size": "1.8GB",
+        "url": "https://hubdrive.pics/file/2799140714"
+      },
+      {
+        "label": "Download 1080p (2.4GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "2.4GB",
+        "url": "https://greenmotors.club/?id=VTRHUGMvbFBxNnQzaTVyby9RT3VWZmhBRE9SbUN6anYyTUwrSCtGZk4zSWZwaHBxRFR5Tkp6RjBpbGZoaVVyb2g3c09FVExCbDRjM3d5cEhpbjEzL2RkV1RNOGs0bE1lZjJqSmFHQ3QzZUk9"
+      },
+      {
+        "label": "Download 1080p (5GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "5GB",
+        "url": "https://hubdrive.pics/file/3648404978"
+      },
+      {
+        "label": "Download 1080p (12.3GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "12.3GB",
+        "url": "https://hubdrive.pics/file/11944213913"
+      },
+      {
+        "label": "Download 1080p (25.6GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "25.6GB",
+        "url": "https://hubdrive.pics/file/16399200543"
       }
     ],
-    "tags": ["Aamir Khan", "Wrestling", "Sports", "Commonwealth Games", "Inspirational", "Bollywood Record"],
+    "tags": [
+      "Doraemon the Movie: Nobita and the Castle of Undersea Devil",
+      "South Movie",
+      "Hindi Dubbed",
+      "Animation | Adventure | Fantasy | Family",
+      "Hindi Dubbed"
+    ],
     "featured": false,
-    "publishedAt": "2024-03-12T09:15:00Z",
-    "seoTitle": "Dangal (2016) - Aamir Khan Sports Biopic Full HD 1080p | CineStatic",
-    "seoDescription": "Watch Dangal (2016) full movie starring Aamir Khan, Fatima Sana Shaikh, and Sanya Malhotra. 1080p Full HD download links with English subtitles."
+    "publishedAt": "2026-10-01T09:28:32.079Z",
+    "seoTitle": "Doraemon the Movie: Nobita and the Castle of Undersea Devil (2026) Hindi Dubbed Movie Download in 4K & 1080p | CineStatic",
+    "seoDescription": "Download Doraemon the Movie: Nobita and the Castle of Undersea Devil (2026) in dual audio Hindi and original South language. High quality 4K UHD, 1080p, 720p downloads."
   },
   {
     "id": "mov-012",
-    "slug": "spider-man-across-the-spider-verse",
-    "title": "Spider-Man: Across the Spider-Verse",
+    "slug": "doraemon-the-movie-nobita-and-the-castle-of-undersea-devil-2026-v12",
+    "title": "Doraemon the Movie: Nobita and the Castle of Undersea Devil",
     "originalTitle": null,
-    "releaseYear": 2023,
-    "poster": "https://image.tmdb.org/t/p/w500/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg",
-    "thumbnail": "https://image.tmdb.org/t/p/w300/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/4HodYYKEIsGOdinkGi2Ucz6X9i0.jpg",
-    "language": "English",
-    "languagesAvailable": ["English", "Hindi Dubbed", "Tamil", "Telugu"],
-    "categories": ["hollywood", "animation", "action", "sci-fi", "hindi-dubbed"],
-    "genres": ["Animation", "Action", "Adventure", "Sci-Fi"],
-    "country": "United States",
-    "runtime": "140 min",
-    "director": "Joaquim Dos Santos, Kemp Powers, Justin K. Thompson",
-    "cast": ["Shameik Moore", "Hailee Steinfeld", "Oscar Isaac", "Jake Johnson", "Daniel Kaluuya"],
-    "synopsis": "Miles Morales catapults across the Multiverse, where he encounters a team of Spider-People charged with protecting its very existence. When the heroes clash on how to handle a new threat, Miles must redefine what it means to be a hero.",
-    "description": "After reuniting with Gwen Stacy, Brooklyn's full-time friendly neighborhood Spider-Man is catapulted across the Multiverse. Confronted by Miguel O'Hara and the Spider Society, Miles finds himself pitted against other Spiders and must redefine heroism to save the person he loves most.",
-    "rating": 8.7,
+    "releaseYear": 2026,
+    "poster": "https://image.tmdb.org/t/p/w342/gdllrWFb9ffvGkCDQAflrdnTaAg.jpg",
+    "thumbnail": "https://image.tmdb.org/t/p/w342/gdllrWFb9ffvGkCDQAflrdnTaAg.jpg",
+    "backdrop": "https://catimages.org/images/2026/10/04/Vlcsnap.mkv-frame020934.th.jpg",
+    "language": "Hindi Dubbed",
+    "languagesAvailable": [
+      "Hindi Dubbed"
+    ],
+    "categories": [
+      "south-indian",
+      "hindi-dubbed",
+      "action"
+    ],
+    "genres": [
+      "Animation | Adventure | Fantasy | Family"
+    ],
+    "country": "India",
+    "runtime": "145 min",
+    "director": "Tetsuo Yajima",
+    "cast": [
+      "Wasabi Mizuta",
+      "Megumi Oohara",
+      "Yumi Kakazu"
+    ],
+    "synopsis": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "description": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "rating": 7.1,
     "ratingSource": "IMDb",
-    "qualities": ["480p", "720p", "1080p", "4K UHD"],
+    "qualities": [
+      "480p",
+      "720p",
+      "1080p"
+    ],
     "fileSizes": {
-      "480p": "460 MB",
-      "720p": "1.2 GB",
-      "1080p": "2.8 GB",
-      "4K UHD": "8.0 GB"
+      "480p": "400MB",
+      "720p": "1GB",
+      "1080p": "12.2GB"
     },
-    "formats": ["MKV", "MP4"],
-    "subtitles": ["English", "Hindi"],
-    "screenshots": [],
+    "formats": [
+      "MKV",
+      "MP4"
+    ],
+    "subtitles": [
+      "English"
+    ],
+    "screenshots": [
+      "https://catimages.org/images/2026/10/04/Vlcsnap.mkv-frame020934.th.jpg",
+      "https://catimages.org/images/2026/10/04/Vlcsnap.mkv-frame066988.th.jpg",
+      "https://catimages.org/images/2026/10/04/Vlcsnap.mkv-frame075361.th.jpg",
+      "https://catimages.org/images/2026/10/04/Vlcsnap.mkv-frame083735.th.jpg",
+      "https://catimages.org/images/2026/10/04/Vlcsnap.mkv-frame100482.th.jpg",
+      "https://catimages.org/images/2026/10/04/Vlcsnap.mkv-frame121416.th.jpg"
+    ],
     "links": [
       {
-        "label": "Stream on Netflix",
-        "type": "official",
-        "quality": "4K UHD",
-        "url": "https://www.netflix.com/title/81594935"
+        "label": "Download 480p (400MB)",
+        "type": "download",
+        "quality": "480p",
+        "size": "400MB",
+        "url": "https://hubcdn.club/file/7ctOUPc2kuMCwwsGuXp8XrDcF"
       },
       {
-        "label": "Download 1080p Multi-Audio",
+        "label": "Download 720p (770MB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "770MB",
+        "url": "https://hubdrive.pics/file/1875502464"
+      },
+      {
+        "label": "Download 720p (1GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "1GB",
+        "url": "https://greenmotors.club/?id=b29PeHRwUTZqQm96ZlhtNW9HRHNicEFXQXRZYlJDWnBZTjQ3c0o1bFV1TmRpYXN4SWVmSkxzWjAxYUtqTDdteHdVTll0Y1ZBUFRkVm9YRm5pc3FvVTFIWFQ5S2tWRFlzeVU4YmJGVDdsdFk9"
+      },
+      {
+        "label": "Download 1080p (1.7GB)",
         "type": "download",
         "quality": "1080p",
-        "size": "2.8 GB",
-        "url": "https://archive.org/details/spider_verse_2_preview"
+        "size": "1.7GB",
+        "url": "https://hubdrive.pics/file/1925421990"
+      },
+      {
+        "label": "Download 1080p (2.2GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "2.2GB",
+        "url": "https://greenmotors.club/?id=b29PeHRwUTZqQm96ZlhtNW9HRHNicEFXQXRZYlJDWnBZTjQ3c0o1bFV1TmRpYXN4SWVmSkxzWjAxYUtqTDdteENudlNnbFNNMDFPWjc5UGF1dm5tVlg3cHlUTXR0bUI4MlV2SnU0Tm5pbEU9"
+      },
+      {
+        "label": "Download 1080p (4.9GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "4.9GB",
+        "url": "https://hubdrive.pics/file/2030939431"
+      },
+      {
+        "label": "Download 1080p (12.2GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "12.2GB",
+        "url": "https://hubdrive.pics/file/12677774640"
       }
     ],
-    "tags": ["Spider-Man", "Miles Morales", "Multiverse", "Animation", "Marvel", "Sony"],
-    "featured": true,
-    "publishedAt": "2024-03-18T10:00:00Z",
-    "seoTitle": "Spider-Man: Across the Spider-Verse (2023) - 4K UHD & 1080p Dual Audio | CineStatic",
-    "seoDescription": "Watch and download Spider-Man: Across the Spider-Verse in 4K UHD and 1080p. Features Hindi dubbed and English audio with complete subtitles."
+    "tags": [
+      "Doraemon the Movie: Nobita and the Castle of Undersea Devil",
+      "South Movie",
+      "Hindi Dubbed",
+      "Animation | Adventure | Fantasy | Family",
+      "Hindi Dubbed"
+    ],
+    "featured": false,
+    "publishedAt": "2026-09-30T09:28:32.127Z",
+    "seoTitle": "Doraemon the Movie: Nobita and the Castle of Undersea Devil (2026) Hindi Dubbed Movie Download in 4K & 1080p | CineStatic",
+    "seoDescription": "Download Doraemon the Movie: Nobita and the Castle of Undersea Devil (2026) in dual audio Hindi and original South language. High quality 4K UHD, 1080p, 720p downloads."
+  },
+  {
+    "id": "mov-013",
+    "slug": "toxic-2026",
+    "title": "Toxic",
+    "originalTitle": null,
+    "releaseYear": 2026,
+    "poster": "https://image.tmdb.org/t/p/w342/hSBE52IVDp6Pf6RWTSUOx6bX5kl.jpg",
+    "thumbnail": "https://image.tmdb.org/t/p/w342/hSBE52IVDp6Pf6RWTSUOx6bX5kl.jpg",
+    "backdrop": "https://catimages.org/images/2026/10/03/vlcsnap-2026-10-02-13h35m11s242.th.jpg",
+    "language": "Hindi Dubbed",
+    "languagesAvailable": [
+      "Hindi Dubbed"
+    ],
+    "categories": [
+      "south-indian",
+      "hindi-dubbed",
+      "action"
+    ],
+    "genres": [
+      "Action | Crime | Drama | Thriller"
+    ],
+    "country": "India",
+    "runtime": "145 min",
+    "director": "Geethu Mohandas",
+    "cast": [
+      "Yash",
+      "Nayanthara",
+      "Kiara Advani"
+    ],
+    "synopsis": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "description": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "rating": 4.1,
+    "ratingSource": "IMDb",
+    "qualities": [
+      "480p",
+      "720p",
+      "1080p"
+    ],
+    "fileSizes": {
+      "480p": "800MB",
+      "720p": "2GB",
+      "1080p": "13.4GB"
+    },
+    "formats": [
+      "MKV",
+      "MP4"
+    ],
+    "subtitles": [
+      "English"
+    ],
+    "screenshots": [
+      "https://catimages.org/images/2026/10/03/vlcsnap-2026-10-02-13h35m11s242.th.jpg",
+      "https://catimages.org/images/2026/10/03/vlcsnap-2026-10-02-13h37m22s017.th.jpg",
+      "https://catimages.org/images/2026/10/03/vlcsnap-2026-10-02-13h38m36s777.th.jpg",
+      "https://catimages.org/images/2026/10/03/vlcsnap-2026-10-02-13h39m24s483.th.jpg",
+      "https://catimages.org/images/2026/10/03/vlcsnap-2026-10-02-13h40m04s568.th.jpg",
+      "https://catimages.org/images/2026/10/03/vlcsnap-2026-10-02-13h43m39s476.th.jpg"
+    ],
+    "links": [
+      {
+        "label": "Download 480p (800MB)",
+        "type": "download",
+        "quality": "480p",
+        "size": "800MB",
+        "url": "https://hubdrive.pics/file/2577416008"
+      },
+      {
+        "label": "Download 720p (1.3GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "1.3GB",
+        "url": "https://hubdrive.pics/file/2730878362"
+      },
+      {
+        "label": "Download 720p (2GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "2GB",
+        "url": "https://greenmotors.club/?id=QnhBZWFJaWF2RkxmQlNiL21ZM2E1cWxDajdWbkgzNlluWGV0YThlRStaRERmZ1Q2RDY1RnduNzJza000eTY5L0ZoamNNKzlsRFRZbjBodlV0aVI1T0NmeE13dlQrVzRYOXA0WmN0Qlc2b2s9"
+      },
+      {
+        "label": "Download 1080p (3GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "3GB",
+        "url": "https://hubdrive.pics/file/4701452862"
+      },
+      {
+        "label": "Download 1080p (4.2GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "4.2GB",
+        "url": "https://greenmotors.club/?id=QnhBZWFJaWF2RkxmQlNiL21ZM2E1cWxDajdWbkgzNlluWGV0YThlRStaRERmZ1Q2RDY1RnduNzJza000eTY5L21nWlY2bkViVmdlNjlSbXU5NmlZMHhENHdKbFFOSEdTaVBwanhiSm1FVjg9"
+      },
+      {
+        "label": "Download 1080p (13.4GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "13.4GB",
+        "url": "https://hubdrive.pics/file/13695646475"
+      }
+    ],
+    "tags": [
+      "Toxic",
+      "South Movie",
+      "Hindi Dubbed",
+      "Action | Crime | Drama | Thriller",
+      "Hindi Dubbed"
+    ],
+    "featured": false,
+    "publishedAt": "2026-09-29T09:28:32.190Z",
+    "seoTitle": "Toxic (2026) Hindi Dubbed Movie Download in 4K & 1080p | CineStatic",
+    "seoDescription": "Download Toxic (2026) in dual audio Hindi and original South language. High quality 4K UHD, 1080p, 720p downloads."
+  },
+  {
+    "id": "mov-014",
+    "slug": "paradha-2025",
+    "title": "Paradha",
+    "originalTitle": null,
+    "releaseYear": 2025,
+    "poster": "https://image.tmdb.org/t/p/w342/wOOxDIhZCUmWkEPxBajQwmKVm8l.jpg",
+    "thumbnail": "https://image.tmdb.org/t/p/w342/wOOxDIhZCUmWkEPxBajQwmKVm8l.jpg",
+    "backdrop": "https://catimages.org/images/2026/10/03/Vlcsnap.mkv-frame013690.th.jpg",
+    "language": "Hindi Dubbed",
+    "languagesAvailable": [
+      "Hindi Dubbed"
+    ],
+    "categories": [
+      "south-indian",
+      "hindi-dubbed",
+      "action"
+    ],
+    "genres": [
+      "Drama"
+    ],
+    "country": "India",
+    "runtime": "145 min",
+    "director": "Praveen Kandregula",
+    "cast": [
+      "Anupama Parameswaran",
+      "Darshana Rajendran",
+      "Sangeetha Krish"
+    ],
+    "synopsis": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "description": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "rating": 5.7,
+    "ratingSource": "IMDb",
+    "qualities": [
+      "480p",
+      "720p",
+      "1080p",
+      "4K UHD"
+    ],
+    "fileSizes": {
+      "480p": "560MB",
+      "720p": "1.3GB",
+      "1080p": "8.8GB",
+      "4K UHD": "2160p SDR WEB-DL – 15.6GB"
+    },
+    "formats": [
+      "MKV",
+      "MP4"
+    ],
+    "subtitles": [
+      "English"
+    ],
+    "screenshots": [
+      "https://catimages.org/images/2026/10/03/Vlcsnap.mkv-frame013690.th.jpg",
+      "https://catimages.org/images/2026/10/03/Vlcsnap.mkv-frame117340.th.jpg",
+      "https://catimages.org/images/2026/10/03/Vlcsnap.mkv-frame140808.th.jpg",
+      "https://catimages.org/images/2026/10/03/Vlcsnap.mkv-frame164276.th.jpg",
+      "https://catimages.org/images/2026/10/03/Vlcsnap.mkv-frame176010.th.jpg",
+      "https://catimages.org/images/2026/10/03/Vlcsnap.mkv-frame199478.th.jpg"
+    ],
+    "links": [
+      {
+        "label": "Download 480p (560MB)",
+        "type": "download",
+        "quality": "480p",
+        "size": "560MB",
+        "url": "https://hubcdn.club/file/CT2T5yw51RGLFR2msdnjDsWwJ"
+      },
+      {
+        "label": "Download 720p (900MB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "900MB",
+        "url": "https://hubdrive.pics/file/2431795593"
+      },
+      {
+        "label": "Download 720p (1.3GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "1.3GB",
+        "url": "https://greenmotors.club/?id=MHlaeUNGS2MxZlJQRHhxUCtjM3Ixb2NFdnlvMVlZUEhnWlY2TCtPbXhHZU1MSXJ1bTduZDUvUm1pd2VnWUpwam53aVUreGZLZmloRE0zVE1mM3N5eXp3UmVNMkx0dmcrREZaVStxRzJNeXM9"
+      },
+      {
+        "label": "Download 1080p (2GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "2GB",
+        "url": "https://hubdrive.pics/file/2846682609"
+      },
+      {
+        "label": "Download 1080p (3GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "3GB",
+        "url": "https://greenmotors.club/?id=MHlaeUNGS2MxZlJQRHhxUCtjM3Ixb2NFdnlvMVlZUEhnWlY2TCtPbXhHZU1MSXJ1bTduZDUvUm1pd2VnWUpwanN3TEYwTHZvSnFFWkJ5Tm9mR0dCcHhLM2Q5ZEdGMTlWd0JIL21zU1AvY1k9"
+      },
+      {
+        "label": "Download 1080p (8.8GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "8.8GB",
+        "url": "https://hubdrive.pics/file/2848822631"
+      },
+      {
+        "label": "Download 4K UHD (2160p SDR WEB-DL – 15.6GB)",
+        "type": "download",
+        "quality": "4K UHD",
+        "size": "2160p SDR WEB-DL – 15.6GB",
+        "url": "https://hubdrive.pics/file/16231808283"
+      }
+    ],
+    "tags": [
+      "Paradha",
+      "South Movie",
+      "Hindi Dubbed",
+      "Drama",
+      "Hindi Dubbed"
+    ],
+    "featured": false,
+    "publishedAt": "2026-09-28T09:28:32.235Z",
+    "seoTitle": "Paradha (2025) Hindi Dubbed Movie Download in 4K & 1080p | CineStatic",
+    "seoDescription": "Download Paradha (2025) in dual audio Hindi and original South language. High quality 4K UHD, 1080p, 720p downloads."
+  },
+  {
+    "id": "mov-015",
+    "slug": "vadam-2026",
+    "title": "Vadam",
+    "originalTitle": null,
+    "releaseYear": 2026,
+    "poster": "https://image.tmdb.org/t/p/w342/7gLOXqD25nnpSexlG5saYDWvYBC.jpg",
+    "thumbnail": "https://image.tmdb.org/t/p/w342/7gLOXqD25nnpSexlG5saYDWvYBC.jpg",
+    "backdrop": "https://catimages.org/images/2026/10/04/Vlcsnap.mkv-frame044136.th.jpg",
+    "language": "Hindi Dubbed",
+    "languagesAvailable": [
+      "Hindi Dubbed"
+    ],
+    "categories": [
+      "south-indian",
+      "hindi-dubbed",
+      "action"
+    ],
+    "genres": [
+      "Action"
+    ],
+    "country": "India",
+    "runtime": "145 min",
+    "director": "V. Kenthiran",
+    "cast": [
+      "Vimal",
+      "Natarajan Subramaniam",
+      "Sanashka Sri"
+    ],
+    "synopsis": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "description": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "rating": 7.5,
+    "ratingSource": "IMDb",
+    "qualities": [
+      "480p",
+      "720p",
+      "1080p"
+    ],
+    "fileSizes": {
+      "480p": "520MB",
+      "720p": "1.3GB",
+      "1080p": "8GB"
+    },
+    "formats": [
+      "MKV",
+      "MP4"
+    ],
+    "subtitles": [
+      "English"
+    ],
+    "screenshots": [
+      "https://catimages.org/images/2026/10/04/Vlcsnap.mkv-frame044136.th.jpg",
+      "https://catimages.org/images/2026/10/04/Vlcsnap.mkv-frame066204.th.jpg",
+      "https://catimages.org/images/2026/10/04/Vlcsnap.mkv-frame093789.th.jpg",
+      "https://catimages.org/images/2026/10/04/Vlcsnap.mkv-frame099306.th.jpg",
+      "https://catimages.org/images/2026/10/04/Vlcsnap.mkv-frame143442.th.jpg",
+      "https://catimages.org/images/2026/10/04/Vlcsnap.mkv-frame154476.th.jpg"
+    ],
+    "links": [
+      {
+        "label": "Download 480p (520MB)",
+        "type": "download",
+        "quality": "480p",
+        "size": "520MB",
+        "url": "https://hubcdn.club/file/qPnhePraR1n4kSWNBEqpFQWEO"
+      },
+      {
+        "label": "Download 720p (850MB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "850MB",
+        "url": "https://hubdrive.pics/file/2612198170"
+      },
+      {
+        "label": "Download 720p (1.3GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "1.3GB",
+        "url": "https://greenmotors.club/?id=VXJIQUw2YkxIR0Z5QjhwTWNCdjJQYy9YSy9peUQ0NFJzNklsRFJrVHBGbVRFYW10Vk9lTmVwVDRRd0trMjVieFE2TzhVS2lqRzZzTUt3NXpldkwzNUc5NG9UbnB1TzYrQlhOOFhCQkhtNkE9"
+      },
+      {
+        "label": "Download 1080p (1.9GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "1.9GB",
+        "url": "https://hubdrive.pics/file/2645289893"
+      },
+      {
+        "label": "Download 1080p (2.8GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "2.8GB",
+        "url": "https://greenmotors.club/?id=VXJIQUw2YkxIR0Z5QjhwTWNCdjJQYy9YSy9peUQ0NFJzNklsRFJrVHBGbVRFYW10Vk9lTmVwVDRRd0trMjVieGtSYzJJK2tKTTlGYUFlMzVITlN1Z081RXVXNitnUkNRMkF0OWxuK3ZHc2s9"
+      },
+      {
+        "label": "Download 1080p (8GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "8GB",
+        "url": "https://hubdrive.pics/file/1944495995"
+      }
+    ],
+    "tags": [
+      "Vadam",
+      "South Movie",
+      "Hindi Dubbed",
+      "Action",
+      "Hindi Dubbed"
+    ],
+    "featured": false,
+    "publishedAt": "2026-09-27T09:28:32.288Z",
+    "seoTitle": "Vadam (2026) Hindi Dubbed Movie Download in 4K & 1080p | CineStatic",
+    "seoDescription": "Download Vadam (2026) in dual audio Hindi and original South language. High quality 4K UHD, 1080p, 720p downloads."
+  },
+  {
+    "id": "mov-016",
+    "slug": "crazy-fellow-2022",
+    "title": "Crazy Fellow",
+    "originalTitle": null,
+    "releaseYear": 2022,
+    "poster": "https://image.tmdb.org/t/p/w342/fI7Kz1IeO70xopwDV9PSVxaHlEk.jpg",
+    "thumbnail": "https://image.tmdb.org/t/p/w342/fI7Kz1IeO70xopwDV9PSVxaHlEk.jpg",
+    "backdrop": "https://catimages.org/images/2026/10/04/Vlcsnap.mkv-frame041007.th.jpg",
+    "language": "Hindi Dubbed",
+    "languagesAvailable": [
+      "Hindi Dubbed"
+    ],
+    "categories": [
+      "south-indian",
+      "hindi-dubbed",
+      "action"
+    ],
+    "genres": [
+      "Comedy | Romance"
+    ],
+    "country": "India",
+    "runtime": "145 min",
+    "director": "Phani Krishna Siriki",
+    "cast": [
+      "Aadi Saikumar",
+      "Digangana Suryavanshi",
+      "Mirnaa"
+    ],
+    "synopsis": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "description": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "rating": 7,
+    "ratingSource": "IMDb",
+    "qualities": [
+      "480p",
+      "720p",
+      "1080p"
+    ],
+    "fileSizes": {
+      "480p": "560MB",
+      "720p": "1.3GB",
+      "1080p": "9.1GB"
+    },
+    "formats": [
+      "MKV",
+      "MP4"
+    ],
+    "subtitles": [
+      "English"
+    ],
+    "screenshots": [
+      "https://catimages.org/images/2026/10/04/Vlcsnap.mkv-frame041007.th.jpg",
+      "https://catimages.org/images/2026/10/04/Vlcsnap.mkv-frame058581.th.jpg",
+      "https://catimages.org/images/2026/10/04/Vlcsnap.mkv-frame087872.th.jpg",
+      "https://catimages.org/images/2026/10/04/Vlcsnap.mkv-frame105447.th.jpg",
+      "https://catimages.org/images/2026/10/04/Vlcsnap.mkv-frame175744.th.jpg",
+      "https://catimages.org/images/2026/10/04/Vlcsnap.mkv-frame199177.th.jpg"
+    ],
+    "links": [
+      {
+        "label": "Download 480p (560MB)",
+        "type": "download",
+        "quality": "480p",
+        "size": "560MB",
+        "url": "https://hubcdn.club/file/XXTdGz0zUqKyfNU00GhT7biLf"
+      },
+      {
+        "label": "Download 720p (900MB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "900MB",
+        "url": "https://hubdrive.pics/file/1961729132"
+      },
+      {
+        "label": "Download 720p (1.3GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "1.3GB",
+        "url": "https://greenmotors.club/?id=aW5YY0RuMWV1R0s0Qys0SHI2R0pEcWZ1K21MZ2lTckVnZm1XOExWTU51RHZIcjlya1BoOERuY2IvZHFQdUpsUnZ2NXJSNXpOWjFHbnlTNkx4NUdSK29qRmJSNVVYOStaaGl4SEhQQXJBWFk9"
+      },
+      {
+        "label": "Download 1080p (3GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "3GB",
+        "url": "https://greenmotors.club/?id=aW5YY0RuMWV1R0s0Qys0SHI2R0pEcWZ1K21MZ2lTckVnZm1XOExWTU51RHZIcjlya1BoOERuY2IvZHFQdUpsUnJ6OUlhemdkcTRsNVpua2F6Q3NXZ0laWVI4SmJmVW5HVzJSemdibzBOTk09"
+      },
+      {
+        "label": "Download 1080p (9.1GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "9.1GB",
+        "url": "https://hubdrive.pics/file/9151246869"
+      }
+    ],
+    "tags": [
+      "Crazy Fellow",
+      "South Movie",
+      "Hindi Dubbed",
+      "Comedy | Romance",
+      "Hindi Dubbed"
+    ],
+    "featured": false,
+    "publishedAt": "2026-09-26T09:28:32.337Z",
+    "seoTitle": "Crazy Fellow (2022) Hindi Dubbed Movie Download in 4K & 1080p | CineStatic",
+    "seoDescription": "Download Crazy Fellow (2022) in dual audio Hindi and original South language. High quality 4K UHD, 1080p, 720p downloads."
+  },
+  {
+    "id": "mov-017",
+    "slug": "pooja-meri-jaan-2026",
+    "title": "Pooja Meri Jaan",
+    "originalTitle": null,
+    "releaseYear": 2026,
+    "poster": "https://image.tmdb.org/t/p/w342/nh2UoBEmP00qQKb1b9pIrLcGIsT.jpg",
+    "thumbnail": "https://image.tmdb.org/t/p/w342/nh2UoBEmP00qQKb1b9pIrLcGIsT.jpg",
+    "backdrop": "https://catimages.org/images/2026/10/02/vlcsnap-2026-10-01-14h12m17s568.th.jpg",
+    "language": "Hindi Dubbed",
+    "languagesAvailable": [
+      "Hindi Dubbed"
+    ],
+    "categories": [
+      "south-indian",
+      "hindi-dubbed",
+      "action"
+    ],
+    "genres": [
+      "Drama | Romance | Thriller"
+    ],
+    "country": "India",
+    "runtime": "145 min",
+    "director": "Navjot Gulati",
+    "cast": [
+      "Huma Qureshi",
+      "Mrunal Thakur",
+      "Vikram Singh Chauhan"
+    ],
+    "synopsis": "N/A Please Watch And Give Reviews in The Comment Section",
+    "description": "N/A Please Watch And Give Reviews in The Comment Section",
+    "rating": 7.5,
+    "ratingSource": "IMDb",
+    "qualities": [
+      "480p",
+      "720p",
+      "1080p",
+      "4K UHD"
+    ],
+    "fileSizes": {
+      "480p": "420MB",
+      "720p": "1.1GB",
+      "1080p": "2.3GB",
+      "4K UHD": "2160p SDR WEB-DL – 4.5GB"
+    },
+    "formats": [
+      "MKV",
+      "MP4"
+    ],
+    "subtitles": [
+      "English"
+    ],
+    "screenshots": [
+      "https://catimages.org/images/2026/10/02/vlcsnap-2026-10-01-14h12m17s568.th.jpg",
+      "https://catimages.org/images/2026/10/02/vlcsnap-2026-10-01-14h12m30s662.th.jpg",
+      "https://catimages.org/images/2026/10/02/vlcsnap-2026-10-01-14h13m02s916.th.jpg",
+      "https://catimages.org/images/2026/10/02/vlcsnap-2026-10-01-14h13m14s843.th.jpg",
+      "https://catimages.org/images/2026/10/02/vlcsnap-2026-10-01-14h13m39s780.th.jpg",
+      "https://catimages.org/images/2026/10/02/vlcsnap-2026-10-01-14h13m47s356.th.jpg"
+    ],
+    "links": [
+      {
+        "label": "Download 480p (420MB)",
+        "type": "download",
+        "quality": "480p",
+        "size": "420MB",
+        "url": "https://hubcdn.club/file/ze0uwT47AHegdyNN0xFOZ8rVM"
+      },
+      {
+        "label": "Download 720p (830MB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "830MB",
+        "url": "https://hubdrive.pics/file/2295714986"
+      },
+      {
+        "label": "Download 720p (1.1GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "1.1GB",
+        "url": "https://greenmotors.club/?id=Ky91NGZ0MURWQ0cyR04xdGpsUG1NNzMrWjRCakw4SmJpVzVmbVhFQ2JvUmQ4UWI4N0hiSXJpelNTc1JKNldWN2JhSjVwN09BWjdCRExQSmhRNGhnZkJubUVzR1RhV1QzeVltczBheERmZFk9"
+      },
+      {
+        "label": "Download 1080p (1.8GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "1.8GB",
+        "url": "https://hubdrive.pics/file/2515877963"
+      },
+      {
+        "label": "Download 1080p (2.3GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "2.3GB",
+        "url": "https://greenmotors.club/?id=Ky91NGZ0MURWQ0cyR04xdGpsUG1NNzMrWjRCakw4SmJpVzVmbVhFQ2JvUmQ4UWI4N0hiSXJpelNTc1JKNldWN3ZRN2tHa1h1ZlNpU09Ja0NYbkRzTW0vb0tVckphUnFtV1RBZWpBOVNMeFU9"
+      },
+      {
+        "label": "Download 4K UHD (2160p SDR WEB-DL – 4.5GB)",
+        "type": "download",
+        "quality": "4K UHD",
+        "size": "2160p SDR WEB-DL – 4.5GB",
+        "url": "https://hubdrive.pics/file/4970200559"
+      }
+    ],
+    "tags": [
+      "Pooja Meri Jaan",
+      "South Movie",
+      "Hindi Dubbed",
+      "Drama | Romance | Thriller",
+      "Hindi Dubbed"
+    ],
+    "featured": false,
+    "publishedAt": "2026-09-25T09:28:32.391Z",
+    "seoTitle": "Pooja Meri Jaan (2026) Hindi Dubbed Movie Download in 4K & 1080p | CineStatic",
+    "seoDescription": "Download Pooja Meri Jaan (2026) in dual audio Hindi and original South language. High quality 4K UHD, 1080p, 720p downloads."
+  },
+  {
+    "id": "mov-018",
+    "slug": "sardar-2-2026",
+    "title": "Sardar 2",
+    "originalTitle": null,
+    "releaseYear": 2026,
+    "poster": "https://image.tmdb.org/t/p/w342/qGo0XltwTLbCvPO7VvtirXlbKny.jpg",
+    "thumbnail": "https://image.tmdb.org/t/p/w342/qGo0XltwTLbCvPO7VvtirXlbKny.jpg",
+    "backdrop": "https://catimages.org/images/2026/10/01/vlcsnap-2026-09-30-14h41m40s721.th.jpg",
+    "language": "Hindi Dubbed",
+    "languagesAvailable": [
+      "Hindi Dubbed"
+    ],
+    "categories": [
+      "south-indian",
+      "hindi-dubbed",
+      "action"
+    ],
+    "genres": [
+      "Action | Thriller"
+    ],
+    "country": "India",
+    "runtime": "145 min",
+    "director": "P. S. Mithran",
+    "cast": [
+      "Karthi",
+      "S. J. Suryah",
+      "Malavika Mohanan"
+    ],
+    "synopsis": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "description": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "rating": 6.2,
+    "ratingSource": "IMDb",
+    "qualities": [
+      "480p",
+      "720p",
+      "1080p",
+      "4K UHD"
+    ],
+    "fileSizes": {
+      "480p": "690MB",
+      "720p": "1.7GB",
+      "1080p": "13.2GB",
+      "4K UHD": "2160p SDR MULTi WEB-DL – 22.7GB"
+    },
+    "formats": [
+      "MKV",
+      "MP4"
+    ],
+    "subtitles": [
+      "English"
+    ],
+    "screenshots": [
+      "https://catimages.org/images/2026/10/01/vlcsnap-2026-09-30-14h41m40s721.th.jpg",
+      "https://catimages.org/images/2026/10/01/vlcsnap-2026-09-30-14h42m06s066.th.jpg",
+      "https://catimages.org/images/2026/10/01/vlcsnap-2026-09-30-14h42m10s475.th.jpg",
+      "https://catimages.org/images/2026/10/01/vlcsnap-2026-09-30-14h42m18s666.th.jpg",
+      "https://catimages.org/images/2026/10/01/vlcsnap-2026-09-30-14h42m28s354.th.jpg",
+      "https://catimages.org/images/2026/10/01/vlcsnap-2026-09-30-14h43m17s096.th.jpg"
+    ],
+    "links": [
+      {
+        "label": "Download 480p (690MB)",
+        "type": "download",
+        "quality": "480p",
+        "size": "690MB",
+        "url": "https://hubcdn.club/file/KC33hlDfYuZFYTPQzkUIGniKD"
+      },
+      {
+        "label": "Download 720p (1.1GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "1.1GB",
+        "url": "https://hubdrive.pics/file/2550289224"
+      },
+      {
+        "label": "Download 720p (1.3GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "1.3GB",
+        "url": "https://greenmotors.club/?id=bDh4OWw1VjlwT2NFMFdncUtOU200TlBuc1Z4UVBEd090RDg0VjVsZFBNZzdhdzBpWHJicXNQR3VjR1RQTW5WOUJMZHVKaWtaeGkyNW1GeHJTZjhDU1RmaXMrSG5SYXN1dVpXK1gwZlZZLzQ9"
+      },
+      {
+        "label": "Download 720p (1.7GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "1.7GB",
+        "url": "https://greenmotors.club/?id=bDh4OWw1VjlwT2NFMFdncUtOU200TlBuc1Z4UVBEd090RDg0VjVsZFBNZzdhdzBpWHJicXNQR3VjR1RQTW5WOWFvNHpCWHZiKzRaZTBVMHowWGlXQWFjUXBWVitmM1FvcmN3cFpjNUZqWXM9"
+      },
+      {
+        "label": "Download 1080p (2.5GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "2.5GB",
+        "url": "https://hubdrive.pics/file/4187080512"
+      },
+      {
+        "label": "Download 1080p (3GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "3GB",
+        "url": "https://greenmotors.club/?id=bDh4OWw1VjlwT2NFMFdncUtOU200TlBuc1Z4UVBEd090RDg0VjVsZFBNZzdhdzBpWHJicXNQR3VjR1RQTW5WOXpWSGdnckJtMkNLM0RtazliUVAvNTJXNSt6Z1gwb2dSYUd6TXVLR0s5TFk9"
+      },
+      {
+        "label": "Download 1080p (3.8GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "3.8GB",
+        "url": "https://greenmotors.club/?id=bDh4OWw1VjlwT2NFMFdncUtOU200TlBuc1Z4UVBEd090RDg0VjVsZFBNZzdhdzBpWHJicXNQR3VjR1RQTW5WOTZnR1M5YTk4b3RMNUtZU3FueDBKRzR2L2xXK3Mra1ZHZWFBR1A3Q1VtSWs9"
+      },
+      {
+        "label": "Download 1080p (13.2GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "13.2GB",
+        "url": "https://hubdrive.pics/file/3348137411"
+      },
+      {
+        "label": "Download 4K UHD (2160p SDR MULTi WEB-DL – 22.7GB)",
+        "type": "download",
+        "quality": "4K UHD",
+        "size": "2160p SDR MULTi WEB-DL – 22.7GB",
+        "url": "https://hubdrive.pics/file/18237590383"
+      }
+    ],
+    "tags": [
+      "Sardar 2",
+      "South Movie",
+      "Hindi Dubbed",
+      "Action | Thriller",
+      "Hindi Dubbed"
+    ],
+    "featured": false,
+    "publishedAt": "2026-09-24T09:28:32.454Z",
+    "seoTitle": "Sardar 2 (2026) Hindi Dubbed Movie Download in 4K & 1080p | CineStatic",
+    "seoDescription": "Download Sardar 2 (2026) in dual audio Hindi and original South language. High quality 4K UHD, 1080p, 720p downloads."
+  },
+  {
+    "id": "mov-019",
+    "slug": "bethlehem-kudumba-unit-2026",
+    "title": "Bethlehem Kudumba Unit",
+    "originalTitle": null,
+    "releaseYear": 2026,
+    "poster": "https://image.tmdb.org/t/p/w342/35ugTVgk8UpGSgTPUFD1CEOooIe.jpg",
+    "thumbnail": "https://image.tmdb.org/t/p/w342/35ugTVgk8UpGSgTPUFD1CEOooIe.jpg",
+    "backdrop": "https://catimages.org/images/2026/10/02/vlcsnap-2026-10-01-14h33m55s713.th.jpg",
+    "language": "Hindi Dubbed",
+    "languagesAvailable": [
+      "Hindi Dubbed"
+    ],
+    "categories": [
+      "south-indian",
+      "hindi-dubbed",
+      "action"
+    ],
+    "genres": [
+      "Romance | Comedy | Drama"
+    ],
+    "country": "India",
+    "runtime": "145 min",
+    "director": "Girish A. D.",
+    "cast": [
+      "Nivin Pauly",
+      "Mamitha Baiju",
+      "Sangeeth Prathap"
+    ],
+    "synopsis": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "description": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "rating": 7.5,
+    "ratingSource": "IMDb",
+    "qualities": [
+      "480p",
+      "720p",
+      "1080p",
+      "4K UHD"
+    ],
+    "fileSizes": {
+      "480p": "600MB",
+      "720p": "1.4GB",
+      "1080p": "5.1GB",
+      "4K UHD": "2160p SDR WEB-DL – 14.1GB"
+    },
+    "formats": [
+      "MKV",
+      "MP4"
+    ],
+    "subtitles": [
+      "English"
+    ],
+    "screenshots": [
+      "https://catimages.org/images/2026/10/02/vlcsnap-2026-10-01-14h33m55s713.th.jpg",
+      "https://catimages.org/images/2026/10/02/vlcsnap-2026-10-01-14h31m12s191.th.jpg",
+      "https://catimages.org/images/2026/10/02/vlcsnap-2026-10-01-14h31m18s592.th.jpg",
+      "https://catimages.org/images/2026/10/02/vlcsnap-2026-10-01-14h31m46s813.th.jpg",
+      "https://catimages.org/images/2026/10/02/vlcsnap-2026-10-01-14h32m29s620.th.jpg",
+      "https://catimages.org/images/2026/10/02/vlcsnap-2026-10-01-14h32m38s196.th.jpg"
+    ],
+    "links": [
+      {
+        "label": "Download 480p (600MB)",
+        "type": "download",
+        "quality": "480p",
+        "size": "600MB",
+        "url": "https://hubcdn.club/file/OOO0lzzzWynyoOzH2eUuAVTay"
+      },
+      {
+        "label": "Download 720p (1.1GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "1.1GB",
+        "url": "https://hubdrive.pics/file/2763745047"
+      },
+      {
+        "label": "Download 720p (1.4GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "1.4GB",
+        "url": "https://greenmotors.club/?id=TmFka0NqdjVQcWc3VUQwUFpJWTB6ek5WUWxtcHFRaG9SNnh0Q1NRcVhhRmFmbXFMeGlGVzloU1lvK2NDWHpKc0RFRjhsSmtPNWhDVWhYbjB3S2hsZEJ2UXVZVjVkNUllM0ZianA0VTBuZG89"
+      },
+      {
+        "label": "Download 1080p (2.6GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "2.6GB",
+        "url": "https://hubdrive.pics/file/4148085443"
+      },
+      {
+        "label": "Download 1080p (3.3GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "3.3GB",
+        "url": "https://greenmotors.club/?id=TmFka0NqdjVQcWc3VUQwUFpJWTB6ek5WUWxtcHFRaG9SNnh0Q1NRcVhhRmFmbXFMeGlGVzloU1lvK2NDWHpKc0N5cEh3aEhhVzhUQ2g5NjBMUDBjSGlVcXh5R0VvRXR0RHp5Vi82RzllTU09"
+      },
+      {
+        "label": "Download 1080p (5.1GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "5.1GB",
+        "url": "https://hubdrive.pics/file/6825871031"
+      },
+      {
+        "label": "Download 4K UHD (2160p SDR WEB-DL – 14.1GB)",
+        "type": "download",
+        "quality": "4K UHD",
+        "size": "2160p SDR WEB-DL – 14.1GB",
+        "url": "https://hubdrive.pics/file/14606861270"
+      }
+    ],
+    "tags": [
+      "Bethlehem Kudumba Unit",
+      "South Movie",
+      "Hindi Dubbed",
+      "Romance | Comedy | Drama",
+      "Hindi Dubbed"
+    ],
+    "featured": false,
+    "publishedAt": "2026-09-23T09:28:32.513Z",
+    "seoTitle": "Bethlehem Kudumba Unit (2026) Hindi Dubbed Movie Download in 4K & 1080p | CineStatic",
+    "seoDescription": "Download Bethlehem Kudumba Unit (2026) in dual audio Hindi and original South language. High quality 4K UHD, 1080p, 720p downloads."
+  },
+  {
+    "id": "mov-020",
+    "slug": "the-paradise-2026",
+    "title": "The Paradise",
+    "originalTitle": null,
+    "releaseYear": 2026,
+    "poster": "https://image.tmdb.org/t/p/w342/smghVMoMWSIFi5dgIz4w1UIcEcY.jpg",
+    "thumbnail": "https://image.tmdb.org/t/p/w342/smghVMoMWSIFi5dgIz4w1UIcEcY.jpg",
+    "backdrop": "https://catimages.org/images/2026/09/25/STEREO.00_07_40_29.Still020.png",
+    "language": "Hindi Dubbed",
+    "languagesAvailable": [
+      "Hindi Dubbed"
+    ],
+    "categories": [
+      "south-indian",
+      "hindi-dubbed",
+      "action"
+    ],
+    "genres": [
+      "Action | Adventure | Drama | Thriller"
+    ],
+    "country": "India",
+    "runtime": "145 min",
+    "director": "Srikanth Odela",
+    "cast": [
+      "Nani",
+      "Mohan Babu",
+      "Raghav Juyal",
+      "Kayadu Lohar"
+    ],
+    "synopsis": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "description": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "rating": 6.7,
+    "ratingSource": "IMDb",
+    "qualities": [
+      "480p",
+      "720p",
+      "1080p"
+    ],
+    "fileSizes": {
+      "480p": "640MB",
+      "720p": "1.6GB",
+      "1080p": "33.5GB"
+    },
+    "formats": [
+      "MKV",
+      "MP4"
+    ],
+    "subtitles": [
+      "English"
+    ],
+    "screenshots": [
+      "https://catimages.org/images/2026/09/25/STEREO.00_07_40_29.Still020.png",
+      "https://catimages.org/images/2026/09/25/vlcsnap-2026-09-25-06h35m29s996.jpg",
+      "https://catimages.org/images/2026/09/25/vlcsnap-2026-09-25-06h24m11s712.jpg",
+      "https://catimages.org/images/2026/09/25/vlcsnap-2026-09-25-06h27m06s053.jpg",
+      "https://catimages.org/images/2026/09/25/vlcsnap-2026-09-25-06h27m49s895.jpg",
+      "https://catimages.org/images/2026/09/25/vlcsnap-2026-09-25-06h29m25s074.jpg"
+    ],
+    "links": [
+      {
+        "label": "Download 480p (640MB)",
+        "type": "download",
+        "quality": "480p",
+        "size": "640MB",
+        "url": "https://hubcdn.club/file/1lE3UFsaj3rX25ooKSVQnT3J8"
+      },
+      {
+        "label": "Download 720p (1GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "1GB",
+        "url": "https://hubdrive.pics/file/2792419201"
+      },
+      {
+        "label": "Download 720p (1.6GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "1.6GB",
+        "url": "https://greenmotors.club/?id=UEp3OENlRERVMG5ZbWlvMWFhc3R5NFhVVkw5MFBaNURXdmYreUROSkNuOTRjdDZPUVpMdkp6ODZXWVVnOGx4TE43Vkg1V2htMVBOdTVpL1Q4U05xTVN0RThKLzh1bDN1ZDI5NU9va0hWSlE9"
+      },
+      {
+        "label": "Download 1080p (2.4GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "2.4GB",
+        "url": "https://hubdrive.pics/file/3633941129"
+      },
+      {
+        "label": "Download 1080p (3.6GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "3.6GB",
+        "url": "https://greenmotors.club/?id=UEp3OENlRERVMG5ZbWlvMWFhc3R5NFhVVkw5MFBaNURXdmYreUROSkNuOTRjdDZPUVpMdkp6ODZXWVVnOGx4TEMreStyeUZwaDJlY2pHRlE3d2dvZ3c4S3gwN04vcjRxVzJlczZ5SVVUVTg9"
+      },
+      {
+        "label": "Download 1080p (9.3GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "9.3GB",
+        "url": "https://hubdrive.pics/file/11662354578"
+      },
+      {
+        "label": "Download 1080p (18.2GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "18.2GB",
+        "url": "https://hubdrive.pics/file/16824823635"
+      },
+      {
+        "label": "Download 1080p (33.5GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "33.5GB",
+        "url": "https://hubdrive.pics/file/8564208280"
+      }
+    ],
+    "tags": [
+      "The Paradise",
+      "South Movie",
+      "Hindi Dubbed",
+      "Action | Adventure | Drama | Thriller",
+      "Hindi Dubbed"
+    ],
+    "featured": false,
+    "publishedAt": "2026-09-22T09:28:32.583Z",
+    "seoTitle": "The Paradise (2026) Hindi Dubbed Movie Download in 4K & 1080p | CineStatic",
+    "seoDescription": "Download The Paradise (2026) in dual audio Hindi and original South language. High quality 4K UHD, 1080p, 720p downloads."
+  },
+  {
+    "id": "mov-021",
+    "slug": "irumudi-2026",
+    "title": "Irumudi",
+    "originalTitle": null,
+    "releaseYear": 2026,
+    "poster": "https://image.tmdb.org/t/p/w342/y0huHbMUwEkp0ETChWLOD8MriNr.jpg",
+    "thumbnail": "https://image.tmdb.org/t/p/w342/y0huHbMUwEkp0ETChWLOD8MriNr.jpg",
+    "backdrop": "https://catimages.org/images/2026/09/18/vlcsnap-2026-09-17-12h31m38s344-1.th.jpg",
+    "language": "Hindi Dubbed",
+    "languagesAvailable": [
+      "Hindi Dubbed"
+    ],
+    "categories": [
+      "south-indian",
+      "hindi-dubbed",
+      "action"
+    ],
+    "genres": [
+      "Action | Drama | Family"
+    ],
+    "country": "India",
+    "runtime": "145 min",
+    "director": "Shiva Nirvana",
+    "cast": [
+      "Ravi Teja",
+      "Nakshathra C M",
+      "Priya Bhavani Shankar"
+    ],
+    "synopsis": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "description": "A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.",
+    "rating": 7.2,
+    "ratingSource": "IMDb",
+    "qualities": [
+      "480p",
+      "720p",
+      "1080p",
+      "4K UHD"
+    ],
+    "fileSizes": {
+      "480p": "550MB",
+      "720p": "1.3GB",
+      "1080p": "8GB",
+      "4K UHD": "2160p SDR MULTi WEB-DL – 18.7GB"
+    },
+    "formats": [
+      "MKV",
+      "MP4"
+    ],
+    "subtitles": [
+      "English"
+    ],
+    "screenshots": [
+      "https://catimages.org/images/2026/09/18/vlcsnap-2026-09-17-12h31m38s344-1.th.jpg",
+      "https://catimages.org/images/2026/09/18/vlcsnap-2026-09-17-12h32m07s116-1.th.jpg",
+      "https://catimages.org/images/2026/09/18/vlcsnap-2026-09-17-12h32m14s432-1.th.jpg",
+      "https://catimages.org/images/2026/09/18/vlcsnap-2026-09-17-12h32m35s457-1.th.jpg",
+      "https://catimages.org/images/2026/09/18/vlcsnap-2026-09-17-12h33m32s559-1.th.jpg",
+      "https://catimages.org/images/2026/09/18/vlcsnap-2026-09-17-12h33m43s531-1.th.jpg"
+    ],
+    "links": [
+      {
+        "label": "Download 480p (550MB)",
+        "type": "download",
+        "quality": "480p",
+        "size": "550MB",
+        "url": "https://hubcdn.wiki/file/zsEIreVXmHLFXbD78X3io776L"
+      },
+      {
+        "label": "Download 720p (910MB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "910MB",
+        "url": "https://hubdrive.pics/file/1875689637"
+      },
+      {
+        "label": "Download 720p (1.1GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "1.1GB",
+        "url": "https://greenmotors.club/?id=RzFRVHg5cFhSZDJNL2FoSGQ1ZkFybnVBeVZJZW13cDZmRis4d1hUTzRIRXJhY3hqZk4yQ1lhb0c2dC96djMvUVE1dXlOT1JMdUFNQ3JEUlVRSk9zWDlPdmlwd0RWMGg3ZWt4Nnl6YlNiZG89"
+      },
+      {
+        "label": "Download 720p (1.3GB)",
+        "type": "download",
+        "quality": "720p",
+        "size": "1.3GB",
+        "url": "https://greenmotors.club/?id=RzFRVHg5cFhSZDJNL2FoSGQ1ZkFybnVBeVZJZW13cDZmRis4d1hUTzRIRXJhY3hqZk4yQ1lhb0c2dC96djMvUWpnZXhicEFnbTRueEVYREQraHlacTZtUVpKaG5teHlIWS9yOWx2OG9QRGM9"
+      },
+      {
+        "label": "Download 1080p (2GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "2GB",
+        "url": "https://hubdrive.pics/file/2846457905"
+      },
+      {
+        "label": "Download 1080p (2.4GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "2.4GB",
+        "url": "https://greenmotors.club/?id=RzFRVHg5cFhSZDJNL2FoSGQ1ZkFybnVBeVZJZW13cDZmRis4d1hUTzRIRXJhY3hqZk4yQ1lhb0c2dC96djMvUXozbmZNaGJFZnlpMk1lRzB4dEVrOVZvd2I2VURLeTA0K2xBMFplVVlxQlE9"
+      },
+      {
+        "label": "Download 1080p (3GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "3GB",
+        "url": "https://greenmotors.club/?id=RzFRVHg5cFhSZDJNL2FoSGQ1ZkFybnVBeVZJZW13cDZmRis4d1hUTzRIRXJhY3hqZk4yQ1lhb0c2dC96djMvUWhGc3FYNDJ4Q3BGa3FCRHdoRXlEaUJVWlM5Z3NKb2I3OHExa2RDMmU0Tzg9"
+      },
+      {
+        "label": "Download 1080p (8GB)",
+        "type": "download",
+        "quality": "1080p",
+        "size": "8GB",
+        "url": "https://hubdrive.pics/file/10099709772"
+      },
+      {
+        "label": "Download 4K UHD (2160p SDR MULTi WEB-DL – 18.7GB)",
+        "type": "download",
+        "quality": "4K UHD",
+        "size": "2160p SDR MULTi WEB-DL – 18.7GB",
+        "url": "https://hubdrive.pics/file/12019327381"
+      }
+    ],
+    "tags": [
+      "Irumudi",
+      "South Movie",
+      "Hindi Dubbed",
+      "Action | Drama | Family",
+      "Hindi Dubbed"
+    ],
+    "featured": false,
+    "publishedAt": "2026-09-21T09:28:32.646Z",
+    "seoTitle": "Irumudi (2026) Hindi Dubbed Movie Download in 4K & 1080p | CineStatic",
+    "seoDescription": "Download Irumudi (2026) in dual audio Hindi and original South language. High quality 4K UHD, 1080p, 720p downloads."
   }
 ]

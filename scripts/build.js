@@ -1,6 +1,6 @@
 /**
  * CineStatic - Static Site Generator
- * Generates pre-rendered HTML for all movie pages, category pages, index.html, and sitemap.xml.
+ * Generates pre-rendered HTML for all movie pages, category pages, index.html, movies.html, and sitemap.xml.
  * Pure Node.js Standard Library - No external npm dependencies.
  */
 
@@ -47,11 +47,11 @@ function getHeaderHtml(activeTab, depth) {
       <nav class="nav-desktop" aria-label="Primary Navigation">
         <a href="${prefix}index.html" class="nav-link ${activeTab === 'home' ? 'active' : ''}">Home</a>
         <a href="${prefix}movies.html" class="nav-link ${activeTab === 'movies' ? 'active' : ''}">All Movies</a>
-        <a href="${prefix}category/bollywood.html" class="nav-link ${activeTab === 'bollywood' ? 'active' : ''}">Bollywood</a>
-        <a href="${prefix}category/hollywood.html" class="nav-link ${activeTab === 'hollywood' ? 'active' : ''}">Hollywood</a>
         <a href="${prefix}category/south-indian.html" class="nav-link ${activeTab === 'south-indian' ? 'active' : ''}">South Indian</a>
         <a href="${prefix}category/hindi-dubbed.html" class="nav-link ${activeTab === 'hindi-dubbed' ? 'active' : ''}">Hindi Dubbed</a>
-        <a href="${prefix}category/web-series.html" class="nav-link ${activeTab === 'web-series' ? 'active' : ''}">Web Series</a>
+        <a href="${prefix}category/action.html" class="nav-link ${activeTab === 'action' ? 'active' : ''}">Action</a>
+        <a href="${prefix}category/bollywood.html" class="nav-link ${activeTab === 'bollywood' ? 'active' : ''}">Bollywood</a>
+        <a href="${prefix}category/hollywood.html" class="nav-link ${activeTab === 'hollywood' ? 'active' : ''}">Hollywood</a>
       </nav>
 
       <div class="header-actions">
@@ -78,11 +78,11 @@ function getHeaderHtml(activeTab, depth) {
     <a href="${prefix}index.html" class="nav-link ${activeTab === 'home' ? 'active' : ''}">Home</a>
     <a href="${prefix}movies.html" class="nav-link ${activeTab === 'movies' ? 'active' : ''}">All Movies</a>
     <a href="${prefix}search.html" class="nav-link ${activeTab === 'search' ? 'active' : ''}">Search & Filters</a>
-    <a href="${prefix}category/bollywood.html" class="nav-link ${activeTab === 'bollywood' ? 'active' : ''}">Bollywood</a>
-    <a href="${prefix}category/hollywood.html" class="nav-link ${activeTab === 'hollywood' ? 'active' : ''}">Hollywood</a>
     <a href="${prefix}category/south-indian.html" class="nav-link ${activeTab === 'south-indian' ? 'active' : ''}">South Indian</a>
     <a href="${prefix}category/hindi-dubbed.html" class="nav-link ${activeTab === 'hindi-dubbed' ? 'active' : ''}">Hindi Dubbed</a>
-    <a href="${prefix}category/web-series.html" class="nav-link ${activeTab === 'web-series' ? 'active' : ''}">Web Series</a>
+    <a href="${prefix}category/action.html" class="nav-link ${activeTab === 'action' ? 'active' : ''}">Action</a>
+    <a href="${prefix}category/bollywood.html" class="nav-link ${activeTab === 'bollywood' ? 'active' : ''}">Bollywood</a>
+    <a href="${prefix}category/hollywood.html" class="nav-link ${activeTab === 'hollywood' ? 'active' : ''}">Hollywood</a>
   </div>
 `;
 }
@@ -100,16 +100,16 @@ function getFooterHtml(depth) {
             <img src="${prefix}assets/images/logo.svg" alt="CineStatic Logo" width="150" height="30" />
           </a>
           <p>
-            CineStatic is an ultra-fast, lightweight movie discovery portal providing authorized streaming links, multi-audio downloads, and comprehensive film details.
+            CineStatic is an ultra-fast, lightweight movie discovery portal providing verified multi-audio downloads, real screenshots, and comprehensive film details.
           </p>
         </div>
         <div>
           <h4 class="footer-heading">Categories</h4>
           <ul class="footer-links">
-            <li><a href="${prefix}category/bollywood.html">Bollywood</a></li>
-            <li><a href="${prefix}category/hollywood.html">Hollywood</a></li>
             <li><a href="${prefix}category/south-indian.html">South Indian</a></li>
             <li><a href="${prefix}category/hindi-dubbed.html">Hindi Dubbed</a></li>
+            <li><a href="${prefix}category/bollywood.html">Bollywood</a></li>
+            <li><a href="${prefix}category/hollywood.html">Hollywood</a></li>
             <li><a href="${prefix}category/web-series.html">Web Series</a></li>
           </ul>
         </div>
@@ -117,10 +117,10 @@ function getFooterHtml(depth) {
           <h4 class="footer-heading">Genres</h4>
           <ul class="footer-links">
             <li><a href="${prefix}category/action.html">Action</a></li>
-            <li><a href="${prefix}category/sci-fi.html">Sci-Fi</a></li>
+            <li><a href="${prefix}category/thriller.html">Thriller</a></li>
             <li><a href="${prefix}category/drama.html">Drama</a></li>
             <li><a href="${prefix}category/comedy.html">Comedy</a></li>
-            <li><a href="${prefix}category/thriller.html">Thriller</a></li>
+            <li><a href="${prefix}category/sci-fi.html">Sci-Fi</a></li>
           </ul>
         </div>
         <div>
@@ -228,7 +228,7 @@ movies.forEach(movie => {
     "image": movie.poster,
     "description": movie.synopsis || movie.description,
     "dateCreated": String(movie.releaseYear),
-    "director": movie.director ? { "@type": "Person", "name": movie.director } : undefined,
+    "director": movie.director && movie.director !== 'N/A' ? { "@type": "Person", "name": movie.director } : undefined,
     "actor": movie.cast ? movie.cast.map(c => ({ "@type": "Person", "name": c })) : undefined,
     "aggregateRating": movie.rating ? {
       "@type": "AggregateRating",
@@ -243,8 +243,8 @@ movies.forEach(movie => {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${escapeHtml(movie.seoTitle || `${movie.title} (${movie.releaseYear}) - Watch & Download | CineStatic`)}</title>
-  <meta name="description" content="${escapeHtml(movie.seoDescription || movie.synopsis || `Download and watch ${movie.title} in HD and 4K.`)}">
+  <title>${escapeHtml(movie.seoTitle || `${movie.title} (${movie.releaseYear}) - Download | CineStatic`)}</title>
+  <meta name="description" content="${escapeHtml(movie.seoDescription || movie.synopsis || `Download ${movie.title} in HD and 4K.`)}">
   <link rel="canonical" href="movies/${encodeURIComponent(movie.slug)}.html">
   
   <!-- Open Graph / Social Sharing -->
@@ -302,7 +302,7 @@ movies.forEach(movie => {
           <div class="detail-meta-pills">
             <span class="meta-pill">${movie.releaseYear || ''}</span>
             ${movie.runtime ? `<span class="meta-pill">${escapeHtml(movie.runtime)}</span>` : ''}
-            <span class="meta-pill">${escapeHtml(movie.language || 'Hindi')}</span>
+            <span class="meta-pill">${escapeHtml(movie.language || 'Hindi Dubbed')}</span>
             <span class="meta-pill">${escapeHtml(topQuality)}</span>
             ${movie.rating ? `
               <span class="meta-pill meta-pill-rating">
@@ -320,7 +320,7 @@ movies.forEach(movie => {
 
           <!-- Synopsis -->
           <div class="synopsis-block">
-            <h2>Synopsis</h2>
+            <h2>Storyline</h2>
             <p class="synopsis-text">${escapeHtml(movie.description || movie.synopsis || '')}</p>
           </div>
 
@@ -328,7 +328,7 @@ movies.forEach(movie => {
           <div class="specs-table-wrap">
             <table class="specs-table">
               <tbody>
-                ${movie.director ? `<tr><th>Director</th><td>${escapeHtml(movie.director)}</td></tr>` : ''}
+                ${movie.director && movie.director !== 'N/A' ? `<tr><th>Director</th><td>${escapeHtml(movie.director)}</td></tr>` : ''}
                 ${movie.cast && movie.cast.length ? `<tr><th>Starring</th><td>${escapeHtml(movie.cast.join(', '))}</td></tr>` : ''}
                 ${movie.country ? `<tr><th>Country</th><td>${escapeHtml(movie.country)}</td></tr>` : ''}
                 <tr><th>Audio Languages</th><td>${escapeHtml(audioText)}</td></tr>
@@ -340,42 +340,56 @@ movies.forEach(movie => {
             </table>
           </div>
 
-          <!-- Download & Streaming Destinations -->
+          <!-- Screenshots Gallery (Real images from source) -->
+          ${movie.screenshots && movie.screenshots.length ? `
+            <section class="screenshots-section">
+              <h2 class="detail-section-title">Movie Screenshots</h2>
+              <div class="screenshots-grid">
+                ${movie.screenshots.map((src, idx) => `
+                  <a href="${escapeHtml(src)}" target="_blank" rel="noopener noreferrer" class="screenshot-item" title="View Full Screenshot ${idx + 1}">
+                    <img 
+                      src="${escapeHtml(src)}" 
+                      alt="${escapeHtml(movie.title)} Screenshot ${idx + 1}" 
+                      loading="lazy" 
+                      width="320" 
+                      height="180" 
+                      onerror="this.parentElement.style.display='none'"
+                    />
+                  </a>
+                `).join('')}
+              </div>
+            </section>
+          ` : ''}
+
+          <!-- Pure Direct Download Links (No Stream Now) -->
           <div class="download-action-box">
             <div class="action-header">
-              <h3>Watch & Download Options</h3>
-              <p>Official verified streaming destinations and direct high-speed download links.</p>
+              <h3>Fast Direct Download Links</h3>
+              <p>Choose your preferred resolution and download directly.</p>
             </div>
             
             <div class="links-list">
-              ${movie.links && movie.links.length ? movie.links.map(link => {
-                const isOfficial = link.type === 'official';
-                return `
-                  <a href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer" class="link-btn-card ${isOfficial ? 'official' : ''}">
-                    <div class="link-btn-left">
-                      <div class="link-icon-wrap">
-                        ${isOfficial ? `
-                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-                        ` : `
-                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                        `}
-                      </div>
-                      <div class="link-info-text">
-                        <span class="link-label">${escapeHtml(link.label)}</span>
-                        <span class="link-submeta">
-                          ${link.quality ? `${escapeHtml(link.quality)} ` : ''}
-                          ${link.size ? `&bull; ${escapeHtml(link.size)}` : ''}
-                        </span>
-                      </div>
+              ${movie.links && movie.links.length ? movie.links.map(link => `
+                <a href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer" class="link-btn-card">
+                  <div class="link-btn-left">
+                    <div class="link-icon-wrap">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
                     </div>
-                    <span class="link-cta-badge">
-                      ${isOfficial ? 'Stream Now' : 'Download'}
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                    </span>
-                  </a>
-                `;
-              }).join('') : `
-                <p style="color: var(--text-secondary); font-size: 0.9rem;">Official streaming links are being updated for this title.</p>
+                    <div class="link-info-text">
+                      <span class="link-label">${escapeHtml(link.label)}</span>
+                      <span class="link-submeta">
+                        ${link.quality ? `${escapeHtml(link.quality)} ` : ''}
+                        ${link.size ? `&bull; ${escapeHtml(link.size)}` : ''}
+                      </span>
+                    </div>
+                  </div>
+                  <span class="link-cta-badge">
+                    Download
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </span>
+                </a>
+              `).join('') : `
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">Download links are currently being updated for this title.</p>
               `}
             </div>
           </div>
@@ -434,10 +448,9 @@ console.log('Generating category pages...');
 categories.forEach(cat => {
   const filePath = path.join(CATEGORY_OUT_DIR, `${cat.slug}.html`);
 
-  // Match movies that have this category or genre
   const matchingMovies = movies.filter(m => {
     const inCats = m.categories && m.categories.includes(cat.slug);
-    const inGenres = m.genres && m.genres.some(g => g.toLowerCase() === cat.slug.toLowerCase());
+    const inGenres = m.genres && m.genres.some(g => g.toLowerCase().includes(cat.slug.toLowerCase()));
     return inCats || inGenres;
   });
 
@@ -446,7 +459,7 @@ categories.forEach(cat => {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${escapeHtml(cat.seoTitle || `${cat.name} Movies - Watch & Download | CineStatic`)}</title>
+  <title>${escapeHtml(cat.seoTitle || `${cat.name} Movies - Download | CineStatic`)}</title>
   <meta name="description" content="${escapeHtml(cat.seoDescription || cat.description || `Browse the best ${cat.name} movies with dual audio and full HD downloads.`)}">
   <link rel="canonical" href="category/${encodeURIComponent(cat.slug)}.html">
   <link rel="stylesheet" href="../assets/css/styles.css">
@@ -499,7 +512,232 @@ categories.forEach(cat => {
 console.log(`Successfully generated ${categories.length} category pages.`);
 
 // -------------------------------------------------------------
-// 3. GENERATE SITEMAP (sitemap.xml)
+// 3. GENERATE DYNAMIC HOMEPAGE (index.html)
+// -------------------------------------------------------------
+console.log('Generating index.html from central dataset...');
+
+const spotlight = movies.find(m => m.featured) || movies[0];
+const latestList = movies.slice(0, 12);
+const spotlightTopQuality = spotlight.qualities && spotlight.qualities.length ? spotlight.qualities[spotlight.qualities.length - 1] : 'HD';
+
+const indexHtml = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineStatic - South Hindi Dubbed Movies Download | 4K & 1080p</title>
+  <meta name="description" content="Discover and download the latest South Indian Hindi dubbed movies, dual audio releases, and blockbusters with screenshots and direct download links.">
+  <link rel="canonical" href="index.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CineStatic - South Hindi Dubbed Movies">
+  <meta property="og:description" content="Direct high-speed downloads, real screenshots, dual audio South Hindi films.">
+  <meta property="og:image" content="${spotlight.poster}">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  ${getHeaderHtml('home', 0)}
+
+  <!-- Compact Hero Section -->
+  <section class="hero-compact" aria-label="Welcome and Featured Film">
+    <div class="container hero-inner">
+      <div class="hero-intro">
+        <h1>South Indian <span>Hindi Dubbed</span> Hub</h1>
+        <p>
+          Lightning-fast static entertainment portal. Download the latest South Hindi blockbusters, uncut editions, and dual audio releases with screenshots and direct links.
+        </p>
+        <div class="hero-features">
+          <span class="hero-feat-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Pure Static HTML
+          </span>
+          <span class="hero-feat-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Dual Audio & Dubs
+          </span>
+          <span class="hero-feat-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Full Screenshots
+          </span>
+        </div>
+      </div>
+
+      <!-- Featured Spotlight Card -->
+      <aside class="featured-highlight-card" aria-label="Featured Movie">
+        <div class="feat-poster-wrap">
+          <img 
+            src="${spotlight.poster}" 
+            alt="${escapeHtml(spotlight.title)} Poster" 
+            width="95" 
+            height="142" 
+            loading="eager"
+            onerror="window.handleImageError && window.handleImageError(this, 'assets/images/default-poster.svg')"
+          />
+        </div>
+        <div class="feat-content">
+          <span class="feat-badge">Spotlight Title</span>
+          <h2 class="feat-title">${escapeHtml(spotlight.title)}</h2>
+          <div class="feat-meta">
+            <span>${spotlight.releaseYear}</span>
+            <span>&bull;</span>
+            <span class="rating-pill">★ ${spotlight.rating}</span>
+            <span>&bull;</span>
+            <span>${escapeHtml(spotlightTopQuality)}</span>
+          </div>
+          <a href="movies/${encodeURIComponent(spotlight.slug)}.html" class="feat-btn">
+            View Downloads &amp; Shots &rarr;
+          </a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Category Browse Bar -->
+  <section class="category-bar-section" aria-label="Browse Categories">
+    <div class="container">
+      <div class="category-scroll-container">
+        <a href="movies.html" class="category-chip active">All Movies</a>
+        <a href="category/south-indian.html" class="category-chip">South Indian</a>
+        <a href="category/hindi-dubbed.html" class="category-chip">Hindi Dubbed</a>
+        <a href="category/action.html" class="category-chip">Action</a>
+        <a href="category/thriller.html" class="category-chip">Thriller</a>
+        <a href="category/bollywood.html" class="category-chip">Bollywood</a>
+        <a href="category/hollywood.html" class="category-chip">Hollywood</a>
+        <a href="category/web-series.html" class="category-chip">Web Series</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content: Movie Grids -->
+  <main class="main-content" id="main-content">
+    <div class="container">
+      
+      <!-- Latest Releases Section -->
+      <section class="catalog-section" aria-labelledby="latest-heading">
+        <div class="section-header">
+          <h2 id="latest-heading" class="section-title">Latest South Hindi Releases</h2>
+          <a href="movies.html" class="section-link">View Full Catalog &rarr;</a>
+        </div>
+        
+        <div class="movies-grid">
+          ${latestList.map(m => renderMovieCardHtml(m, 0)).join('')}
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  ${getFooterHtml(0)}
+</body>
+</html>`;
+
+fs.writeFileSync(path.join(ROOT_DIR, 'index.html'), indexHtml, 'utf-8');
+console.log('Successfully updated index.html.');
+
+// -------------------------------------------------------------
+// 4. GENERATE DYNAMIC CATALOG (movies.html)
+// -------------------------------------------------------------
+console.log('Generating movies.html fallback catalog...');
+
+const moviesHtml = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Movies - Explore Our Complete Catalog | CineStatic</title>
+  <meta name="description" content="Browse our complete collection of South Indian Hindi Dubbed movies. Filter by quality (4K, 1080p), audio, and genre.">
+  <link rel="canonical" href="movies.html">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  ${getHeaderHtml('movies', 0)}
+
+  <main class="main-content" id="main-content">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumbs">
+        <a href="index.html">Home</a>
+        <span class="separator">/</span>
+        <span class="current">All Movies</span>
+      </nav>
+
+      <div class="section-header" style="flex-wrap: wrap; gap: 16px;">
+        <div>
+          <h1 class="section-title">Movie Catalog</h1>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 4px;">
+            Explore our curated database of South Indian Hindi dubbed movies.
+          </p>
+        </div>
+
+        <div class="filter-controls-row">
+          <select id="filter-category" class="filter-select" aria-label="Filter by Category">
+            <option value="all">All Categories</option>
+            <option value="south-indian">South Indian</option>
+            <option value="hindi-dubbed">Hindi Dubbed</option>
+            <option value="action">Action</option>
+            <option value="thriller">Thriller</option>
+            <option value="bollywood">Bollywood</option>
+            <option value="hollywood">Hollywood</option>
+          </select>
+
+          <select id="filter-quality" class="filter-select" aria-label="Filter by Quality">
+            <option value="all">All Qualities</option>
+            <option value="4K UHD">4K UHD</option>
+            <option value="1080p">1080p Full HD</option>
+            <option value="720p">720p HD</option>
+            <option value="480p">480p</option>
+          </select>
+
+          <select id="filter-language" class="filter-select" aria-label="Filter by Language">
+            <option value="all">All Languages</option>
+            <option value="hindi">Hindi</option>
+            <option value="kannada">Kannada</option>
+            <option value="telugu">Telugu</option>
+            <option value="tamil">Tamil</option>
+            <option value="malayalam">Malayalam</option>
+          </select>
+
+          <select id="filter-sort" class="filter-select" aria-label="Sort Movies">
+            <option value="latest">Sort: Recently Added</option>
+            <option value="rating">Sort: Highest Rated</option>
+            <option value="year">Sort: Release Year</option>
+            <option value="title">Sort: Title (A-Z)</option>
+          </select>
+
+          <button id="reset-filters-btn" class="clear-btn" type="button">Reset</button>
+        </div>
+      </div>
+
+      <div class="results-status-bar">
+        <span id="catalog-count">Showing ${movies.length} movies</span>
+      </div>
+
+      <div class="movies-grid" id="catalog-grid">
+        ${movies.map(m => renderMovieCardHtml(m, 0)).join('')}
+      </div>
+
+      <div id="catalog-empty" class="empty-state" style="display: none;">
+        <svg class="empty-state-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <h3>No matching movies found</h3>
+        <p>Try adjusting your category, quality, or language filters.</p>
+        <button class="btn-primary" onclick="document.getElementById('reset-filters-btn').click()">Reset Filters</button>
+      </div>
+
+    </div>
+  </main>
+
+  ${getFooterHtml(0)}
+  <script src="assets/js/catalog.js" defer></script>
+</body>
+</html>`;
+
+fs.writeFileSync(path.join(ROOT_DIR, 'movies.html'), moviesHtml, 'utf-8');
+console.log('Successfully updated movies.html.');
+
+// -------------------------------------------------------------
+// 5. GENERATE SITEMAP (sitemap.xml)
 // -------------------------------------------------------------
 console.log('Generating sitemap.xml...');
 
@@ -545,7 +783,7 @@ fs.writeFileSync(path.join(ROOT_DIR, 'sitemap.xml'), sitemapXml, 'utf-8');
 console.log(`Generated sitemap.xml with ${sitemapEntries.length} URLs.`);
 
 // -------------------------------------------------------------
-// 4. GENERATE ROBOTS.TXT
+// 6. GENERATE ROBOTS.TXT
 // -------------------------------------------------------------
 const robotsTxt = `User-agent: *
 Allow: /
