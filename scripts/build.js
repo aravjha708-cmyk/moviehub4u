@@ -355,77 +355,76 @@ movies.forEach(movie => {
               </tbody>
             </table>
           </div>
-
-          <!-- Screenshots Gallery (Real images from source - Large Previews) -->
-          ${movie.screenshots && movie.screenshots.length ? `
-            <section class="screenshots-section">
-              <h2 class="detail-section-title">Movie Screenshots</h2>
-              <div class="screenshots-grid">
-                ${movie.screenshots.map((src, idx) => `
-                  <a href="${escapeHtml(src)}" target="_blank" rel="noopener noreferrer" class="screenshot-item" title="View Full Screenshot ${idx + 1}">
-                    <img 
-                      src="${escapeHtml(src)}" 
-                      alt="${escapeHtml(movie.title)} Screenshot ${idx + 1}" 
-                      loading="lazy" 
-                      onerror="this.parentElement.style.display='none'"
-                    />
-                  </a>
-                `).join('')}
-              </div>
-            </section>
-          ` : ''}
-
-          <!-- Direct Download - Single Full HD Button (All Others Removed) -->
-          <div class="download-action-box" id="download-options">
-            <div class="action-header">
-              <h3>Fast Direct Download</h3>
-              <p>High speed direct cloud link in 1080p Full HD resolution.</p>
-            </div>
-            
-            <div class="links-list">
-              ${fullHdLink ? `
-                <a href="${escapeHtml(fullHdLink.url)}" target="_blank" rel="noopener noreferrer" class="link-btn-card full-hd-btn">
-                  <div class="link-btn-left">
-                    <div class="link-icon-wrap">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                    </div>
-                    <div class="link-info-text">
-                      <span class="link-label">Full HD Download</span>
-                      <span class="link-submeta">
-                        1080p Full HD ${fullHdLink.size ? `&bull; ${escapeHtml(fullHdLink.size)}` : ''} &bull; Fast Direct Server
-                      </span>
-                    </div>
-                  </div>
-                  <span class="link-cta-badge">
-                    Full HD Download
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                  </span>
-                </a>
-              ` : `
-                <p style="color: var(--text-secondary); font-size: 0.9rem;">Download link is currently being updated for this title.</p>
-              `}
-            </div>
-          </div>
-
-          <!-- Share Section -->
-          <div class="share-section">
-            <span class="share-label">Share This Movie:</span>
-            <button class="share-btn" onclick="window.copyPageUrl()" title="Copy Page Link">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-              <span>Copy Link</span>
-            </button>
-            <a href="https://api.whatsapp.com/send?text=${encodeURIComponent(`${movie.title} (${movie.releaseYear}) on CineStatic`)}" target="_blank" rel="noopener noreferrer" class="share-btn">
-              <span>WhatsApp</span>
-            </a>
-            <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(`Check out ${movie.title} (${movie.releaseYear}) on CineStatic`)}" target="_blank" rel="noopener noreferrer" class="share-btn">
-              <span>X / Twitter</span>
-            </a>
-            <a href="https://t.me/share/url?url=&text=${encodeURIComponent(`${movie.title} (${movie.releaseYear}) on CineStatic`)}" target="_blank" rel="noopener noreferrer" class="share-btn">
-              <span>Telegram</span>
-            </a>
-          </div>
-
         </div>
+      </div>
+
+      <!-- Screenshots Gallery (Full-Width Layout - Large Uncropped Previews) -->
+      ${movie.screenshots && movie.screenshots.length ? `
+        <section class="screenshots-section">
+          <h2 class="detail-section-title">Movie Screenshots</h2>
+          <div class="screenshots-grid">
+            ${movie.screenshots.map((src, idx) => `
+              <a href="${escapeHtml(src)}" target="_blank" rel="noopener noreferrer" class="screenshot-item" title="View Full Screenshot ${idx + 1}">
+                <img 
+                  src="${escapeHtml(src)}" 
+                  alt="${escapeHtml(movie.title)} Screenshot ${idx + 1}" 
+                  loading="lazy" 
+                  onerror="this.parentElement.style.display='none'"
+                />
+              </a>
+            `).join('')}
+          </div>
+        </section>
+      ` : ''}
+
+      <!-- Direct Download - Single Full HD Button (All Others Removed) -->
+      <div class="download-action-box" id="download-options">
+        <div class="action-header">
+          <h3>Fast Direct Download</h3>
+          <p>High speed direct cloud link in 1080p Full HD resolution.</p>
+        </div>
+        
+        <div class="links-list">
+          ${fullHdLink ? `
+            <a href="${escapeHtml(fullHdLink.url)}" target="_blank" rel="noopener noreferrer" class="link-btn-card full-hd-btn">
+              <div class="link-btn-left">
+                <div class="link-icon-wrap">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                </div>
+                <div class="link-info-text">
+                  <span class="link-label">Full HD Download</span>
+                  <span class="link-submeta">
+                    1080p Full HD ${fullHdLink.size ? `&bull; ${escapeHtml(fullHdLink.size)}` : ''} &bull; Fast Direct Server
+                  </span>
+                </div>
+              </div>
+              <span class="link-cta-badge">
+                Full HD Download
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </span>
+            </a>
+          ` : `
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">Download link is currently being updated for this title.</p>
+          `}
+        </div>
+      </div>
+
+      <!-- Share Section -->
+      <div class="share-section">
+        <span class="share-label">Share This Movie:</span>
+        <button class="share-btn" onclick="window.copyPageUrl()" title="Copy Page Link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+          <span>Copy Link</span>
+        </button>
+        <a href="https://api.whatsapp.com/send?text=${encodeURIComponent(`${movie.title} (${movie.releaseYear}) on CineStatic`)}" target="_blank" rel="noopener noreferrer" class="share-btn">
+          <span>WhatsApp</span>
+        </a>
+        <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(`Check out ${movie.title} (${movie.releaseYear}) on CineStatic`)}" target="_blank" rel="noopener noreferrer" class="share-btn">
+          <span>X / Twitter</span>
+        </a>
+        <a href="https://t.me/share/url?url=&text=${encodeURIComponent(`${movie.title} (${movie.releaseYear}) on CineStatic`)}" target="_blank" rel="noopener noreferrer" class="share-btn">
+          <span>Telegram</span>
+        </a>
       </div>
 
       <!-- Related Movies Section -->
