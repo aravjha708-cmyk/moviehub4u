@@ -24,545 +24,525 @@
 </head>
 <body>
   
-  <!-- Header (HDHub4u Signature Dual-Tier) -->
   <header class="site-header" role="banner">
-    <div class="container header-top">
-      <div class="brand-wrap">
-        <a href="../index.html" aria-label="MovieHub4u Home">
-          <img src="../assets/images/logo.svg" alt="MovieHub4u Logo" class="brand-logo" width="165" height="38" />
+    <div class="container header-inner">
+      <a href="../index.html" class="brand" aria-label="CineStatic Home">
+        <img src="../assets/images/logo.svg" alt="CineStatic Logo" class="brand-logo" width="160" height="32" />
+      </a>
+
+      <nav class="nav-desktop" aria-label="Primary Navigation">
+        <a href="../index.html" class="nav-link ">Home</a>
+        <a href="../movies.html" class="nav-link active">All Movies</a>
+        <a href="../category/south-indian.html" class="nav-link ">South Indian</a>
+        <a href="../category/hindi-dubbed.html" class="nav-link ">Hindi Dubbed</a>
+        <a href="../category/action.html" class="nav-link ">Action</a>
+        <a href="../category/bollywood.html" class="nav-link ">Bollywood</a>
+        <a href="../category/hollywood.html" class="nav-link ">Hollywood</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="../search.html" class="search-trigger-btn" aria-label="Search movies">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span>Search</span>
         </a>
-      </div>
-
-      <form class="header-search-bar" action="../search.html" method="get" role="search">
-        <input 
-          type="search" 
-          name="q" 
-          class="header-search-input" 
-          placeholder="Search South Hindi, 4K, 1080p, Actors..." 
-          aria-label="Search movies"
-          autocomplete="off"
-        />
-        <button type="submit" class="header-search-btn" aria-label="Search">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <button class="mobile-menu-toggle" aria-label="Open Mobile Menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
         </button>
-      </form>
-
-      <button class="mobile-menu-toggle" aria-label="Open Mobile Menu" aria-expanded="false">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-      </button>
-    </div>
-
-    <!-- Category Nav Strip -->
-    <nav class="nav-strip" aria-label="Primary Navigation">
-      <div class="container nav-strip-inner">
-        <a href="../index.html" class="nav-strip-link ">⚡ Home</a>
-        <a href="../movies.html" class="nav-strip-link active">All Movies</a>
-        <a href="../category/south-indian.html" class="nav-strip-link ">South Hindi</a>
-        <a href="../category/hindi-dubbed.html" class="nav-strip-link ">Hindi Dubbed</a>
-        <a href="../category/action.html" class="nav-strip-link ">Action</a>
-        <a href="../category/thriller.html" class="nav-strip-link ">Thriller</a>
-        <a href="../category/bollywood.html" class="nav-strip-link ">Bollywood</a>
-        <a href="../category/hollywood.html" class="nav-strip-link ">Hollywood</a>
-        <a href="../category/web-series.html" class="nav-strip-link ">Web Series</a>
-        <a href="../search.html" class="nav-strip-link ">🔍 Search</a>
       </div>
-    </nav>
-
-    <!-- Mobile Drawer -->
-    <div class="mobile-nav-drawer" role="dialog" aria-label="Mobile Navigation">
-      <a href="../index.html">⚡ Home</a>
-      <a href="../movies.html">All Movies</a>
-      <a href="../search.html">🔍 Search &amp; Filters</a>
-      <a href="../category/south-indian.html">South Hindi</a>
-      <a href="../category/hindi-dubbed.html">Hindi Dubbed</a>
-      <a href="../category/action.html">Action</a>
-      <a href="../category/thriller.html">Thriller</a>
-      <a href="../category/bollywood.html">Bollywood</a>
-      <a href="../category/hollywood.html">Hollywood</a>
-      <a href="../category/web-series.html">Web Series</a>
     </div>
   </header>
 
-  <!-- HDHub4u Signature Announcement Ribbon -->
-  <div class="notice-ribbon" role="region" aria-label="Announcement">
-    <div class="container">
-      ⚡ <strong>Official MovieHub4u:</strong> Download South Indian Hindi Dubbed Movies &bull; Pure Fast Direct Links &bull; 4K &bull; 1080p &bull; No Ads &bull; No Popups!
-    </div>
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" role="dialog" aria-label="Mobile Navigation">
+    <a href="../index.html" class="nav-link ">Home</a>
+    <a href="../movies.html" class="nav-link active">All Movies</a>
+    <a href="../search.html" class="nav-link ">Search & Filters</a>
+    <a href="../category/south-indian.html" class="nav-link ">South Indian</a>
+    <a href="../category/hindi-dubbed.html" class="nav-link ">Hindi Dubbed</a>
+    <a href="../category/action.html" class="nav-link ">Action</a>
+    <a href="../category/bollywood.html" class="nav-link ">Bollywood</a>
+    <a href="../category/hollywood.html" class="nav-link ">Hollywood</a>
   </div>
 
 
   <main class="main-content" id="main-content">
     <div class="container">
-      
       <!-- Breadcrumb Navigation -->
-      <nav class="breadcrumbs-bar" aria-label="Breadcrumbs">
+      <nav class="breadcrumbs" aria-label="Breadcrumbs">
         <a href="../index.html">Home</a>
-        <span>&raquo;</span>
+        <span class="separator">/</span>
         <a href="../movies.html">Movies</a>
         
-          <span>&raquo;</span>
+          <span class="separator">/</span>
           <a href="../category/south-indian.html">SOUTH INDIAN</a>
         
-        <span>&raquo;</span>
-        <span>Paradha</span>
+        <span class="separator">/</span>
+        <span class="current">Paradha</span>
       </nav>
 
-      <!-- Post Header Banner (HDHub4u Signature Title) -->
-      <div class="post-header-card">
-        <h1 class="post-main-title">Paradha (2025) Dual Audio [Hindi-Original] WEB-DL 480p 720p 1080p 4K</h1>
-        <div class="post-meta-strip">
-          <span class="post-cat-badge">Hindi Dubbed</span>
-          <span class="post-meta-item">📅 2025</span>
-          <span class="post-meta-item">⏱️ 145 min</span>
-          <span class="post-meta-item" style="color: var(--accent-gold); font-weight: 700;">★ IMDb 5.7/10</span>
-          <span class="post-meta-item">🏷️ Drama</span>
-        </div>
-      </div>
-
-      <!-- Centered Main Poster Presentation (HDHub4u Style) -->
-      <div class="detail-center-poster">
-        <img 
-          src="https://image.tmdb.org/t/p/w342/wOOxDIhZCUmWkEPxBajQwmKVm8l.jpg" 
-          alt="Paradha Official Poster" 
-          width="320" 
-          height="480"
-          onerror="window.handleImageError && window.handleImageError(this, '../assets/images/default-poster.svg')"
-        />
-      </div>
-
-      <!-- Technical Specifications Box (HDHub4u Specs Table) -->
-      <div class="specs-card-hub">
-        <div class="specs-grid-row">
-          <div class="specs-label">Movie Title:</div>
-          <div class="specs-val"><strong>Paradha</strong></div>
-        </div>
-        
-        <div class="specs-grid-row">
-          <div class="specs-label">Release Year:</div>
-          <div class="specs-val">2025</div>
-        </div>
-        <div class="specs-grid-row">
-          <div class="specs-label">Audio / Language:</div>
-          <div class="specs-val">Hindi Dubbed</div>
-        </div>
-        
-        <div class="specs-grid-row">
-          <div class="specs-label">Subtitles:</div>
-          <div class="specs-val">English</div>
-        </div>
-        <div class="specs-grid-row">
-          <div class="specs-label">Qualities Available:</div>
-          <div class="specs-val">480p, 720p, 1080p, 4K UHD</div>
-        </div>
-        
-        <div class="specs-grid-row">
-          <div class="specs-label">File Size:</div>
-          <div class="specs-val">480p: 560MB | 720p: 1.3GB | 1080p: 8.8GB | 4K UHD: 2160p SDR WEB-DL – 15.6GB</div>
-        </div>
-        
-        <div class="specs-grid-row">
-          <div class="specs-label">Format:</div>
-          <div class="specs-val">MKV, MP4</div>
-        </div>
-        
-        <div class="specs-grid-row">
-          <div class="specs-label">Director:</div>
-          <div class="specs-val">Praveen Kandregula</div>
-        </div>
-        
-        <div class="specs-grid-row">
-          <div class="specs-label">Star Cast:</div>
-          <div class="specs-val">Anupama Parameswaran, Darshana Rajendran, Sangeetha Krish</div>
-        </div>
-        
-        <div class="specs-grid-row">
-          <div class="specs-label">IMDb Rating:</div>
-          <div class="specs-val imdb-val">★ 5.7/10 (IMDb)</div>
-        </div>
-      </div>
-
-      <!-- Storyline Card -->
-      <div class="storyline-card">
-        <h3>: SYNOPSIS / STORYLINE :</h3>
-        <p>A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.</p>
-      </div>
-
-      <!-- Screenshots Gallery (Real images from source) -->
-      
-        <div class="hub-section-divider">
-          <span class="hub-section-divider-title">: SCREEN-SHOTS :</span>
-        </div>
-
-        <div class="screenshots-hub-grid">
-          
-            <a href="https://catimages.org/images/2026/10/03/Vlcsnap.mkv-frame013690.th.jpg" target="_blank" rel="noopener noreferrer" class="shot-frame" title="View Full Screenshot 1">
-              <img 
-                src="https://catimages.org/images/2026/10/03/Vlcsnap.mkv-frame013690.th.jpg" 
-                alt="Paradha Screenshot 1" 
-                loading="lazy" 
-                width="360" 
-                height="200" 
-                onerror="this.parentElement.style.display='none'"
-              />
-            </a>
-          
-            <a href="https://catimages.org/images/2026/10/03/Vlcsnap.mkv-frame117340.th.jpg" target="_blank" rel="noopener noreferrer" class="shot-frame" title="View Full Screenshot 2">
-              <img 
-                src="https://catimages.org/images/2026/10/03/Vlcsnap.mkv-frame117340.th.jpg" 
-                alt="Paradha Screenshot 2" 
-                loading="lazy" 
-                width="360" 
-                height="200" 
-                onerror="this.parentElement.style.display='none'"
-              />
-            </a>
-          
-            <a href="https://catimages.org/images/2026/10/03/Vlcsnap.mkv-frame140808.th.jpg" target="_blank" rel="noopener noreferrer" class="shot-frame" title="View Full Screenshot 3">
-              <img 
-                src="https://catimages.org/images/2026/10/03/Vlcsnap.mkv-frame140808.th.jpg" 
-                alt="Paradha Screenshot 3" 
-                loading="lazy" 
-                width="360" 
-                height="200" 
-                onerror="this.parentElement.style.display='none'"
-              />
-            </a>
-          
-            <a href="https://catimages.org/images/2026/10/03/Vlcsnap.mkv-frame164276.th.jpg" target="_blank" rel="noopener noreferrer" class="shot-frame" title="View Full Screenshot 4">
-              <img 
-                src="https://catimages.org/images/2026/10/03/Vlcsnap.mkv-frame164276.th.jpg" 
-                alt="Paradha Screenshot 4" 
-                loading="lazy" 
-                width="360" 
-                height="200" 
-                onerror="this.parentElement.style.display='none'"
-              />
-            </a>
-          
-            <a href="https://catimages.org/images/2026/10/03/Vlcsnap.mkv-frame176010.th.jpg" target="_blank" rel="noopener noreferrer" class="shot-frame" title="View Full Screenshot 5">
-              <img 
-                src="https://catimages.org/images/2026/10/03/Vlcsnap.mkv-frame176010.th.jpg" 
-                alt="Paradha Screenshot 5" 
-                loading="lazy" 
-                width="360" 
-                height="200" 
-                onerror="this.parentElement.style.display='none'"
-              />
-            </a>
-          
-            <a href="https://catimages.org/images/2026/10/03/Vlcsnap.mkv-frame199478.th.jpg" target="_blank" rel="noopener noreferrer" class="shot-frame" title="View Full Screenshot 6">
-              <img 
-                src="https://catimages.org/images/2026/10/03/Vlcsnap.mkv-frame199478.th.jpg" 
-                alt="Paradha Screenshot 6" 
-                loading="lazy" 
-                width="360" 
-                height="200" 
-                onerror="this.parentElement.style.display='none'"
-              />
-            </a>
-          
-        </div>
-      
-
-      <!-- HDHub4u Signature Colorful Download Links (Pure Direct Links) -->
-      <div class="hub-section-divider">
-        <span class="hub-section-divider-title">: DOWNLOAD LINKS :</span>
-      </div>
-
-      <div class="download-buttons-wrap">
-        
-            <a href="https://hubcdn.club/file/CT2T5yw51RGLFR2msdnjDsWwJ" target="_blank" rel="noopener noreferrer" class="btn-hub-download btn-hub-480p">
-              <div class="btn-hub-left">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                <div>
-                  <div style="font-weight: 800;">Download 480p (560MB)</div>
-                  <small style="opacity: 0.9; font-size: 0.78rem;">Size: 560MB</small>
-                </div>
-              </div>
-              <span class="btn-hub-cta">Download</span>
-            </a>
-          
-            <a href="https://hubdrive.pics/file/2431795593" target="_blank" rel="noopener noreferrer" class="btn-hub-download btn-hub-720p">
-              <div class="btn-hub-left">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                <div>
-                  <div style="font-weight: 800;">Download 720p (900MB)</div>
-                  <small style="opacity: 0.9; font-size: 0.78rem;">Size: 900MB</small>
-                </div>
-              </div>
-              <span class="btn-hub-cta">Download</span>
-            </a>
-          
-            <a href="https://greenmotors.club/?id=MHlaeUNGS2MxZlJQRHhxUCtjM3Ixb2NFdnlvMVlZUEhnWlY2TCtPbXhHZU1MSXJ1bTduZDUvUm1pd2VnWUpwam53aVUreGZLZmloRE0zVE1mM3N5eXp3UmVNMkx0dmcrREZaVStxRzJNeXM9" target="_blank" rel="noopener noreferrer" class="btn-hub-download btn-hub-720p">
-              <div class="btn-hub-left">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                <div>
-                  <div style="font-weight: 800;">Download 720p (1.3GB)</div>
-                  <small style="opacity: 0.9; font-size: 0.78rem;">Size: 1.3GB</small>
-                </div>
-              </div>
-              <span class="btn-hub-cta">Download</span>
-            </a>
-          
-            <a href="https://hubdrive.pics/file/2846682609" target="_blank" rel="noopener noreferrer" class="btn-hub-download btn-hub-1080p">
-              <div class="btn-hub-left">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                <div>
-                  <div style="font-weight: 800;">Download 1080p (2GB)</div>
-                  <small style="opacity: 0.9; font-size: 0.78rem;">Size: 2GB</small>
-                </div>
-              </div>
-              <span class="btn-hub-cta">Download</span>
-            </a>
-          
-            <a href="https://greenmotors.club/?id=MHlaeUNGS2MxZlJQRHhxUCtjM3Ixb2NFdnlvMVlZUEhnWlY2TCtPbXhHZU1MSXJ1bTduZDUvUm1pd2VnWUpwanN3TEYwTHZvSnFFWkJ5Tm9mR0dCcHhLM2Q5ZEdGMTlWd0JIL21zU1AvY1k9" target="_blank" rel="noopener noreferrer" class="btn-hub-download btn-hub-1080p">
-              <div class="btn-hub-left">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                <div>
-                  <div style="font-weight: 800;">Download 1080p (3GB)</div>
-                  <small style="opacity: 0.9; font-size: 0.78rem;">Size: 3GB</small>
-                </div>
-              </div>
-              <span class="btn-hub-cta">Download</span>
-            </a>
-          
-            <a href="https://hubdrive.pics/file/2848822631" target="_blank" rel="noopener noreferrer" class="btn-hub-download btn-hub-1080p">
-              <div class="btn-hub-left">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                <div>
-                  <div style="font-weight: 800;">Download 1080p (8.8GB)</div>
-                  <small style="opacity: 0.9; font-size: 0.78rem;">Size: 8.8GB</small>
-                </div>
-              </div>
-              <span class="btn-hub-cta">Download</span>
-            </a>
-          
-            <a href="https://hubdrive.pics/file/16231808283" target="_blank" rel="noopener noreferrer" class="btn-hub-download btn-hub-4k">
-              <div class="btn-hub-left">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                <div>
-                  <div style="font-weight: 800;">Download 4K UHD (2160p SDR WEB-DL – 15.6GB)</div>
-                  <small style="opacity: 0.9; font-size: 0.78rem;">Size: 2160p SDR WEB-DL – 15.6GB</small>
-                </div>
-              </div>
-              <span class="btn-hub-cta">Download</span>
-            </a>
-          
-      </div>
-
-      <!-- Share Section -->
-      <div class="share-bar-hub">
-        <span style="font-size: 0.85rem; color: var(--text-secondary); margin-right: 6px;">Share with Friends:</span>
-        <button class="share-hub-btn" onclick="window.copyPageUrl()" title="Copy Page Link">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-          Copy Link
-        </button>
-        <a href="https://api.whatsapp.com/send?text=Paradha%20(2025)%20Download%20on%20MovieHub4u" target="_blank" rel="noopener noreferrer" class="share-hub-btn">
-          WhatsApp
-        </a>
-        <a href="https://t.me/share/url?url=&text=Paradha%20(2025)%20Download%20on%20MovieHub4u" target="_blank" rel="noopener noreferrer" class="share-hub-btn">
-          Telegram
-        </a>
-        <a href="https://twitter.com/intent/tweet?text=Check%20out%20Paradha%20(2025)%20on%20MovieHub4u" target="_blank" rel="noopener noreferrer" class="share-hub-btn">
-          X / Twitter
-        </a>
-      </div>
-
-      <!-- Related Movies Section (Dense 6-Column Grid) -->
-      
-        <section class="catalog-section" style="padding-top: 10px;">
-          <div class="section-title-bar">
-            <h2 class="section-title-text">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
-              Related South Hindi Releases
-            </h2>
-            <a href="../movies.html" style="font-size: 0.85rem; color: var(--accent-red); font-weight: 700;">View Full Hub &rarr;</a>
+      <div class="movie-detail-grid">
+        <!-- Poster Column -->
+        <div class="movie-poster-column">
+          <div class="detail-poster-wrap">
+            <img 
+              src="https://image.tmdb.org/t/p/w342/wOOxDIhZCUmWkEPxBajQwmKVm8l.jpg" 
+              alt="Paradha Official Poster" 
+              width="400" 
+              height="600"
+              onerror="window.handleImageError && window.handleImageError(this, '../assets/images/default-poster.svg')"
+            />
           </div>
-          <div class="movies-grid-hub">
+          <a href="#download-options" class="poster-download-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span>Download</span>
+          </a>
+        </div>
+
+        <!-- Info Column -->
+        <div class="movie-info-column">
+          <h1 class="detail-title">Paradha</h1>
+          
+
+          <div class="detail-meta-pills">
+            <span class="meta-pill">2025</span>
+            <span class="meta-pill">145 min</span>
+            <span class="meta-pill">Hindi Dubbed</span>
+            <span class="meta-pill">4K UHD</span>
             
-    <article class="hub-card movie-card" data-id="mov-001">
-      <a href="../movies/adbhut-2024.html" class="hub-card-poster" aria-label="Download Adbhut">
-        <span class="badge-audio">Hindi Dubbed</span>
-        <span class="badge-quality">1080p</span>
+              <span class="meta-pill meta-pill-rating">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
+                5.7 (IMDb)
+              </span>
+            
+          </div>
+
+          
+            <div class="genre-tags">
+              <span class="genre-tag">Drama</span>
+            </div>
+          
+
+          <!-- Synopsis -->
+          <div class="synopsis-block">
+            <h2>Storyline</h2>
+            <p class="synopsis-text">A thrilling South Indian spectacle full of high-stakes action, dramatic turns, and unforgettable sequences.</p>
+          </div>
+
+          <!-- Technical Specs Table -->
+          <div class="specs-table-wrap">
+            <table class="specs-table">
+              <tbody>
+                <tr><th>Director</th><td>Praveen Kandregula</td></tr>
+                <tr><th>Starring</th><td>Anupama Parameswaran, Darshana Rajendran, Sangeetha Krish</td></tr>
+                <tr><th>Country</th><td>India</td></tr>
+                <tr><th>Audio Languages</th><td>Hindi Dubbed</td></tr>
+                <tr><th>Subtitles</th><td>English</td></tr>
+                <tr><th>Available Qualities</th><td>480p, 720p, 1080p, 4K UHD</td></tr>
+                <tr><th>File Sizes</th><td>480p: 560MB | 720p: 1.3GB | 1080p: 8.8GB | 4K UHD: 2160p SDR WEB-DL – 15.6GB</td></tr>
+                <tr><th>Container Formats</th><td>MKV, MP4</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Screenshots Gallery (Real images from source) -->
+          
+            <section class="screenshots-section">
+              <h2 class="detail-section-title">Movie Screenshots</h2>
+              <div class="screenshots-grid">
+                
+                  <a href="https://catimages.org/images/2026/10/03/Vlcsnap.mkv-frame013690.th.jpg" target="_blank" rel="noopener noreferrer" class="screenshot-item" title="View Full Screenshot 1">
+                    <img 
+                      src="https://catimages.org/images/2026/10/03/Vlcsnap.mkv-frame013690.th.jpg" 
+                      alt="Paradha Screenshot 1" 
+                      loading="lazy" 
+                      width="320" 
+                      height="180" 
+                      onerror="this.parentElement.style.display='none'"
+                    />
+                  </a>
+                
+                  <a href="https://catimages.org/images/2026/10/03/Vlcsnap.mkv-frame117340.th.jpg" target="_blank" rel="noopener noreferrer" class="screenshot-item" title="View Full Screenshot 2">
+                    <img 
+                      src="https://catimages.org/images/2026/10/03/Vlcsnap.mkv-frame117340.th.jpg" 
+                      alt="Paradha Screenshot 2" 
+                      loading="lazy" 
+                      width="320" 
+                      height="180" 
+                      onerror="this.parentElement.style.display='none'"
+                    />
+                  </a>
+                
+                  <a href="https://catimages.org/images/2026/10/03/Vlcsnap.mkv-frame140808.th.jpg" target="_blank" rel="noopener noreferrer" class="screenshot-item" title="View Full Screenshot 3">
+                    <img 
+                      src="https://catimages.org/images/2026/10/03/Vlcsnap.mkv-frame140808.th.jpg" 
+                      alt="Paradha Screenshot 3" 
+                      loading="lazy" 
+                      width="320" 
+                      height="180" 
+                      onerror="this.parentElement.style.display='none'"
+                    />
+                  </a>
+                
+                  <a href="https://catimages.org/images/2026/10/03/Vlcsnap.mkv-frame164276.th.jpg" target="_blank" rel="noopener noreferrer" class="screenshot-item" title="View Full Screenshot 4">
+                    <img 
+                      src="https://catimages.org/images/2026/10/03/Vlcsnap.mkv-frame164276.th.jpg" 
+                      alt="Paradha Screenshot 4" 
+                      loading="lazy" 
+                      width="320" 
+                      height="180" 
+                      onerror="this.parentElement.style.display='none'"
+                    />
+                  </a>
+                
+                  <a href="https://catimages.org/images/2026/10/03/Vlcsnap.mkv-frame176010.th.jpg" target="_blank" rel="noopener noreferrer" class="screenshot-item" title="View Full Screenshot 5">
+                    <img 
+                      src="https://catimages.org/images/2026/10/03/Vlcsnap.mkv-frame176010.th.jpg" 
+                      alt="Paradha Screenshot 5" 
+                      loading="lazy" 
+                      width="320" 
+                      height="180" 
+                      onerror="this.parentElement.style.display='none'"
+                    />
+                  </a>
+                
+                  <a href="https://catimages.org/images/2026/10/03/Vlcsnap.mkv-frame199478.th.jpg" target="_blank" rel="noopener noreferrer" class="screenshot-item" title="View Full Screenshot 6">
+                    <img 
+                      src="https://catimages.org/images/2026/10/03/Vlcsnap.mkv-frame199478.th.jpg" 
+                      alt="Paradha Screenshot 6" 
+                      loading="lazy" 
+                      width="320" 
+                      height="180" 
+                      onerror="this.parentElement.style.display='none'"
+                    />
+                  </a>
+                
+              </div>
+            </section>
+          
+
+          <!-- Pure Direct Download Links (No Stream Now) -->
+          <div class="download-action-box" id="download-options">
+            <div class="action-header">
+              <h3>Fast Direct Download Links</h3>
+              <p>Choose your preferred resolution and download directly.</p>
+            </div>
+            
+            <div class="links-list">
+              
+                <a href="https://hubcdn.club/file/CT2T5yw51RGLFR2msdnjDsWwJ" target="_blank" rel="noopener noreferrer" class="link-btn-card">
+                  <div class="link-btn-left">
+                    <div class="link-icon-wrap">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    </div>
+                    <div class="link-info-text">
+                      <span class="link-label">Download 480p (560MB)</span>
+                      <span class="link-submeta">
+                        480p 
+                        &bull; 560MB
+                      </span>
+                    </div>
+                  </div>
+                  <span class="link-cta-badge">
+                    Download
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </span>
+                </a>
+              
+                <a href="https://hubdrive.pics/file/2431795593" target="_blank" rel="noopener noreferrer" class="link-btn-card">
+                  <div class="link-btn-left">
+                    <div class="link-icon-wrap">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    </div>
+                    <div class="link-info-text">
+                      <span class="link-label">Download 720p (900MB)</span>
+                      <span class="link-submeta">
+                        720p 
+                        &bull; 900MB
+                      </span>
+                    </div>
+                  </div>
+                  <span class="link-cta-badge">
+                    Download
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </span>
+                </a>
+              
+                <a href="https://greenmotors.club/?id=MHlaeUNGS2MxZlJQRHhxUCtjM3Ixb2NFdnlvMVlZUEhnWlY2TCtPbXhHZU1MSXJ1bTduZDUvUm1pd2VnWUpwam53aVUreGZLZmloRE0zVE1mM3N5eXp3UmVNMkx0dmcrREZaVStxRzJNeXM9" target="_blank" rel="noopener noreferrer" class="link-btn-card">
+                  <div class="link-btn-left">
+                    <div class="link-icon-wrap">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    </div>
+                    <div class="link-info-text">
+                      <span class="link-label">Download 720p (1.3GB)</span>
+                      <span class="link-submeta">
+                        720p 
+                        &bull; 1.3GB
+                      </span>
+                    </div>
+                  </div>
+                  <span class="link-cta-badge">
+                    Download
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </span>
+                </a>
+              
+                <a href="https://hubdrive.pics/file/2846682609" target="_blank" rel="noopener noreferrer" class="link-btn-card">
+                  <div class="link-btn-left">
+                    <div class="link-icon-wrap">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    </div>
+                    <div class="link-info-text">
+                      <span class="link-label">Download 1080p (2GB)</span>
+                      <span class="link-submeta">
+                        1080p 
+                        &bull; 2GB
+                      </span>
+                    </div>
+                  </div>
+                  <span class="link-cta-badge">
+                    Download
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </span>
+                </a>
+              
+                <a href="https://greenmotors.club/?id=MHlaeUNGS2MxZlJQRHhxUCtjM3Ixb2NFdnlvMVlZUEhnWlY2TCtPbXhHZU1MSXJ1bTduZDUvUm1pd2VnWUpwanN3TEYwTHZvSnFFWkJ5Tm9mR0dCcHhLM2Q5ZEdGMTlWd0JIL21zU1AvY1k9" target="_blank" rel="noopener noreferrer" class="link-btn-card">
+                  <div class="link-btn-left">
+                    <div class="link-icon-wrap">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    </div>
+                    <div class="link-info-text">
+                      <span class="link-label">Download 1080p (3GB)</span>
+                      <span class="link-submeta">
+                        1080p 
+                        &bull; 3GB
+                      </span>
+                    </div>
+                  </div>
+                  <span class="link-cta-badge">
+                    Download
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </span>
+                </a>
+              
+                <a href="https://hubdrive.pics/file/2848822631" target="_blank" rel="noopener noreferrer" class="link-btn-card">
+                  <div class="link-btn-left">
+                    <div class="link-icon-wrap">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    </div>
+                    <div class="link-info-text">
+                      <span class="link-label">Download 1080p (8.8GB)</span>
+                      <span class="link-submeta">
+                        1080p 
+                        &bull; 8.8GB
+                      </span>
+                    </div>
+                  </div>
+                  <span class="link-cta-badge">
+                    Download
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </span>
+                </a>
+              
+                <a href="https://hubdrive.pics/file/16231808283" target="_blank" rel="noopener noreferrer" class="link-btn-card">
+                  <div class="link-btn-left">
+                    <div class="link-icon-wrap">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    </div>
+                    <div class="link-info-text">
+                      <span class="link-label">Download 4K UHD (2160p SDR WEB-DL – 15.6GB)</span>
+                      <span class="link-submeta">
+                        4K UHD 
+                        &bull; 2160p SDR WEB-DL – 15.6GB
+                      </span>
+                    </div>
+                  </div>
+                  <span class="link-cta-badge">
+                    Download
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </span>
+                </a>
+              
+            </div>
+          </div>
+
+          <!-- Share Section -->
+          <div class="share-section">
+            <span class="share-label">Share This Movie:</span>
+            <button class="share-btn" onclick="window.copyPageUrl()" title="Copy Page Link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              <span>Copy Link</span>
+            </button>
+            <a href="https://api.whatsapp.com/send?text=Paradha%20(2025)%20on%20CineStatic" target="_blank" rel="noopener noreferrer" class="share-btn">
+              <span>WhatsApp</span>
+            </a>
+            <a href="https://twitter.com/intent/tweet?text=Check%20out%20Paradha%20(2025)%20on%20CineStatic" target="_blank" rel="noopener noreferrer" class="share-btn">
+              <span>X / Twitter</span>
+            </a>
+            <a href="https://t.me/share/url?url=&text=Paradha%20(2025)%20on%20CineStatic" target="_blank" rel="noopener noreferrer" class="share-btn">
+              <span>Telegram</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Related Movies Section -->
+      
+        <section class="related-section">
+          <div class="section-header">
+            <h2 class="section-title">You Might Also Like</h2>
+            <a href="../movies.html" class="section-link">View All Movies &rarr;</a>
+          </div>
+          <div class="movies-grid">
+            
+    <article class="movie-card" data-id="mov-001">
+      <a href="../movies/adbhut-2024.html" class="card-poster-link" aria-label="View details for Adbhut">
+        <span class="card-badge-top-left">Hindi Dubbed</span>
+        <span class="card-badge-top-right">1080p</span>
         
-          <span class="badge-rating">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
+          <span class="card-rating-badge">
+            <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
             5.2
           </span>
         
         <img 
           src="http://image.tmdb.org/t/p/w500/mEZ7QSnF5VjDITgQ17zU52WUt8K.jpg" 
           alt="Adbhut Poster" 
-          class="hub-card-img" 
+          class="card-poster-img" 
           loading="lazy" 
           width="300" 
           height="450"
           onerror="window.handleImageError && window.handleImageError(this, '../assets/images/default-poster.svg')"
         />
       </a>
-      <div class="hub-card-caption">
-        <h3 class="hub-card-title">
+      <div class="card-body">
+        <h3 class="card-title">
           <a href="../movies/adbhut-2024.html">Adbhut</a>
         </h3>
-        <div class="hub-card-footer">
+        <div class="card-meta">
           <span>2024</span>
           <span>145 min</span>
         </div>
+        <div class="card-genres">Horror | Thriller</div>
+        <a href="../movies/adbhut-2024.html" class="card-download-btn" aria-label="Download Adbhut">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Download</span>
+        </a>
       </div>
     </article>
   
-    <article class="hub-card movie-card" data-id="mov-002">
-      <a href="../movies/rony-the-ruler-2024.html" class="hub-card-poster" aria-label="Download Rony The Ruler">
-        <span class="badge-audio">Hindi Dubbed</span>
-        <span class="badge-quality badge-quality-4k">4K UHD</span>
+    <article class="movie-card" data-id="mov-002">
+      <a href="../movies/rony-the-ruler-2024.html" class="card-poster-link" aria-label="View details for Rony The Ruler">
+        <span class="card-badge-top-left">Hindi Dubbed</span>
+        <span class="card-badge-top-right card-badge-4k">4K UHD</span>
         
-          <span class="badge-rating">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
+          <span class="card-rating-badge">
+            <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
             8.2
           </span>
         
         <img 
           src="https://image.tmdb.org/t/p/w342/6kZfckIY8DIT9SkqKZfsRgmisEJ.jpg" 
           alt="Rony The Ruler Poster" 
-          class="hub-card-img" 
+          class="card-poster-img" 
           loading="lazy" 
           width="300" 
           height="450"
           onerror="window.handleImageError && window.handleImageError(this, '../assets/images/default-poster.svg')"
         />
       </a>
-      <div class="hub-card-caption">
-        <h3 class="hub-card-title">
+      <div class="card-body">
+        <h3 class="card-title">
           <a href="../movies/rony-the-ruler-2024.html">Rony The Ruler</a>
         </h3>
-        <div class="hub-card-footer">
+        <div class="card-meta">
           <span>2024</span>
           <span>145 min</span>
         </div>
+        <div class="card-genres">Action</div>
+        <a href="../movies/rony-the-ruler-2024.html" class="card-download-btn" aria-label="Download Rony The Ruler">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Download</span>
+        </a>
       </div>
     </article>
   
-    <article class="hub-card movie-card" data-id="mov-003">
-      <a href="../movies/pradhama-drishtiya-kuttakkar-2026.html" class="hub-card-poster" aria-label="Download Pradhama Drishtiya Kuttakkar">
-        <span class="badge-audio">Hindi Dubbed</span>
-        <span class="badge-quality">1080p</span>
+    <article class="movie-card" data-id="mov-003">
+      <a href="../movies/pradhama-drishtiya-kuttakkar-2026.html" class="card-poster-link" aria-label="View details for Pradhama Drishtiya Kuttakkar">
+        <span class="card-badge-top-left">Hindi Dubbed</span>
+        <span class="card-badge-top-right">1080p</span>
         
-          <span class="badge-rating">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
+          <span class="card-rating-badge">
+            <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
             7.8
           </span>
         
         <img 
           src="https://image.tmdb.org/t/p/w342/plDdL5IWMbNOf3ul4Yd34LzOqEs.jpg" 
           alt="Pradhama Drishtiya Kuttakkar Poster" 
-          class="hub-card-img" 
+          class="card-poster-img" 
           loading="lazy" 
           width="300" 
           height="450"
           onerror="window.handleImageError && window.handleImageError(this, '../assets/images/default-poster.svg')"
         />
       </a>
-      <div class="hub-card-caption">
-        <h3 class="hub-card-title">
+      <div class="card-body">
+        <h3 class="card-title">
           <a href="../movies/pradhama-drishtiya-kuttakkar-2026.html">Pradhama Drishtiya Kuttakkar</a>
         </h3>
-        <div class="hub-card-footer">
+        <div class="card-meta">
           <span>2026</span>
           <span>145 min</span>
         </div>
+        <div class="card-genres">Crime | Drama | Mystery | Thriller</div>
+        <a href="../movies/pradhama-drishtiya-kuttakkar-2026.html" class="card-download-btn" aria-label="Download Pradhama Drishtiya Kuttakkar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Download</span>
+        </a>
       </div>
     </article>
   
-    <article class="hub-card movie-card" data-id="mov-004">
-      <a href="../movies/eyes-season-1-ds4k-web-dl-hindi-dd5-1-malayalam-4k-1080p-720p-480p-dual-audio-x264-10bit-hevc-full-series-2024.html" class="hub-card-poster" aria-label="Download Eyes (Season 1) DS4K WEB DL [Hindi (DD5.1) &amp; Malayalam] 4K 1080p 720p &amp; 480p Dual Audio [x264/10Bit HEVC] | Full Series">
-        <span class="badge-audio">Hindi Dubbed</span>
-        <span class="badge-quality badge-quality-4k">4K UHD</span>
+    <article class="movie-card" data-id="mov-004">
+      <a href="../movies/eyes-season-1-ds4k-web-dl-hindi-dd5-1-malayalam-4k-1080p-720p-480p-dual-audio-x264-10bit-hevc-full-series-2024.html" class="card-poster-link" aria-label="View details for Eyes (Season 1) DS4K WEB DL [Hindi (DD5.1) &amp; Malayalam] 4K 1080p 720p &amp; 480p Dual Audio [x264/10Bit HEVC] | Full Series">
+        <span class="card-badge-top-left">Hindi Dubbed</span>
+        <span class="card-badge-top-right card-badge-4k">4K UHD</span>
         
-          <span class="badge-rating">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
+          <span class="card-rating-badge">
+            <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
             7.5
           </span>
         
         <img 
           src="https://image.tmdb.org/t/p/w342/oHhLK5Dxi1Jpe4weMF9iuRp5cHL.jpg" 
           alt="Eyes (Season 1) DS4K WEB DL [Hindi (DD5.1) &amp; Malayalam] 4K 1080p 720p &amp; 480p Dual Audio [x264/10Bit HEVC] | Full Series Poster" 
-          class="hub-card-img" 
+          class="card-poster-img" 
           loading="lazy" 
           width="300" 
           height="450"
           onerror="window.handleImageError && window.handleImageError(this, '../assets/images/default-poster.svg')"
         />
       </a>
-      <div class="hub-card-caption">
-        <h3 class="hub-card-title">
+      <div class="card-body">
+        <h3 class="card-title">
           <a href="../movies/eyes-season-1-ds4k-web-dl-hindi-dd5-1-malayalam-4k-1080p-720p-480p-dual-audio-x264-10bit-hevc-full-series-2024.html">Eyes (Season 1) DS4K WEB DL [Hindi (DD5.1) &amp; Malayalam] 4K 1080p 720p &amp; 480p Dual Audio [x264/10Bit HEVC] | Full Series</a>
         </h3>
-        <div class="hub-card-footer">
+        <div class="card-meta">
           <span>2024</span>
           <span>145 min</span>
         </div>
-      </div>
-    </article>
-  
-    <article class="hub-card movie-card" data-id="mov-005">
-      <a href="../movies/khalifa-2026.html" class="hub-card-poster" aria-label="Download Khalifa">
-        <span class="badge-audio">Hindi Dubbed</span>
-        <span class="badge-quality badge-quality-4k">4K UHD</span>
-        
-          <span class="badge-rating">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
-            6.7
-          </span>
-        
-        <img 
-          src="https://image.tmdb.org/t/p/w342/3HOC3omTbl7lB9gxKu7uCEpOtuC.jpg" 
-          alt="Khalifa Poster" 
-          class="hub-card-img" 
-          loading="lazy" 
-          width="300" 
-          height="450"
-          onerror="window.handleImageError && window.handleImageError(this, '../assets/images/default-poster.svg')"
-        />
-      </a>
-      <div class="hub-card-caption">
-        <h3 class="hub-card-title">
-          <a href="../movies/khalifa-2026.html">Khalifa</a>
-        </h3>
-        <div class="hub-card-footer">
-          <span>2026</span>
-          <span>145 min</span>
-        </div>
-      </div>
-    </article>
-  
-    <article class="hub-card movie-card" data-id="mov-006">
-      <a href="../movies/epic-first-semester-2026.html" class="hub-card-poster" aria-label="Download Epic First Semester">
-        <span class="badge-audio">Hindi Dubbed</span>
-        <span class="badge-quality badge-quality-4k">4K UHD</span>
-        
-          <span class="badge-rating">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
-            6.8
-          </span>
-        
-        <img 
-          src="https://image.tmdb.org/t/p/w342/pXf3VlwaCgxvS7kvQlQ3QBwjZpy.jpg" 
-          alt="Epic First Semester Poster" 
-          class="hub-card-img" 
-          loading="lazy" 
-          width="300" 
-          height="450"
-          onerror="window.handleImageError && window.handleImageError(this, '../assets/images/default-poster.svg')"
-        />
-      </a>
-      <div class="hub-card-caption">
-        <h3 class="hub-card-title">
-          <a href="../movies/epic-first-semester-2026.html">Epic First Semester</a>
-        </h3>
-        <div class="hub-card-footer">
-          <span>2026</span>
-          <span>145 min</span>
-        </div>
+        <div class="card-genres">Action, Drama</div>
+        <a href="../movies/eyes-season-1-ds4k-web-dl-hindi-dd5-1-malayalam-4k-1080p-720p-480p-dual-audio-x264-10bit-hevc-full-series-2024.html" class="card-download-btn" aria-label="Download Eyes (Season 1) DS4K WEB DL [Hindi (DD5.1) &amp; Malayalam] 4K 1080p 720p &amp; 480p Dual Audio [x264/10Bit HEVC] | Full Series">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Download</span>
+        </a>
       </div>
     </article>
   
@@ -574,26 +554,51 @@
   </main>
 
   
-  <!-- Footer (HDHub4u Clean Style) -->
-  <footer class="site-footer-hub" role="contentinfo">
-    <div class="container footer-hub-content">
-      <a href="../index.html" aria-label="MovieHub4u Home">
-        <img src="../assets/images/logo.svg" alt="MovieHub4u Logo" width="160" height="38" />
-      </a>
-      <div class="footer-nav-hub">
-        <a href="../index.html">Home</a>
-        <a href="../movies.html">All Movies</a>
-        <a href="../category/south-indian.html">South Indian</a>
-        <a href="../category/hindi-dubbed.html">Hindi Dubbed</a>
-        <a href="../category/action.html">Action</a>
-        <a href="../about.html">About Us</a>
-        <a href="../contact.html">Contact</a>
-        <a href="../privacy.html">Privacy Policy</a>
-        <a href="../disclaimer.html">Disclaimer &amp; DMCA</a>
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="../index.html">
+            <img src="../assets/images/logo.svg" alt="CineStatic Logo" width="150" height="30" />
+          </a>
+          <p>
+            CineStatic is an ultra-fast, lightweight movie discovery portal providing verified multi-audio downloads, real screenshots, and comprehensive film details.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Categories</h4>
+          <ul class="footer-links">
+            <li><a href="../category/south-indian.html">South Indian</a></li>
+            <li><a href="../category/hindi-dubbed.html">Hindi Dubbed</a></li>
+            <li><a href="../category/bollywood.html">Bollywood</a></li>
+            <li><a href="../category/hollywood.html">Hollywood</a></li>
+            <li><a href="../category/web-series.html">Web Series</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Genres</h4>
+          <ul class="footer-links">
+            <li><a href="../category/action.html">Action</a></li>
+            <li><a href="../category/thriller.html">Thriller</a></li>
+            <li><a href="../category/drama.html">Drama</a></li>
+            <li><a href="../category/comedy.html">Comedy</a></li>
+            <li><a href="../category/sci-fi.html">Sci-Fi</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Information</h4>
+          <ul class="footer-links">
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../disclaimer.html">Disclaimer & DMCA</a></li>
+          </ul>
+        </div>
       </div>
-      <p class="footer-copy">
-        &copy; 2026 MovieHub4u &bull; Pure Static High Performance &bull; Hosted on GitHub Pages &bull; No Annoying Ads &bull; Fast Delivery
-      </p>
+      <div class="footer-bottom">
+        <p>&copy; 2026 CineStatic. Built for high performance on GitHub Pages.</p>
+        <p>Pure Static HTML5 &bull; No Server Runtime &bull; Fast Delivery</p>
+      </div>
     </div>
   </footer>
   <div class="toast-notice" id="toast" role="status" aria-live="polite"></div>

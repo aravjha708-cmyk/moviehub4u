@@ -1,8 +1,7 @@
 /**
- * MovieHub4u - Static Site Generator
+ * CineStatic - Static Site Generator
  * Generates pre-rendered HTML for all movie pages, category pages, index.html, movies.html, and sitemap.xml.
- * Inspired by HDHub4u Layout & Theme - Modernized, Ad-Free, Ultra-Performant Pure Static HTML.
- * Pure Node.js Standard Library - Zero external npm dependencies.
+ * Pure Node.js Standard Library - No external npm dependencies.
  */
 
 const fs = require('fs');
@@ -35,74 +34,55 @@ function escapeHtml(str) {
     .replace(/'/g, '&#39;');
 }
 
-// Reusable Navigation Header HTML (HDHub4u Signature Dual-Tier)
+// Reusable Navigation Header HTML
 function getHeaderHtml(activeTab, depth) {
   const prefix = depth === 1 ? '../' : '';
   return `
-  <!-- Header (HDHub4u Signature Dual-Tier) -->
   <header class="site-header" role="banner">
-    <div class="container header-top">
-      <div class="brand-wrap">
-        <a href="${prefix}index.html" aria-label="MovieHub4u Home">
-          <img src="${prefix}assets/images/logo.svg" alt="MovieHub4u Logo" class="brand-logo" width="165" height="38" />
+    <div class="container header-inner">
+      <a href="${prefix}index.html" class="brand" aria-label="CineStatic Home">
+        <img src="${prefix}assets/images/logo.svg" alt="CineStatic Logo" class="brand-logo" width="160" height="32" />
+      </a>
+
+      <nav class="nav-desktop" aria-label="Primary Navigation">
+        <a href="${prefix}index.html" class="nav-link ${activeTab === 'home' ? 'active' : ''}">Home</a>
+        <a href="${prefix}movies.html" class="nav-link ${activeTab === 'movies' ? 'active' : ''}">All Movies</a>
+        <a href="${prefix}category/south-indian.html" class="nav-link ${activeTab === 'south-indian' ? 'active' : ''}">South Indian</a>
+        <a href="${prefix}category/hindi-dubbed.html" class="nav-link ${activeTab === 'hindi-dubbed' ? 'active' : ''}">Hindi Dubbed</a>
+        <a href="${prefix}category/action.html" class="nav-link ${activeTab === 'action' ? 'active' : ''}">Action</a>
+        <a href="${prefix}category/bollywood.html" class="nav-link ${activeTab === 'bollywood' ? 'active' : ''}">Bollywood</a>
+        <a href="${prefix}category/hollywood.html" class="nav-link ${activeTab === 'hollywood' ? 'active' : ''}">Hollywood</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="${prefix}search.html" class="search-trigger-btn" aria-label="Search movies">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span>Search</span>
         </a>
-      </div>
-
-      <form class="header-search-bar" action="${prefix}search.html" method="get" role="search">
-        <input 
-          type="search" 
-          name="q" 
-          class="header-search-input" 
-          placeholder="Search South Hindi, 4K, 1080p, Actors..." 
-          aria-label="Search movies"
-          autocomplete="off"
-        />
-        <button type="submit" class="header-search-btn" aria-label="Search">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <button class="mobile-menu-toggle" aria-label="Open Mobile Menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
         </button>
-      </form>
-
-      <button class="mobile-menu-toggle" aria-label="Open Mobile Menu" aria-expanded="false">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-      </button>
-    </div>
-
-    <!-- Category Nav Strip -->
-    <nav class="nav-strip" aria-label="Primary Navigation">
-      <div class="container nav-strip-inner">
-        <a href="${prefix}index.html" class="nav-strip-link ${activeTab === 'home' ? 'active' : ''}">⚡ Home</a>
-        <a href="${prefix}movies.html" class="nav-strip-link ${activeTab === 'movies' ? 'active' : ''}">All Movies</a>
-        <a href="${prefix}category/south-indian.html" class="nav-strip-link ${activeTab === 'south-indian' ? 'active' : ''}">South Hindi</a>
-        <a href="${prefix}category/hindi-dubbed.html" class="nav-strip-link ${activeTab === 'hindi-dubbed' ? 'active' : ''}">Hindi Dubbed</a>
-        <a href="${prefix}category/action.html" class="nav-strip-link ${activeTab === 'action' ? 'active' : ''}">Action</a>
-        <a href="${prefix}category/thriller.html" class="nav-strip-link ${activeTab === 'thriller' ? 'active' : ''}">Thriller</a>
-        <a href="${prefix}category/bollywood.html" class="nav-strip-link ${activeTab === 'bollywood' ? 'active' : ''}">Bollywood</a>
-        <a href="${prefix}category/hollywood.html" class="nav-strip-link ${activeTab === 'hollywood' ? 'active' : ''}">Hollywood</a>
-        <a href="${prefix}category/web-series.html" class="nav-strip-link ${activeTab === 'web-series' ? 'active' : ''}">Web Series</a>
-        <a href="${prefix}search.html" class="nav-strip-link ${activeTab === 'search' ? 'active' : ''}">🔍 Search</a>
       </div>
-    </nav>
-
-    <!-- Mobile Drawer -->
-    <div class="mobile-nav-drawer" role="dialog" aria-label="Mobile Navigation">
-      <a href="${prefix}index.html">⚡ Home</a>
-      <a href="${prefix}movies.html">All Movies</a>
-      <a href="${prefix}search.html">🔍 Search &amp; Filters</a>
-      <a href="${prefix}category/south-indian.html">South Hindi</a>
-      <a href="${prefix}category/hindi-dubbed.html">Hindi Dubbed</a>
-      <a href="${prefix}category/action.html">Action</a>
-      <a href="${prefix}category/thriller.html">Thriller</a>
-      <a href="${prefix}category/bollywood.html">Bollywood</a>
-      <a href="${prefix}category/hollywood.html">Hollywood</a>
-      <a href="${prefix}category/web-series.html">Web Series</a>
     </div>
   </header>
 
-  <!-- HDHub4u Signature Announcement Ribbon -->
-  <div class="notice-ribbon" role="region" aria-label="Announcement">
-    <div class="container">
-      ⚡ <strong>Official MovieHub4u:</strong> Download South Indian Hindi Dubbed Movies &bull; Pure Fast Direct Links &bull; 4K &bull; 1080p &bull; No Ads &bull; No Popups!
-    </div>
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" role="dialog" aria-label="Mobile Navigation">
+    <a href="${prefix}index.html" class="nav-link ${activeTab === 'home' ? 'active' : ''}">Home</a>
+    <a href="${prefix}movies.html" class="nav-link ${activeTab === 'movies' ? 'active' : ''}">All Movies</a>
+    <a href="${prefix}search.html" class="nav-link ${activeTab === 'search' ? 'active' : ''}">Search & Filters</a>
+    <a href="${prefix}category/south-indian.html" class="nav-link ${activeTab === 'south-indian' ? 'active' : ''}">South Indian</a>
+    <a href="${prefix}category/hindi-dubbed.html" class="nav-link ${activeTab === 'hindi-dubbed' ? 'active' : ''}">Hindi Dubbed</a>
+    <a href="${prefix}category/action.html" class="nav-link ${activeTab === 'action' ? 'active' : ''}">Action</a>
+    <a href="${prefix}category/bollywood.html" class="nav-link ${activeTab === 'bollywood' ? 'active' : ''}">Bollywood</a>
+    <a href="${prefix}category/hollywood.html" class="nav-link ${activeTab === 'hollywood' ? 'active' : ''}">Hollywood</a>
   </div>
 `;
 }
@@ -112,26 +92,51 @@ function getFooterHtml(depth) {
   const prefix = depth === 1 ? '../' : '';
   const year = new Date().getFullYear();
   return `
-  <!-- Footer (HDHub4u Clean Style) -->
-  <footer class="site-footer-hub" role="contentinfo">
-    <div class="container footer-hub-content">
-      <a href="${prefix}index.html" aria-label="MovieHub4u Home">
-        <img src="${prefix}assets/images/logo.svg" alt="MovieHub4u Logo" width="160" height="38" />
-      </a>
-      <div class="footer-nav-hub">
-        <a href="${prefix}index.html">Home</a>
-        <a href="${prefix}movies.html">All Movies</a>
-        <a href="${prefix}category/south-indian.html">South Indian</a>
-        <a href="${prefix}category/hindi-dubbed.html">Hindi Dubbed</a>
-        <a href="${prefix}category/action.html">Action</a>
-        <a href="${prefix}about.html">About Us</a>
-        <a href="${prefix}contact.html">Contact</a>
-        <a href="${prefix}privacy.html">Privacy Policy</a>
-        <a href="${prefix}disclaimer.html">Disclaimer &amp; DMCA</a>
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="${prefix}index.html">
+            <img src="${prefix}assets/images/logo.svg" alt="CineStatic Logo" width="150" height="30" />
+          </a>
+          <p>
+            CineStatic is an ultra-fast, lightweight movie discovery portal providing verified multi-audio downloads, real screenshots, and comprehensive film details.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Categories</h4>
+          <ul class="footer-links">
+            <li><a href="${prefix}category/south-indian.html">South Indian</a></li>
+            <li><a href="${prefix}category/hindi-dubbed.html">Hindi Dubbed</a></li>
+            <li><a href="${prefix}category/bollywood.html">Bollywood</a></li>
+            <li><a href="${prefix}category/hollywood.html">Hollywood</a></li>
+            <li><a href="${prefix}category/web-series.html">Web Series</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Genres</h4>
+          <ul class="footer-links">
+            <li><a href="${prefix}category/action.html">Action</a></li>
+            <li><a href="${prefix}category/thriller.html">Thriller</a></li>
+            <li><a href="${prefix}category/drama.html">Drama</a></li>
+            <li><a href="${prefix}category/comedy.html">Comedy</a></li>
+            <li><a href="${prefix}category/sci-fi.html">Sci-Fi</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Information</h4>
+          <ul class="footer-links">
+            <li><a href="${prefix}about.html">About Us</a></li>
+            <li><a href="${prefix}contact.html">Contact</a></li>
+            <li><a href="${prefix}privacy.html">Privacy Policy</a></li>
+            <li><a href="${prefix}disclaimer.html">Disclaimer & DMCA</a></li>
+          </ul>
+        </div>
       </div>
-      <p class="footer-copy">
-        &copy; ${year} MovieHub4u &bull; Pure Static High Performance &bull; Hosted on GitHub Pages &bull; No Annoying Ads &bull; Fast Delivery
-      </p>
+      <div class="footer-bottom">
+        <p>&copy; ${year} CineStatic. Built for high performance on GitHub Pages.</p>
+        <p>Pure Static HTML5 &bull; No Server Runtime &bull; Fast Delivery</p>
+      </div>
     </div>
   </footer>
   <div class="toast-notice" id="toast" role="status" aria-live="polite"></div>
@@ -139,7 +144,7 @@ function getFooterHtml(depth) {
 `;
 }
 
-// Generate Movie Card HTML (HDHub4u Signature Dense Card)
+// Generate Movie Card HTML
 function renderMovieCardHtml(movie, depth) {
   const prefix = depth === 1 ? '../' : '';
   const detailUrl = `${prefix}movies/${encodeURIComponent(movie.slug)}.html`;
@@ -147,37 +152,43 @@ function renderMovieCardHtml(movie, depth) {
   const fallbackSrc = `${prefix}assets/images/default-poster.svg`;
   const topQuality = movie.qualities && movie.qualities.length ? movie.qualities[movie.qualities.length - 1] : 'HD';
   const is4K = topQuality.toUpperCase().includes('4K');
-  const badgeClass = is4K ? 'badge-quality badge-quality-4k' : 'badge-quality';
+  const badgeClass = is4K ? 'card-badge-top-right card-badge-4k' : 'card-badge-top-right';
+  const genresShort = movie.genres ? movie.genres.slice(0, 2).join(', ') : '';
 
   return `
-    <article class="hub-card movie-card" data-id="${escapeHtml(movie.id)}">
-      <a href="${detailUrl}" class="hub-card-poster" aria-label="Download ${escapeHtml(movie.title)}">
-        <span class="badge-audio">${escapeHtml(movie.language || 'Hindi')}</span>
+    <article class="movie-card" data-id="${escapeHtml(movie.id)}">
+      <a href="${detailUrl}" class="card-poster-link" aria-label="View details for ${escapeHtml(movie.title)}">
+        <span class="card-badge-top-left">${escapeHtml(movie.language || 'Multi')}</span>
         <span class="${badgeClass}">${escapeHtml(topQuality)}</span>
         ${movie.rating ? `
-          <span class="badge-rating">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
+          <span class="card-rating-badge">
+            <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
             ${movie.rating}
           </span>
         ` : ''}
         <img 
           src="${posterSrc}" 
           alt="${escapeHtml(movie.title)} Poster" 
-          class="hub-card-img" 
+          class="card-poster-img" 
           loading="lazy" 
           width="300" 
           height="450"
           onerror="window.handleImageError && window.handleImageError(this, '${fallbackSrc}')"
         />
       </a>
-      <div class="hub-card-caption">
-        <h3 class="hub-card-title">
+      <div class="card-body">
+        <h3 class="card-title">
           <a href="${detailUrl}">${escapeHtml(movie.title)}</a>
         </h3>
-        <div class="hub-card-footer">
+        <div class="card-meta">
           <span>${movie.releaseYear || ''}</span>
-          <span>${escapeHtml(movie.runtime || 'HD')}</span>
+          <span>${escapeHtml(movie.runtime || '')}</span>
         </div>
+        ${genresShort ? `<div class="card-genres">${escapeHtml(genresShort)}</div>` : ''}
+        <a href="${detailUrl}" class="card-download-btn" aria-label="Download ${escapeHtml(movie.title)}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Download</span>
+        </a>
       </div>
     </article>
   `;
@@ -186,7 +197,7 @@ function renderMovieCardHtml(movie, depth) {
 // -------------------------------------------------------------
 // 1. GENERATE INDIVIDUAL MOVIE DETAIL PAGES (movies/[slug].html)
 // -------------------------------------------------------------
-console.log('Generating individual movie detail pages (HDHub4u layout)...');
+console.log('Generating individual movie detail pages...');
 
 movies.forEach(movie => {
   const filePath = path.join(MOVIES_OUT_DIR, `${movie.slug}.html`);
@@ -198,7 +209,7 @@ movies.forEach(movie => {
     const sameCat = m.categories && movie.categories && m.categories.some(c => movie.categories.includes(c));
     const sameGenre = m.genres && movie.genres && m.genres.some(g => movie.genres.includes(g));
     return sameCat || sameGenre;
-  }).slice(0, 6);
+  }).slice(0, 4);
 
   // File size text
   let fileSizesText = '';
@@ -211,7 +222,7 @@ movies.forEach(movie => {
   }
 
   // Audio / languages text
-  const audioText = movie.languagesAvailable ? movie.languagesAvailable.join(', ') : (movie.language || 'Hindi Dubbed');
+  const audioText = movie.languagesAvailable ? movie.languagesAvailable.join(', ') : (movie.language || 'Original');
 
   // Schema.org JSON-LD structured data
   const jsonLd = {
@@ -236,8 +247,8 @@ movies.forEach(movie => {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${escapeHtml(movie.seoTitle || `${movie.title} (${movie.releaseYear}) Download | MovieHub4u`)}</title>
-  <meta name="description" content="${escapeHtml(movie.seoDescription || movie.synopsis || `Download ${movie.title} in HD and 4K with fast links.`)}">
+  <title>${escapeHtml(movie.seoTitle || `${movie.title} (${movie.releaseYear}) - Download | CineStatic`)}</title>
+  <meta name="description" content="${escapeHtml(movie.seoDescription || movie.synopsis || `Download ${movie.title} in HD and 4K.`)}">
   <link rel="canonical" href="movies/${encodeURIComponent(movie.slug)}.html">
   
   <!-- Open Graph / Social Sharing -->
@@ -260,186 +271,166 @@ movies.forEach(movie => {
 
   <main class="main-content" id="main-content">
     <div class="container">
-      
       <!-- Breadcrumb Navigation -->
-      <nav class="breadcrumbs-bar" aria-label="Breadcrumbs">
+      <nav class="breadcrumbs" aria-label="Breadcrumbs">
         <a href="../index.html">Home</a>
-        <span>&raquo;</span>
+        <span class="separator">/</span>
         <a href="../movies.html">Movies</a>
         ${movie.categories && movie.categories[0] ? `
-          <span>&raquo;</span>
+          <span class="separator">/</span>
           <a href="../category/${encodeURIComponent(movie.categories[0])}.html">${escapeHtml(movie.categories[0].replace('-', ' ').toUpperCase())}</a>
         ` : ''}
-        <span>&raquo;</span>
-        <span>${escapeHtml(movie.title)}</span>
+        <span class="separator">/</span>
+        <span class="current">${escapeHtml(movie.title)}</span>
       </nav>
 
-      <!-- Post Header Banner (HDHub4u Signature Title) -->
-      <div class="post-header-card">
-        <h1 class="post-main-title">${escapeHtml(movie.title)} (${movie.releaseYear}) Dual Audio [Hindi-Original] WEB-DL 480p 720p 1080p 4K</h1>
-        <div class="post-meta-strip">
-          <span class="post-cat-badge">${escapeHtml(movie.language || 'Hindi Dubbed')}</span>
-          <span class="post-meta-item">📅 ${movie.releaseYear || ''}</span>
-          ${movie.runtime ? `<span class="post-meta-item">⏱️ ${escapeHtml(movie.runtime)}</span>` : ''}
-          ${movie.rating ? `<span class="post-meta-item" style="color: var(--accent-gold); font-weight: 700;">★ IMDb ${movie.rating}/10</span>` : ''}
-          ${movie.genres && movie.genres.length ? `<span class="post-meta-item">🏷️ ${escapeHtml(movie.genres.join(', '))}</span>` : ''}
-        </div>
-      </div>
-
-      <!-- Centered Main Poster Presentation (HDHub4u Style) -->
-      <div class="detail-center-poster">
-        <img 
-          src="${movie.poster || '../assets/images/default-poster.svg'}" 
-          alt="${escapeHtml(movie.title)} Official Poster" 
-          width="320" 
-          height="480"
-          onerror="window.handleImageError && window.handleImageError(this, '../assets/images/default-poster.svg')"
-        />
-      </div>
-
-      <!-- Technical Specifications Box (HDHub4u Specs Table) -->
-      <div class="specs-card-hub">
-        <div class="specs-grid-row">
-          <div class="specs-label">Movie Title:</div>
-          <div class="specs-val"><strong>${escapeHtml(movie.title)}</strong></div>
-        </div>
-        ${movie.originalTitle ? `
-        <div class="specs-grid-row">
-          <div class="specs-label">Original Title:</div>
-          <div class="specs-val">${escapeHtml(movie.originalTitle)}</div>
-        </div>` : ''}
-        <div class="specs-grid-row">
-          <div class="specs-label">Release Year:</div>
-          <div class="specs-val">${movie.releaseYear || ''}</div>
-        </div>
-        <div class="specs-grid-row">
-          <div class="specs-label">Audio / Language:</div>
-          <div class="specs-val">${escapeHtml(audioText)}</div>
-        </div>
-        ${movie.subtitles && movie.subtitles.length ? `
-        <div class="specs-grid-row">
-          <div class="specs-label">Subtitles:</div>
-          <div class="specs-val">${escapeHtml(movie.subtitles.join(', '))}</div>
-        </div>` : ''}
-        <div class="specs-grid-row">
-          <div class="specs-label">Qualities Available:</div>
-          <div class="specs-val">${escapeHtml(movie.qualities ? movie.qualities.join(', ') : '480p, 720p, 1080p, 4K')}</div>
-        </div>
-        ${fileSizesText ? `
-        <div class="specs-grid-row">
-          <div class="specs-label">File Size:</div>
-          <div class="specs-val">${escapeHtml(fileSizesText)}</div>
-        </div>` : ''}
-        ${movie.formats && movie.formats.length ? `
-        <div class="specs-grid-row">
-          <div class="specs-label">Format:</div>
-          <div class="specs-val">${escapeHtml(movie.formats.join(', '))}</div>
-        </div>` : ''}
-        ${movie.director && movie.director !== 'N/A' ? `
-        <div class="specs-grid-row">
-          <div class="specs-label">Director:</div>
-          <div class="specs-val">${escapeHtml(movie.director)}</div>
-        </div>` : ''}
-        ${movie.cast && movie.cast.length ? `
-        <div class="specs-grid-row">
-          <div class="specs-label">Star Cast:</div>
-          <div class="specs-val">${escapeHtml(movie.cast.join(', '))}</div>
-        </div>` : ''}
-        ${movie.rating ? `
-        <div class="specs-grid-row">
-          <div class="specs-label">IMDb Rating:</div>
-          <div class="specs-val imdb-val">★ ${movie.rating}/10 (${escapeHtml(movie.ratingSource || 'IMDb')})</div>
-        </div>` : ''}
-      </div>
-
-      <!-- Storyline Card -->
-      <div class="storyline-card">
-        <h3>: SYNOPSIS / STORYLINE :</h3>
-        <p>${escapeHtml(movie.description || movie.synopsis || '')}</p>
-      </div>
-
-      <!-- Screenshots Gallery (Real images from source) -->
-      ${movie.screenshots && movie.screenshots.length ? `
-        <div class="hub-section-divider">
-          <span class="hub-section-divider-title">: SCREEN-SHOTS :</span>
-        </div>
-
-        <div class="screenshots-hub-grid">
-          ${movie.screenshots.map((src, idx) => `
-            <a href="${escapeHtml(src)}" target="_blank" rel="noopener noreferrer" class="shot-frame" title="View Full Screenshot ${idx + 1}">
-              <img 
-                src="${escapeHtml(src)}" 
-                alt="${escapeHtml(movie.title)} Screenshot ${idx + 1}" 
-                loading="lazy" 
-                width="360" 
-                height="200" 
-                onerror="this.parentElement.style.display='none'"
-              />
-            </a>
-          `).join('')}
-        </div>
-      ` : ''}
-
-      <!-- HDHub4u Signature Colorful Download Links (Pure Direct Links) -->
-      <div class="hub-section-divider">
-        <span class="hub-section-divider-title">: DOWNLOAD LINKS :</span>
-      </div>
-
-      <div class="download-buttons-wrap">
-        ${movie.links && movie.links.length ? movie.links.map(link => {
-          const q = (link.quality || '').toLowerCase();
-          let btnColorClass = 'btn-hub-720p';
-          if (q.includes('480')) btnColorClass = 'btn-hub-480p';
-          else if (q.includes('720')) btnColorClass = 'btn-hub-720p';
-          else if (q.includes('1080')) btnColorClass = 'btn-hub-1080p';
-          else if (q.includes('4k') || q.includes('2160') || q.includes('uhd')) btnColorClass = 'btn-hub-4k';
-          
-          return `
-            <a href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer" class="btn-hub-download ${btnColorClass}">
-              <div class="btn-hub-left">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                <div>
-                  <div style="font-weight: 800;">${escapeHtml(link.label)}</div>
-                  ${link.size ? `<small style="opacity: 0.9; font-size: 0.78rem;">Size: ${escapeHtml(link.size)}</small>` : ''}
-                </div>
-              </div>
-              <span class="btn-hub-cta">Download</span>
-            </a>
-          `;
-        }).join('') : `
-          <p style="text-align: center; color: var(--text-secondary);">Direct download links are currently being updated for this title.</p>
-        `}
-      </div>
-
-      <!-- Share Section -->
-      <div class="share-bar-hub">
-        <span style="font-size: 0.85rem; color: var(--text-secondary); margin-right: 6px;">Share with Friends:</span>
-        <button class="share-hub-btn" onclick="window.copyPageUrl()" title="Copy Page Link">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-          Copy Link
-        </button>
-        <a href="https://api.whatsapp.com/send?text=${encodeURIComponent(`${movie.title} (${movie.releaseYear}) Download on MovieHub4u`)}" target="_blank" rel="noopener noreferrer" class="share-hub-btn">
-          WhatsApp
-        </a>
-        <a href="https://t.me/share/url?url=&text=${encodeURIComponent(`${movie.title} (${movie.releaseYear}) Download on MovieHub4u`)}" target="_blank" rel="noopener noreferrer" class="share-hub-btn">
-          Telegram
-        </a>
-        <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(`Check out ${movie.title} (${movie.releaseYear}) on MovieHub4u`)}" target="_blank" rel="noopener noreferrer" class="share-hub-btn">
-          X / Twitter
-        </a>
-      </div>
-
-      <!-- Related Movies Section (Dense 6-Column Grid) -->
-      ${relatedMovies.length ? `
-        <section class="catalog-section" style="padding-top: 10px;">
-          <div class="section-title-bar">
-            <h2 class="section-title-text">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
-              Related South Hindi Releases
-            </h2>
-            <a href="../movies.html" style="font-size: 0.85rem; color: var(--accent-red); font-weight: 700;">View Full Hub &rarr;</a>
+      <div class="movie-detail-grid">
+        <!-- Poster Column -->
+        <div class="movie-poster-column">
+          <div class="detail-poster-wrap">
+            <img 
+              src="${movie.poster || '../assets/images/default-poster.svg'}" 
+              alt="${escapeHtml(movie.title)} Official Poster" 
+              width="400" 
+              height="600"
+              onerror="window.handleImageError && window.handleImageError(this, '../assets/images/default-poster.svg')"
+            />
           </div>
-          <div class="movies-grid-hub">
+          <a href="#download-options" class="poster-download-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span>Download</span>
+          </a>
+        </div>
+
+        <!-- Info Column -->
+        <div class="movie-info-column">
+          <h1 class="detail-title">${escapeHtml(movie.title)}</h1>
+          ${movie.originalTitle ? `<p class="detail-original-title">Original Title: ${escapeHtml(movie.originalTitle)}</p>` : ''}
+
+          <div class="detail-meta-pills">
+            <span class="meta-pill">${movie.releaseYear || ''}</span>
+            ${movie.runtime ? `<span class="meta-pill">${escapeHtml(movie.runtime)}</span>` : ''}
+            <span class="meta-pill">${escapeHtml(movie.language || 'Hindi Dubbed')}</span>
+            <span class="meta-pill">${escapeHtml(topQuality)}</span>
+            ${movie.rating ? `
+              <span class="meta-pill meta-pill-rating">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
+                ${movie.rating} ${movie.ratingSource ? `(${escapeHtml(movie.ratingSource)})` : ''}
+              </span>
+            ` : ''}
+          </div>
+
+          ${movie.genres && movie.genres.length ? `
+            <div class="genre-tags">
+              ${movie.genres.map(g => `<span class="genre-tag">${escapeHtml(g)}</span>`).join('')}
+            </div>
+          ` : ''}
+
+          <!-- Synopsis -->
+          <div class="synopsis-block">
+            <h2>Storyline</h2>
+            <p class="synopsis-text">${escapeHtml(movie.description || movie.synopsis || '')}</p>
+          </div>
+
+          <!-- Technical Specs Table -->
+          <div class="specs-table-wrap">
+            <table class="specs-table">
+              <tbody>
+                ${movie.director && movie.director !== 'N/A' ? `<tr><th>Director</th><td>${escapeHtml(movie.director)}</td></tr>` : ''}
+                ${movie.cast && movie.cast.length ? `<tr><th>Starring</th><td>${escapeHtml(movie.cast.join(', '))}</td></tr>` : ''}
+                ${movie.country ? `<tr><th>Country</th><td>${escapeHtml(movie.country)}</td></tr>` : ''}
+                <tr><th>Audio Languages</th><td>${escapeHtml(audioText)}</td></tr>
+                ${movie.subtitles && movie.subtitles.length ? `<tr><th>Subtitles</th><td>${escapeHtml(movie.subtitles.join(', '))}</td></tr>` : ''}
+                ${movie.qualities && movie.qualities.length ? `<tr><th>Available Qualities</th><td>${escapeHtml(movie.qualities.join(', '))}</td></tr>` : ''}
+                ${fileSizesText ? `<tr><th>File Sizes</th><td>${escapeHtml(fileSizesText)}</td></tr>` : ''}
+                ${movie.formats && movie.formats.length ? `<tr><th>Container Formats</th><td>${escapeHtml(movie.formats.join(', '))}</td></tr>` : ''}
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Screenshots Gallery (Real images from source) -->
+          ${movie.screenshots && movie.screenshots.length ? `
+            <section class="screenshots-section">
+              <h2 class="detail-section-title">Movie Screenshots</h2>
+              <div class="screenshots-grid">
+                ${movie.screenshots.map((src, idx) => `
+                  <a href="${escapeHtml(src)}" target="_blank" rel="noopener noreferrer" class="screenshot-item" title="View Full Screenshot ${idx + 1}">
+                    <img 
+                      src="${escapeHtml(src)}" 
+                      alt="${escapeHtml(movie.title)} Screenshot ${idx + 1}" 
+                      loading="lazy" 
+                      width="320" 
+                      height="180" 
+                      onerror="this.parentElement.style.display='none'"
+                    />
+                  </a>
+                `).join('')}
+              </div>
+            </section>
+          ` : ''}
+
+          <!-- Pure Direct Download Links (No Stream Now) -->
+          <div class="download-action-box" id="download-options">
+            <div class="action-header">
+              <h3>Fast Direct Download Links</h3>
+              <p>Choose your preferred resolution and download directly.</p>
+            </div>
+            
+            <div class="links-list">
+              ${movie.links && movie.links.length ? movie.links.map(link => `
+                <a href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer" class="link-btn-card">
+                  <div class="link-btn-left">
+                    <div class="link-icon-wrap">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    </div>
+                    <div class="link-info-text">
+                      <span class="link-label">${escapeHtml(link.label)}</span>
+                      <span class="link-submeta">
+                        ${link.quality ? `${escapeHtml(link.quality)} ` : ''}
+                        ${link.size ? `&bull; ${escapeHtml(link.size)}` : ''}
+                      </span>
+                    </div>
+                  </div>
+                  <span class="link-cta-badge">
+                    Download
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </span>
+                </a>
+              `).join('') : `
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">Download links are currently being updated for this title.</p>
+              `}
+            </div>
+          </div>
+
+          <!-- Share Section -->
+          <div class="share-section">
+            <span class="share-label">Share This Movie:</span>
+            <button class="share-btn" onclick="window.copyPageUrl()" title="Copy Page Link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              <span>Copy Link</span>
+            </button>
+            <a href="https://api.whatsapp.com/send?text=${encodeURIComponent(`${movie.title} (${movie.releaseYear}) on CineStatic`)}" target="_blank" rel="noopener noreferrer" class="share-btn">
+              <span>WhatsApp</span>
+            </a>
+            <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(`Check out ${movie.title} (${movie.releaseYear}) on CineStatic`)}" target="_blank" rel="noopener noreferrer" class="share-btn">
+              <span>X / Twitter</span>
+            </a>
+            <a href="https://t.me/share/url?url=&text=${encodeURIComponent(`${movie.title} (${movie.releaseYear}) on CineStatic`)}" target="_blank" rel="noopener noreferrer" class="share-btn">
+              <span>Telegram</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Related Movies Section -->
+      ${relatedMovies.length ? `
+        <section class="related-section">
+          <div class="section-header">
+            <h2 class="section-title">You Might Also Like</h2>
+            <a href="../movies.html" class="section-link">View All Movies &rarr;</a>
+          </div>
+          <div class="movies-grid">
             ${relatedMovies.map(m => renderMovieCardHtml(m, 1)).join('')}
           </div>
         </section>
@@ -460,7 +451,7 @@ console.log(`Successfully generated ${movies.length} static movie pages.`);
 // -------------------------------------------------------------
 // 2. GENERATE CATEGORY PAGES (category/[slug].html)
 // -------------------------------------------------------------
-console.log('Generating category pages (HDHub4u layout)...');
+console.log('Generating category pages...');
 
 categories.forEach(cat => {
   const filePath = path.join(CATEGORY_OUT_DIR, `${cat.slug}.html`);
@@ -476,7 +467,7 @@ categories.forEach(cat => {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${escapeHtml(cat.seoTitle || `${cat.name} Movies - Download | MovieHub4u`)}</title>
+  <title>${escapeHtml(cat.seoTitle || `${cat.name} Movies - Download | CineStatic`)}</title>
   <meta name="description" content="${escapeHtml(cat.seoDescription || cat.description || `Browse the best ${cat.name} movies with dual audio and full HD downloads.`)}">
   <link rel="canonical" href="category/${encodeURIComponent(cat.slug)}.html">
   <link rel="stylesheet" href="../assets/css/styles.css">
@@ -487,31 +478,33 @@ categories.forEach(cat => {
   <main class="main-content" id="main-content">
     <div class="container">
       <!-- Breadcrumbs -->
-      <nav class="breadcrumbs-bar" aria-label="Breadcrumbs">
+      <nav class="breadcrumbs" aria-label="Breadcrumbs">
         <a href="../index.html">Home</a>
-        <span>&raquo;</span>
+        <span class="separator">/</span>
         <a href="../movies.html">Categories</a>
-        <span>&raquo;</span>
-        <span>${escapeHtml(cat.name)}</span>
+        <span class="separator">/</span>
+        <span class="current">${escapeHtml(cat.name)}</span>
       </nav>
 
-      <div class="section-title-bar" style="margin-top: 14px;">
-        <h1 class="section-title-text">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
-          ${escapeHtml(cat.name)} Collection (${matchingMovies.length} Titles)
-        </h1>
-        <a href="../search.html?category=${encodeURIComponent(cat.slug)}" style="font-size: 0.85rem; color: var(--accent-red); font-weight: 700;">Filter Category &rarr;</a>
+      <div class="section-header">
+        <div>
+          <h1 class="section-title">${escapeHtml(cat.name)} Collection</h1>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 6px;">
+            ${escapeHtml(cat.description || '')} (${matchingMovies.length} title${matchingMovies.length === 1 ? '' : 's'})
+          </p>
+        </div>
+        <a href="../search.html?category=${encodeURIComponent(cat.slug)}" class="section-link">Filter Category &rarr;</a>
       </div>
 
       ${matchingMovies.length ? `
-        <div class="movies-grid-hub">
+        <div class="movies-grid">
           ${matchingMovies.map(m => renderMovieCardHtml(m, 1)).join('')}
         </div>
       ` : `
-        <div class="empty-state" style="text-align: center; padding: 60px 20px;">
+        <div class="empty-state">
           <h3>No titles found</h3>
-          <p style="color: var(--text-secondary); margin-top: 8px;">We are actively adding more titles to the ${escapeHtml(cat.name)} collection.</p>
-          <a href="../movies.html" style="display: inline-block; margin-top: 16px; background-color: var(--accent-red); color: #fff; padding: 10px 20px; border-radius: 6px; font-weight: 700;">Browse Full Catalog</a>
+          <p>We are actively adding more titles to the ${escapeHtml(cat.name)} collection.</p>
+          <a href="../movies.html" class="btn-primary">Browse All Movies</a>
         </div>
       `}
     </div>
@@ -529,22 +522,26 @@ console.log(`Successfully generated ${categories.length} category pages.`);
 // -------------------------------------------------------------
 // 3. GENERATE DYNAMIC HOMEPAGE (index.html)
 // -------------------------------------------------------------
-console.log('Generating index.html in HDHub4u layout...');
+console.log('Generating index.html from central dataset...');
+
+const spotlight = movies.find(m => m.featured) || movies[0];
+const latestList = movies.slice(0, 12);
+const spotlightTopQuality = spotlight.qualities && spotlight.qualities.length ? spotlight.qualities[spotlight.qualities.length - 1] : 'HD';
 
 const indexHtml = `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MovieHub4u - South Hindi Dubbed Movies Download | 4K & 1080p Web-DL</title>
-  <meta name="description" content="Download the latest South Indian Hindi dubbed movies, dual audio releases, and blockbusters with screenshots and direct download links. No ads, no popups.">
+  <title>CineStatic - South Hindi Dubbed Movies Download | 4K & 1080p</title>
+  <meta name="description" content="Discover and download the latest South Indian Hindi dubbed movies, dual audio releases, and blockbusters with screenshots and direct download links.">
   <link rel="canonical" href="index.html">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="MovieHub4u - South Hindi Dubbed Movies">
+  <meta property="og:title" content="CineStatic - South Hindi Dubbed Movies">
   <meta property="og:description" content="Direct high-speed downloads, real screenshots, dual audio South Hindi films.">
-  <meta property="og:image" content="${movies[0].poster}">
+  <meta property="og:image" content="${spotlight.poster}">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -552,38 +549,90 @@ const indexHtml = `<!DOCTYPE html>
 <body>
   ${getHeaderHtml('home', 0)}
 
-  <!-- Quick Filter Tags Bar -->
-  <section class="quick-tags-section" aria-label="Quick Category Tags">
+  <!-- Compact Hero Section -->
+  <section class="hero-compact" aria-label="Welcome and Featured Film">
+    <div class="container hero-inner">
+      <div class="hero-intro">
+        <h1>South Indian <span>Hindi Dubbed</span> Hub</h1>
+        <p>
+          Lightning-fast static entertainment portal. Download the latest South Hindi blockbusters, uncut editions, and dual audio releases with screenshots and direct links.
+        </p>
+        <div class="hero-features">
+          <span class="hero-feat-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Pure Static HTML
+          </span>
+          <span class="hero-feat-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Dual Audio & Dubs
+          </span>
+          <span class="hero-feat-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Full Screenshots
+          </span>
+        </div>
+      </div>
+
+      <!-- Featured Spotlight Card -->
+      <aside class="featured-highlight-card" aria-label="Featured Movie">
+        <div class="feat-poster-wrap">
+          <img 
+            src="${spotlight.poster}" 
+            alt="${escapeHtml(spotlight.title)} Poster" 
+            width="95" 
+            height="142" 
+            loading="eager"
+            onerror="window.handleImageError && window.handleImageError(this, 'assets/images/default-poster.svg')"
+          />
+        </div>
+        <div class="feat-content">
+          <span class="feat-badge">Spotlight Title</span>
+          <h2 class="feat-title">${escapeHtml(spotlight.title)}</h2>
+          <div class="feat-meta">
+            <span>${spotlight.releaseYear}</span>
+            <span>&bull;</span>
+            <span class="rating-pill">★ ${spotlight.rating}</span>
+            <span>&bull;</span>
+            <span>${escapeHtml(spotlightTopQuality)}</span>
+          </div>
+          <a href="movies/${encodeURIComponent(spotlight.slug)}.html" class="feat-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span>Download</span>
+          </a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Category Browse Bar -->
+  <section class="category-bar-section" aria-label="Browse Categories">
     <div class="container">
-      <div class="quick-tags-wrap">
-        <a href="category/south-indian.html" class="quick-tag-chip">🔥 South Hindi</a>
-        <a href="category/hindi-dubbed.html" class="quick-tag-chip">🎧 Hindi Dubbed</a>
-        <a href="category/action.html" class="quick-tag-chip">💥 Action</a>
-        <a href="category/thriller.html" class="quick-tag-chip">⚡ Thriller</a>
-        <a href="category/bollywood.html" class="quick-tag-chip">🎬 Bollywood</a>
-        <a href="category/hollywood.html" class="quick-tag-chip">🍿 Hollywood</a>
-        <a href="category/web-series.html" class="quick-tag-chip">📺 Web Series</a>
-        <a href="movies.html" class="quick-tag-chip">⭐ All Movies</a>
+      <div class="category-scroll-container">
+        <a href="movies.html" class="category-chip active">All Movies</a>
+        <a href="category/south-indian.html" class="category-chip">South Indian</a>
+        <a href="category/hindi-dubbed.html" class="category-chip">Hindi Dubbed</a>
+        <a href="category/action.html" class="category-chip">Action</a>
+        <a href="category/thriller.html" class="category-chip">Thriller</a>
+        <a href="category/bollywood.html" class="category-chip">Bollywood</a>
+        <a href="category/hollywood.html" class="category-chip">Hollywood</a>
+        <a href="category/web-series.html" class="category-chip">Web Series</a>
       </div>
     </div>
   </section>
 
-  <!-- Main Content: Dense Movie Grids (HDHub4u Signature Style) -->
+  <!-- Main Content: Movie Grids -->
   <main class="main-content" id="main-content">
     <div class="container">
       
       <!-- Latest Releases Section -->
       <section class="catalog-section" aria-labelledby="latest-heading">
-        <div class="section-title-bar">
-          <h2 id="latest-heading" class="section-title-text">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
-            Latest South Hindi Dubbed Movies
-          </h2>
-          <a href="movies.html" style="font-size: 0.88rem; color: var(--accent-red); font-weight: 700;">View All (${movies.length}) &rarr;</a>
+        <div class="section-header">
+          <h2 id="latest-heading" class="section-title">Latest South Hindi Releases</h2>
+          <a href="movies.html" class="section-link">View Full Catalog &rarr;</a>
         </div>
         
-        <div class="movies-grid-hub">
-          ${movies.map(m => renderMovieCardHtml(m, 0)).join('')}
+        <div class="movies-grid">
+          ${latestList.map(m => renderMovieCardHtml(m, 0)).join('')}
         </div>
       </section>
 
@@ -600,14 +649,14 @@ console.log('Successfully updated index.html.');
 // -------------------------------------------------------------
 // 4. GENERATE DYNAMIC CATALOG (movies.html)
 // -------------------------------------------------------------
-console.log('Generating movies.html catalog...');
+console.log('Generating movies.html fallback catalog...');
 
 const moviesHtml = `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>All Movies - Explore Our Complete Catalog | MovieHub4u</title>
+  <title>All Movies - Explore Our Complete Catalog | CineStatic</title>
   <meta name="description" content="Browse our complete collection of South Indian Hindi Dubbed movies. Filter by quality (4K, 1080p), audio, and genre.">
   <link rel="canonical" href="movies.html">
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -617,20 +666,22 @@ const moviesHtml = `<!DOCTYPE html>
 
   <main class="main-content" id="main-content">
     <div class="container">
-      <nav class="breadcrumbs-bar" aria-label="Breadcrumbs">
+      <nav class="breadcrumbs" aria-label="Breadcrumbs">
         <a href="index.html">Home</a>
-        <span>&raquo;</span>
-        <span>All Movies</span>
+        <span class="separator">/</span>
+        <span class="current">All Movies</span>
       </nav>
 
-      <div class="section-title-bar" style="margin-top: 14px; flex-wrap: wrap; gap: 14px;">
-        <h1 class="section-title-text">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
-          All Movies &amp; Dubbed Releases
-        </h1>
+      <div class="section-header" style="flex-wrap: wrap; gap: 16px;">
+        <div>
+          <h1 class="section-title">Movie Catalog</h1>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 4px;">
+            Explore our curated database of South Indian Hindi dubbed movies.
+          </p>
+        </div>
 
-        <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-          <select id="filter-category" class="filter-select" aria-label="Filter by Category" style="background: var(--bg-surface); color: #fff; border: 1px solid var(--border-card); padding: 6px 12px; border-radius: 4px; font-size: 0.84rem;">
+        <div class="filter-controls-row">
+          <select id="filter-category" class="filter-select" aria-label="Filter by Category">
             <option value="all">All Categories</option>
             <option value="south-indian">South Indian</option>
             <option value="hindi-dubbed">Hindi Dubbed</option>
@@ -640,7 +691,7 @@ const moviesHtml = `<!DOCTYPE html>
             <option value="hollywood">Hollywood</option>
           </select>
 
-          <select id="filter-quality" class="filter-select" aria-label="Filter by Quality" style="background: var(--bg-surface); color: #fff; border: 1px solid var(--border-card); padding: 6px 12px; border-radius: 4px; font-size: 0.84rem;">
+          <select id="filter-quality" class="filter-select" aria-label="Filter by Quality">
             <option value="all">All Qualities</option>
             <option value="4K UHD">4K UHD</option>
             <option value="1080p">1080p Full HD</option>
@@ -648,29 +699,39 @@ const moviesHtml = `<!DOCTYPE html>
             <option value="480p">480p</option>
           </select>
 
-          <select id="filter-sort" class="filter-select" aria-label="Sort Movies" style="background: var(--bg-surface); color: #fff; border: 1px solid var(--border-card); padding: 6px 12px; border-radius: 4px; font-size: 0.84rem;">
+          <select id="filter-language" class="filter-select" aria-label="Filter by Language">
+            <option value="all">All Languages</option>
+            <option value="hindi">Hindi</option>
+            <option value="kannada">Kannada</option>
+            <option value="telugu">Telugu</option>
+            <option value="tamil">Tamil</option>
+            <option value="malayalam">Malayalam</option>
+          </select>
+
+          <select id="filter-sort" class="filter-select" aria-label="Sort Movies">
             <option value="latest">Sort: Recently Added</option>
             <option value="rating">Sort: Highest Rated</option>
             <option value="year">Sort: Release Year</option>
             <option value="title">Sort: Title (A-Z)</option>
           </select>
 
-          <button id="reset-filters-btn" type="button" style="background: #23293d; color: #fff; border: none; padding: 6px 14px; border-radius: 4px; font-size: 0.84rem; cursor: pointer;">Reset</button>
+          <button id="reset-filters-btn" class="clear-btn" type="button">Reset</button>
         </div>
       </div>
 
-      <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 16px;">
+      <div class="results-status-bar">
         <span id="catalog-count">Showing ${movies.length} movies</span>
       </div>
 
-      <div class="movies-grid-hub" id="catalog-grid">
+      <div class="movies-grid" id="catalog-grid">
         ${movies.map(m => renderMovieCardHtml(m, 0)).join('')}
       </div>
 
-      <div id="catalog-empty" class="empty-state" style="display: none; text-align: center; padding: 60px 20px;">
+      <div id="catalog-empty" class="empty-state" style="display: none;">
+        <svg class="empty-state-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
         <h3>No matching movies found</h3>
-        <p style="color: var(--text-secondary); margin-top: 8px;">Try adjusting your filters.</p>
-        <button onclick="document.getElementById('reset-filters-btn').click()" style="margin-top: 14px; background: var(--accent-red); color: #fff; border: none; padding: 8px 18px; border-radius: 4px; cursor: pointer;">Reset Filters</button>
+        <p>Try adjusting your category, quality, or language filters.</p>
+        <button class="btn-primary" onclick="document.getElementById('reset-filters-btn').click()">Reset Filters</button>
       </div>
 
     </div>

@@ -3,130 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Search Movies & South Hindi Dubs - Fast Search | MovieHub4u</title>
+  <title>Search Movies & Web Series - Fast Local Search | CineStatic</title>
   <meta name="description" content="Instantly search movies by title, actor, director, genre, year, audio language, or quality tags. Zero waiting, real-time results.">
   <link rel="canonical" href="search.html">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <!-- Header (HDHub4u Signature Dual-Tier) -->
+  <!-- Header -->
   <header class="site-header" role="banner">
-    <div class="container header-top">
-      <div class="brand-wrap">
-        <a href="index.html" aria-label="MovieHub4u Home">
-          <img src="assets/images/logo.svg" alt="MovieHub4u Logo" class="brand-logo" width="165" height="38" />
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="CineStatic Home">
+        <img src="assets/images/logo.svg" alt="CineStatic Logo" class="brand-logo" width="160" height="32" />
+      </a>
+
+      <nav class="nav-desktop" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="movies.html" class="nav-link">All Movies</a>
+        <a href="category/bollywood.html" class="nav-link">Bollywood</a>
+        <a href="category/hollywood.html" class="nav-link">Hollywood</a>
+        <a href="category/south-indian.html" class="nav-link">South Indian</a>
+        <a href="category/hindi-dubbed.html" class="nav-link">Hindi Dubbed</a>
+        <a href="category/web-series.html" class="nav-link">Web Series</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="search.html" class="search-trigger-btn" aria-label="Search movies">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span>Search</span>
         </a>
-      </div>
-
-      <form class="header-search-bar" action="search.html" method="get" role="search">
-        <input 
-          type="search" 
-          name="q" 
-          class="header-search-input" 
-          placeholder="Search South Hindi, 4K, 1080p, Actors..." 
-          aria-label="Search movies"
-          autocomplete="off"
-        />
-        <button type="submit" class="header-search-btn" aria-label="Search">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <button class="mobile-menu-toggle" aria-label="Open Mobile Menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
         </button>
-      </form>
-
-      <button class="mobile-menu-toggle" aria-label="Open Mobile Menu" aria-expanded="false">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-      </button>
-    </div>
-
-    <!-- Category Nav Strip -->
-    <nav class="nav-strip" aria-label="Primary Navigation">
-      <div class="container nav-strip-inner">
-        <a href="index.html" class="nav-strip-link">⚡ Home</a>
-        <a href="movies.html" class="nav-strip-link">All Movies</a>
-        <a href="category/south-indian.html" class="nav-strip-link">South Hindi</a>
-        <a href="category/hindi-dubbed.html" class="nav-strip-link">Hindi Dubbed</a>
-        <a href="category/action.html" class="nav-strip-link">Action</a>
-        <a href="category/thriller.html" class="nav-strip-link">Thriller</a>
-        <a href="category/bollywood.html" class="nav-strip-link">Bollywood</a>
-        <a href="category/hollywood.html" class="nav-strip-link">Hollywood</a>
-        <a href="category/web-series.html" class="nav-strip-link">Web Series</a>
-        <a href="search.html" class="nav-strip-link active">🔍 Search</a>
       </div>
-    </nav>
-
-    <!-- Mobile Drawer -->
-    <div class="mobile-nav-drawer" role="dialog" aria-label="Mobile Navigation">
-      <a href="index.html">⚡ Home</a>
-      <a href="movies.html">All Movies</a>
-      <a href="search.html">🔍 Search &amp; Filters</a>
-      <a href="category/south-indian.html">South Hindi</a>
-      <a href="category/hindi-dubbed.html">Hindi Dubbed</a>
-      <a href="category/action.html">Action</a>
-      <a href="category/thriller.html">Thriller</a>
-      <a href="category/bollywood.html">Bollywood</a>
-      <a href="category/hollywood.html">Hollywood</a>
-      <a href="category/web-series.html">Web Series</a>
     </div>
   </header>
 
-  <!-- HDHub4u Signature Announcement Ribbon -->
-  <div class="notice-ribbon" role="region" aria-label="Announcement">
-    <div class="container">
-      ⚡ <strong>Official MovieHub4u:</strong> Instant Live Search &bull; South Hindi Dubbed Movies &bull; Direct Downloads
-    </div>
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" role="dialog" aria-label="Mobile Navigation">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="movies.html" class="nav-link">All Movies</a>
+    <a href="search.html" class="nav-link active">Search & Filters</a>
+    <a href="category/bollywood.html" class="nav-link">Bollywood</a>
+    <a href="category/hollywood.html" class="nav-link">Hollywood</a>
+    <a href="category/south-indian.html" class="nav-link">South Indian</a>
+    <a href="category/hindi-dubbed.html" class="nav-link">Hindi Dubbed</a>
+    <a href="category/web-series.html" class="nav-link">Web Series</a>
   </div>
 
   <!-- Search Hero Header -->
-  <main class="main-content" id="main-content">
+  <section class="search-hero" aria-label="Search Form">
     <div class="container">
-      <div class="section-title-bar" style="margin-top: 14px;">
-        <h1 class="section-title-text">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
-          Search MovieHub4u
-        </h1>
+      <div style="text-align: center; margin-bottom: 20px;">
+        <h1 style="font-size: 1.8rem; font-weight: 800; margin-bottom: 6px;">Search Our Collection</h1>
+        <p style="color: var(--text-secondary); font-size: 0.95rem;">
+          Instant search across titles, directors, actors, genres, and audio formats.
+        </p>
       </div>
 
-      <div style="background: var(--bg-surface); border: 1px solid var(--border-card); border-radius: var(--radius-md); padding: 20px; margin-bottom: 24px;">
-        <div style="position: relative; margin-bottom: 14px;">
-          <input 
-            type="search" 
-            id="search-input" 
-            class="header-search-input" 
-            placeholder="Type a title, actor, director, or keyword (e.g., Devara, Pushpa, 4K, Hindi)..." 
-            aria-label="Search movie query"
-            autocomplete="off"
-            style="border-radius: 6px; padding: 12px 18px; font-size: 1rem;"
-            autofocus
-          />
-        </div>
-
-        <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
-          <select id="search-category" class="filter-select" aria-label="Filter category" style="background: var(--bg-card); color: #fff; border: 1px solid var(--border-card); padding: 8px 12px; border-radius: 4px; font-size: 0.85rem;">
-            <option value="all">All Categories</option>
-            <option value="south-indian">South Indian</option>
-            <option value="hindi-dubbed">Hindi Dubbed</option>
-            <option value="action">Action</option>
-            <option value="thriller">Thriller</option>
-            <option value="bollywood">Bollywood</option>
-            <option value="hollywood">Hollywood</option>
-            <option value="web-series">Web Series</option>
-          </select>
-
-          <select id="search-quality" class="filter-select" aria-label="Filter quality" style="background: var(--bg-card); color: #fff; border: 1px solid var(--border-card); padding: 8px 12px; border-radius: 4px; font-size: 0.85rem;">
-            <option value="all">All Qualities</option>
-            <option value="4K UHD">4K UHD</option>
-            <option value="1080p">1080p Full HD</option>
-            <option value="720p">720p HD</option>
-            <option value="480p">480p</option>
-          </select>
-
-          <button id="search-clear" type="button" style="display: none; background: #23293d; color: #fff; border: none; padding: 8px 16px; border-radius: 4px; font-size: 0.85rem; cursor: pointer;">
-            Clear &times;
-          </button>
+      <div class="search-box-wrap">
+        <input 
+          type="search" 
+          id="search-input" 
+          class="search-input" 
+          placeholder="Type a title, actor, director, or keyword (e.g., Nolan, SRK, 4K)..." 
+          aria-label="Search movie query"
+          autocomplete="off"
+          autofocus
+        />
+        <div class="search-input-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
         </div>
       </div>
 
-      <!-- Search Results Area -->
-      <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 16px;">
+      <div class="filter-controls-row">
+        <select id="search-category" class="filter-select" aria-label="Filter category">
+          <option value="all">All Categories</option>
+          <option value="bollywood">Bollywood</option>
+          <option value="hollywood">Hollywood</option>
+          <option value="south-indian">South Indian</option>
+          <option value="hindi-dubbed">Hindi Dubbed</option>
+          <option value="web-series">Web Series</option>
+          <option value="action">Action</option>
+          <option value="sci-fi">Sci-Fi</option>
+          <option value="drama">Drama</option>
+          <option value="comedy">Comedy</option>
+          <option value="thriller">Thriller</option>
+        </select>
+
+        <select id="search-quality" class="filter-select" aria-label="Filter quality">
+          <option value="all">All Qualities</option>
+          <option value="4K UHD">4K UHD</option>
+          <option value="1080p">1080p Full HD</option>
+          <option value="720p">720p HD</option>
+        </select>
+
+        <button id="search-clear" class="clear-btn" type="button" style="display: none;">
+          Clear Query &times;
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search Results Area -->
+  <main class="main-content" id="main-content" style="padding-top: 10px;">
+    <div class="container">
+      <div class="results-status-bar">
         <span id="search-results-count">Type in the search box to find titles instantly</span>
       </div>
 
@@ -134,38 +122,64 @@
         Tip: Press <kbd style="background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 4px;">Ctrl + K</kbd> anytime to jump to search.
       </p>
 
-      <div class="movies-grid-hub" id="search-results-grid"></div>
+      <div class="movies-grid" id="search-results-grid"></div>
 
       <!-- Empty State -->
-      <div id="search-empty" class="empty-state" style="display: none; text-align: center; padding: 60px 20px;">
-        <svg class="empty-state-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 48px; height: 48px; margin: 0 auto 12px; opacity: 0.5;"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      <div id="search-empty" class="empty-state" style="display: none;">
+        <svg class="empty-state-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
         <h3>No matching movies found</h3>
-        <p style="color: var(--text-secondary); margin-top: 8px;">No results matched your search criteria. Check your spelling or reset filters.</p>
-        <button onclick="document.getElementById('search-input').value=''; document.getElementById('search-quality').value='all'; document.getElementById('search-category').value='all'; window.location.reload();" style="margin-top: 14px; background: var(--accent-red); color: #fff; border: none; padding: 8px 18px; border-radius: 4px; cursor: pointer;">Reset Search</button>
+        <p>No results matched your search criteria. Check your spelling or reset the quality and category filters.</p>
+        <button class="btn-primary" onclick="document.getElementById('search-input').value=''; document.getElementById('search-quality').value='all'; document.getElementById('search-category').value='all'; window.location.reload();">Reset Search</button>
       </div>
     </div>
   </main>
 
-  <!-- Footer (HDHub4u Clean Style) -->
-  <footer class="site-footer-hub" role="contentinfo">
-    <div class="container footer-hub-content">
-      <a href="index.html" aria-label="MovieHub4u Home">
-        <img src="assets/images/logo.svg" alt="MovieHub4u Logo" width="160" height="38" />
-      </a>
-      <div class="footer-nav-hub">
-        <a href="index.html">Home</a>
-        <a href="movies.html">All Movies</a>
-        <a href="category/south-indian.html">South Indian</a>
-        <a href="category/hindi-dubbed.html">Hindi Dubbed</a>
-        <a href="category/action.html">Action</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="disclaimer.html">Disclaimer &amp; DMCA</a>
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html">
+            <img src="assets/images/logo.svg" alt="CineStatic Logo" width="150" height="30" />
+          </a>
+          <p>
+            CineStatic is an ultra-fast, lightweight movie discovery portal providing authorized streaming links, multi-audio downloads, and comprehensive film details.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Categories</h4>
+          <ul class="footer-links">
+            <li><a href="category/bollywood.html">Bollywood</a></li>
+            <li><a href="category/hollywood.html">Hollywood</a></li>
+            <li><a href="category/south-indian.html">South Indian</a></li>
+            <li><a href="category/hindi-dubbed.html">Hindi Dubbed</a></li>
+            <li><a href="category/web-series.html">Web Series</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Genres</h4>
+          <ul class="footer-links">
+            <li><a href="category/action.html">Action</a></li>
+            <li><a href="category/sci-fi.html">Sci-Fi</a></li>
+            <li><a href="category/drama.html">Drama</a></li>
+            <li><a href="category/comedy.html">Comedy</a></li>
+            <li><a href="category/thriller.html">Thriller</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Information</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer &amp; DMCA</a></li>
+          </ul>
+        </div>
       </div>
-      <p class="footer-copy">
-        &copy; 2026 MovieHub4u &bull; Pure Static High Performance &bull; Hosted on GitHub Pages &bull; No Ads, No Popups
-      </p>
+      <div class="footer-bottom">
+        <p>&copy; 2026 CineStatic. Built for high performance on GitHub Pages.</p>
+        <p>Pure Static HTML5 &bull; No Server Runtime &bull; Fast Delivery</p>
+      </div>
     </div>
   </footer>
 
