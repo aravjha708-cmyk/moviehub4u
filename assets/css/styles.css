@@ -143,17 +143,17 @@ button {
 }
 
 .brand-logo {
-  height: 36px;
+  height: 47px;
   width: auto;
-  max-width: 170px;
+  max-width: 225px;
   object-fit: contain;
   display: block;
 }
 
 .footer-logo {
-  height: 36px;
+  height: 47px;
   width: auto;
-  max-width: 170px;
+  max-width: 225px;
   object-fit: contain;
   display: block;
 }
