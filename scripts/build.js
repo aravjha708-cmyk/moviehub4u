@@ -524,9 +524,74 @@ console.log(`Successfully generated ${categories.length} category pages.`);
 // -------------------------------------------------------------
 console.log('Generating index.html from central dataset...');
 
-const spotlight = movies.find(m => m.featured) || movies[0];
+const sliderMovies = movies.slice(0, 6);
 const latestList = movies.slice(0, 12);
-const spotlightTopQuality = spotlight.qualities && spotlight.qualities.length ? spotlight.qualities[spotlight.qualities.length - 1] : 'HD';
+const firstMovie = sliderMovies[0] || movies[0];
+
+const sliderSlidesHtml = sliderMovies.map((movie, index) => {
+  const topQuality = movie.qualities && movie.qualities.length ? movie.qualities[movie.qualities.length - 1] : 'HD';
+  const bgImage = movie.backdrop || movie.poster || 'assets/images/default-poster.svg';
+  const genresShort = movie.genres ? (Array.isArray(movie.genres) ? movie.genres.slice(0, 3).join(' • ') : movie.genres) : '';
+  const detailUrl = `movies/${encodeURIComponent(movie.slug)}.html`;
+  const ratingText = movie.rating ? `${movie.rating} ${movie.ratingSource ? `(${escapeHtml(movie.ratingSource)})` : ''}` : '';
+  const audioText = movie.language || 'Hindi Dubbed';
+
+  return `
+        <div class="slider-slide ${index === 0 ? 'active' : ''}" data-index="${index}" role="group" aria-roledescription="slide" aria-label="${index + 1} of ${sliderMovies.length}">
+          <div class="slide-bg" style="background-image: url('${escapeHtml(bgImage)}');"></div>
+          <div class="slide-overlay"></div>
+          <div class="container slide-container">
+            <div class="slide-content">
+              <div class="slide-badge-row">
+                <span class="slide-badge">⚡ Latest South Hindi Release</span>
+                <span class="slide-badge-quality">${escapeHtml(topQuality)}</span>
+              </div>
+              <h2 class="slide-title">
+                <a href="${detailUrl}">${escapeHtml(movie.title)}</a>
+              </h2>
+              <div class="slide-meta">
+                ${movie.releaseYear ? `<span class="meta-pill">${movie.releaseYear}</span>` : ''}
+                ${movie.runtime ? `<span class="meta-pill">${escapeHtml(movie.runtime)}</span>` : ''}
+                <span class="meta-pill">${escapeHtml(audioText)}</span>
+                ${movie.rating ? `
+                  <span class="meta-pill meta-pill-rating">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon></svg>
+                    ★ ${ratingText}
+                  </span>
+                ` : ''}
+              </div>
+              ${genresShort ? `<div class="slide-genres">${escapeHtml(genresShort)}</div>` : ''}
+              <p class="slide-synopsis">${escapeHtml(movie.synopsis || movie.description || '')}</p>
+              <div class="slide-actions">
+                <a href="${detailUrl}#download-options" class="slide-btn-download">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  <span>Download Movie</span>
+                </a>
+                <a href="${detailUrl}" class="slide-btn-outline">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  <span>Screenshots & Details</span>
+                </a>
+              </div>
+            </div>
+            <div class="slide-poster-col">
+              <a href="${detailUrl}" class="slide-poster-link" aria-label="View ${escapeHtml(movie.title)}">
+                <img 
+                  src="${movie.poster || 'assets/images/default-poster.svg'}" 
+                  alt="${escapeHtml(movie.title)} Poster" 
+                  class="slide-poster-img"
+                  width="260"
+                  height="390"
+                  loading="${index === 0 ? 'eager' : 'lazy'}"
+                  onerror="window.handleImageError && window.handleImageError(this, 'assets/images/default-poster.svg')"
+                />
+              </a>
+            </div>
+          </div>
+        </div>`;
+}).join('');
+
+const sliderDotsHtml = sliderMovies.map((_, i) => `
+        <button class="slider-dot ${i === 0 ? 'active' : ''}" data-slide="${i}" role="tab" aria-label="Go to slide ${i + 1}" aria-selected="${i === 0}"></button>`).join('');
 
 const indexHtml = `<!DOCTYPE html>
 <html lang="en">
@@ -541,7 +606,7 @@ const indexHtml = `<!DOCTYPE html>
   <meta property="og:type" content="website">
   <meta property="og:title" content="CineStatic - South Hindi Dubbed Movies">
   <meta property="og:description" content="Direct high-speed downloads, real screenshots, dual audio South Hindi films.">
-  <meta property="og:image" content="${spotlight.poster}">
+  <meta property="og:image" content="${firstMovie.poster}">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -549,58 +614,25 @@ const indexHtml = `<!DOCTYPE html>
 <body>
   ${getHeaderHtml('home', 0)}
 
-  <!-- Compact Hero Section -->
-  <section class="hero-compact" aria-label="Welcome and Featured Film">
-    <div class="container hero-inner">
-      <div class="hero-intro">
-        <h1>South Indian <span>Hindi Dubbed</span> Hub</h1>
-        <p>
-          Lightning-fast static entertainment portal. Download the latest South Hindi blockbusters, uncut editions, and dual audio releases with screenshots and direct links.
-        </p>
-        <div class="hero-features">
-          <span class="hero-feat-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-            Pure Static HTML
-          </span>
-          <span class="hero-feat-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-            Dual Audio & Dubs
-          </span>
-          <span class="hero-feat-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-            Full Screenshots
-          </span>
-        </div>
+  <!-- Hero Movie Slider (Latest Releases Showcase) -->
+  <section class="hero-slider-section" aria-label="Featured Releases Slider">
+    <div class="hero-slider" id="heroSlider" aria-roledescription="carousel">
+      <div class="slider-track" id="sliderTrack">
+${sliderSlidesHtml}
       </div>
 
-      <!-- Featured Spotlight Card -->
-      <aside class="featured-highlight-card" aria-label="Featured Movie">
-        <div class="feat-poster-wrap">
-          <img 
-            src="${spotlight.poster}" 
-            alt="${escapeHtml(spotlight.title)} Poster" 
-            width="95" 
-            height="142" 
-            loading="eager"
-            onerror="window.handleImageError && window.handleImageError(this, 'assets/images/default-poster.svg')"
-          />
-        </div>
-        <div class="feat-content">
-          <span class="feat-badge">Spotlight Title</span>
-          <h2 class="feat-title">${escapeHtml(spotlight.title)}</h2>
-          <div class="feat-meta">
-            <span>${spotlight.releaseYear}</span>
-            <span>&bull;</span>
-            <span class="rating-pill">★ ${spotlight.rating}</span>
-            <span>&bull;</span>
-            <span>${escapeHtml(spotlightTopQuality)}</span>
-          </div>
-          <a href="movies/${encodeURIComponent(spotlight.slug)}.html" class="feat-btn">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-            <span>Download</span>
-          </a>
-        </div>
-      </aside>
+      <!-- Slider Arrows -->
+      <button class="slider-arrow slider-arrow-prev" id="sliderPrev" aria-label="Previous Slide">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
+      <button class="slider-arrow slider-arrow-next" id="sliderNext" aria-label="Next Slide">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </button>
+
+      <!-- Pagination Indicators -->
+      <div class="slider-pagination" id="sliderPagination" role="tablist" aria-label="Hero Slides">
+${sliderDotsHtml}
+      </div>
     </div>
   </section>
 
@@ -640,6 +672,7 @@ const indexHtml = `<!DOCTYPE html>
   </main>
 
   ${getFooterHtml(0)}
+  <script src="assets/js/hero-slider.js" defer></script>
 </body>
 </html>`;
 
