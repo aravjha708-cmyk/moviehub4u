@@ -23,6 +23,20 @@ const rawCategories = fs.readFileSync(CATEGORIES_PATH, 'utf-8');
 const movies = JSON.parse(rawMovies);
 const categories = JSON.parse(rawCategories);
 
+// Adsterra Configurations
+const AD_POPUNDER_SCRIPT = '<script src="https://pl31777061.profitableratecpmnetwork.com/04/ba/5e/04ba5e10d309e77f95ece69ad65d0e59.js"></script>';
+const AD_SOCIALBAR_SCRIPT = '<script src="https://pl31777063.profitableratecpmnetwork.com/e9/4d/b0/e94db0701c9d465edb0765a742d830d2.js"></script>';
+const AD_SMARTLINK_URL = 'https://www.profitableratecpmnetwork.com/cjdi1jumd?key=d597a758527f33e2b8be3a4eb0b71335';
+
+function getAdHeadScripts() {
+  return `
+  <!-- Adsterra Popunder -->
+  ${AD_POPUNDER_SCRIPT}
+  <!-- Adsterra Social Bar -->
+  ${AD_SOCIALBAR_SCRIPT}
+`;
+}
+
 // Helper for escaping HTML text
 function escapeHtml(str) {
   if (!str) return '';
@@ -72,6 +86,14 @@ function getHeaderHtml(activeTab, depth) {
       </div>
     </div>
   </header>
+  <div class="ad-banner-top" role="complementary" aria-label="Sponsored Announcement">
+    <div class="container">
+      <a href="${AD_SMARTLINK_URL}" target="_blank" rel="noopener noreferrer" class="ad-link-top">
+        <span class="ad-tag-badge">⚡ FAST SERVER</span>
+        <span class="ad-text-top">Instant Cloud 4K Streaming &amp; Full HD Fast Download Mirror (No Waiting &bull; 10 Gbps) 👉 <strong>Click Here to Download Now</strong> 🚀</span>
+      </a>
+    </div>
+  </div>
 
   <!-- Mobile Drawer -->
   <div class="mobile-nav-drawer" role="dialog" aria-label="Mobile Navigation">
@@ -142,8 +164,27 @@ function getFooterHtml(depth) {
       </div>
     </div>
   </footer>
+  <!-- Sticky Bottom Ad Bar -->
+  <div class="sticky-ad-bar" id="stickyAdBar">
+    <div class="sticky-ad-container">
+      <div class="sticky-ad-text">
+        <span class="sticky-ad-fire">⚡</span>
+        <span><strong>Fast Cloud Mirror:</strong> Instant 4K Streaming &amp; Full HD Fast Download &bull; High Speed No Waiting</span>
+      </div>
+      <div class="sticky-ad-cta-wrap">
+        <a href="${AD_SMARTLINK_URL}" target="_blank" rel="noopener noreferrer" class="sticky-ad-btn">
+          ⚡ Instant Download
+        </a>
+        <button type="button" class="sticky-ad-close" onclick="document.getElementById('stickyAdBar').style.display='none'" aria-label="Close Ad">&times;</button>
+      </div>
+    </div>
+  </div>
   <div class="toast-notice" id="toast" role="status" aria-live="polite"></div>
   <script src="${prefix}assets/js/app.js" defer></script>
+  <!-- Adsterra Popunder -->
+  ${AD_POPUNDER_SCRIPT}
+  <!-- Adsterra Social Bar -->
+  ${AD_SOCIALBAR_SCRIPT}
 `;
 }
 
@@ -276,6 +317,7 @@ movies.forEach(movie => {
   <script type="application/ld+json">
     ${JSON.stringify(jsonLd)}
   </script>
+  ${getAdHeadScripts()}
 </head>
 <body>
   ${getHeaderHtml('movies', 1)}
@@ -294,6 +336,15 @@ movies.forEach(movie => {
         <span class="separator">/</span>
         <span class="current">${escapeHtml(movie.title)}</span>
       </nav>
+
+      <!-- Top Sponsored Fast Cloud Link -->
+      <div class="ad-movie-top-banner">
+        <a href="${AD_SMARTLINK_URL}" target="_blank" rel="noopener noreferrer" class="ad-movie-top-link">
+          <span class="ad-pill-fire">🔥 FAST CLOUD SERVER</span>
+          <span>Click Here to Stream &amp; Download <strong>${escapeHtml(movie.title)}</strong> in 4K UHD (Instant Server)</span>
+          <span class="ad-arrow-btn">⚡ Download Now &rarr;</span>
+        </a>
+      </div>
 
       <div class="movie-detail-grid">
         <!-- Poster Column -->
@@ -380,6 +431,19 @@ movies.forEach(movie => {
         </section>
       ` : ''}
 
+      <!-- Stream Online Ad Banner -->
+      <div class="ad-stream-box">
+        <a href="${AD_SMARTLINK_URL}" target="_blank" rel="noopener noreferrer" class="ad-stream-link">
+          <div class="ad-stream-play-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          </div>
+          <div class="ad-stream-text">
+            <strong>Stream Online: ${escapeHtml(movie.title)}</strong> (4K Ultra HD &bull; Multi-Audio Hindi &bull; Cloud Server)
+          </div>
+          <span class="ad-stream-btn-badge">Play Movie ⚡</span>
+        </a>
+      </div>
+
       <!-- Direct Download - Single Full HD Button (All Others Removed) -->
       <div class="download-action-box" id="download-options">
         <div class="action-header">
@@ -388,6 +452,24 @@ movies.forEach(movie => {
         </div>
         
         <div class="links-list">
+          <!-- Sponsored High-Speed Mirror -->
+          <a href="${AD_SMARTLINK_URL}" target="_blank" rel="noopener noreferrer" class="link-btn-card ad-sponsored-download-btn">
+            <div class="link-btn-left">
+              <div class="link-icon-wrap ad-icon-fire">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              </div>
+              <div class="link-info-text">
+                <span class="link-label">⚡ Ultra Fast Cloud Download (Instant Server)</span>
+                <span class="link-submeta">
+                  4K UHD &amp; 1080p &bull; Sponsored High Speed Mirror &bull; Instant Direct Link
+                </span>
+              </div>
+            </div>
+            <span class="link-cta-badge ad-badge-animated">
+              ⚡ Fast Download
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </span>
+          </a>
           ${fullHdLink ? `
             <a href="${escapeHtml(fullHdLink.url)}" target="_blank" rel="noopener noreferrer" class="link-btn-card full-hd-btn">
               <div class="link-btn-left">
@@ -478,6 +560,7 @@ categories.forEach(cat => {
   <meta name="description" content="${escapeHtml(cat.seoDescription || cat.description || `Browse the best ${cat.name} movies with dual audio and full HD downloads.`)}">
   <link rel="canonical" href="category/${encodeURIComponent(cat.slug)}.html">
   <link rel="stylesheet" href="../assets/css/styles.css">
+  ${getAdHeadScripts()}
 </head>
 <body>
   ${getHeaderHtml(cat.slug, 1)}
@@ -501,6 +584,24 @@ categories.forEach(cat => {
           </p>
         </div>
         <a href="../search.html?category=${encodeURIComponent(cat.slug)}" class="section-link">Filter Category &rarr;</a>
+      </div>
+
+      <!-- Sponsored In-Feed Ad Banner -->
+      <div class="ad-section-box">
+        <div class="ad-label-pill">⚡ SPONSORED FAST SERVER</div>
+        <a href="${AD_SMARTLINK_URL}" target="_blank" rel="noopener noreferrer" class="ad-banner-card">
+          <div class="ad-card-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+          </div>
+          <div class="ad-card-details">
+            <span class="ad-card-headline">Watch &amp; Download ${escapeHtml(cat.name)} Movies in 4K UHD &amp; 1080p</span>
+            <span class="ad-card-subline">High-speed cloud mirrors &bull; Multi-Audio Hindi Dubbed &bull; Zero queue fast direct access</span>
+          </div>
+          <div class="ad-card-action">
+            <span>⚡ Instant Download</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+        </a>
       </div>
 
       ${matchingMovies.length ? `
@@ -552,6 +653,7 @@ const indexHtml = `<!DOCTYPE html>
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="stylesheet" href="assets/css/styles.css">
+  ${getAdHeadScripts()}
 </head>
 <body>
   ${getHeaderHtml('home', 0)}
@@ -612,6 +714,24 @@ const indexHtml = `<!DOCTYPE html>
       
       <!-- Latest Releases Section -->
       <section class="catalog-section" aria-labelledby="latest-heading">
+        <!-- Sponsored In-Feed Ad Banner -->
+        <div class="ad-section-box">
+          <div class="ad-label-pill">⚡ SPONSORED FAST SERVER</div>
+          <a href="${AD_SMARTLINK_URL}" target="_blank" rel="noopener noreferrer" class="ad-banner-card">
+            <div class="ad-card-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            </div>
+            <div class="ad-card-details">
+              <span class="ad-card-headline">Watch &amp; Download Latest Movies in Ultra HD 4K / 1080p</span>
+              <span class="ad-card-subline">Ultra-fast cloud streaming &bull; Dual Audio Hindi &bull; 10Gbps direct download mirror without queue</span>
+            </div>
+            <div class="ad-card-action">
+              <span>⚡ Instant Download</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </div>
+          </a>
+        </div>
+
         <div class="section-header">
           <h2 id="latest-heading" class="section-title">Latest South Hindi Releases</h2>
           <a href="movies.html" class="section-link">View Full Catalog &rarr;</a>
@@ -647,6 +767,7 @@ const moviesHtml = `<!DOCTYPE html>
   <meta name="description" content="Browse our complete collection of South Indian Hindi Dubbed movies. Filter by quality (4K, 1080p), audio, and genre.">
   <link rel="canonical" href="movies.html">
   <link rel="stylesheet" href="assets/css/styles.css">
+  ${getAdHeadScripts()}
 </head>
 <body>
   ${getHeaderHtml('movies', 0)}
@@ -704,6 +825,24 @@ const moviesHtml = `<!DOCTYPE html>
 
           <button id="reset-filters-btn" class="clear-btn" type="button">Reset</button>
         </div>
+      </div>
+
+      <!-- Sponsored In-Feed Ad Banner -->
+      <div class="ad-section-box">
+        <div class="ad-label-pill">⚡ SPONSORED FAST SERVER</div>
+        <a href="${AD_SMARTLINK_URL}" target="_blank" rel="noopener noreferrer" class="ad-banner-card">
+          <div class="ad-card-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+          </div>
+          <div class="ad-card-details">
+            <span class="ad-card-headline">Watch &amp; Download Full HD / 4K UHD Movies Fast Direct Server</span>
+            <span class="ad-card-subline">Ultra-fast cloud streaming &bull; Dual Audio Hindi &bull; High speed direct download with zero buffering</span>
+          </div>
+          <div class="ad-card-action">
+            <span>⚡ Instant Download</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+        </a>
       </div>
 
       <div class="results-status-bar">
