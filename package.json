@@ -1,0 +1,21 @@
+{
+  "name": "cinestatic",
+  "version": "1.0.0",
+  "description": "Lightning-fast static movie website built with pure HTML5, CSS3, and Vanilla JavaScript for GitHub Pages",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "validate": "node scripts/validate.js",
+    "test": "node scripts/validate.js",
+    "serve": "npx -y serve ."
+  },
+  "keywords": [
+    "static-site",
+    "movies",
+    "github-pages",
+    "vanilla-js",
+    "seo-optimized",
+    "fast-performance"
+  ],
+  "author": "",
+  "license": "MIT"
+}

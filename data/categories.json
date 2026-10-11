@@ -1,0 +1,98 @@
+[
+  {
+    "slug": "bollywood",
+    "name": "Bollywood",
+    "type": "industry",
+    "description": "Latest and greatest Hindi cinema, blockbuster hits, and timeless classics.",
+    "seoTitle": "Bollywood Movies - Watch & Download Hindi Films | CineStatic",
+    "seoDescription": "Explore top Bollywood Hindi movies with high quality downloads, official streaming links, and complete cast information."
+  },
+  {
+    "slug": "hollywood",
+    "name": "Hollywood",
+    "type": "industry",
+    "description": "Global Hollywood blockbusters, Oscar winners, and thrilling franchises.",
+    "seoTitle": "Hollywood Movies - Full HD & 4K Cinema | CineStatic",
+    "seoDescription": "Discover popular Hollywood movies, sci-fi masterpieces, action hits with multi-audio and dual-language options."
+  },
+  {
+    "slug": "south-indian",
+    "name": "South Indian",
+    "type": "industry",
+    "description": "Electrifying Telugu, Tamil, Kannada, and Malayalam cinematic sensations.",
+    "seoTitle": "South Indian Movies - Tollywood, Kollywood, Mollywood & Sandalwood | CineStatic",
+    "seoDescription": "Watch and download top South Indian pan-India blockbusters in original audio and multi-language dubs."
+  },
+  {
+    "slug": "hindi-dubbed",
+    "name": "Hindi Dubbed",
+    "type": "language",
+    "description": "Hollywood and South Indian cinema dubbed in clear, high-definition Hindi audio.",
+    "seoTitle": "Hindi Dubbed Movies - Hollywood & South Films in Hindi | CineStatic",
+    "seoDescription": "Stream and download the best Hollywood and South Indian movies professionally dubbed in Hindi."
+  },
+  {
+    "slug": "web-series",
+    "name": "Web Series",
+    "type": "format",
+    "description": "Binge-worthy drama, crime thrillers, and acclaimed multi-episode web series.",
+    "seoTitle": "Web Series - Binge-Worthy TV & Streaming Shows | CineStatic",
+    "seoDescription": "Discover complete seasons and episodes of top-rated Indian and international web series."
+  },
+  {
+    "slug": "action",
+    "name": "Action",
+    "type": "genre",
+    "description": "Adrenaline-fueled adventures, martial arts, gunplay, and superhero epics.",
+    "seoTitle": "Action Movies - High Octane Blockbusters | CineStatic",
+    "seoDescription": "Experience the ultimate adrenaline rush with our curated collection of high-octane action films."
+  },
+  {
+    "slug": "sci-fi",
+    "name": "Sci-Fi",
+    "type": "genre",
+    "description": "Mind-bending space odysseys, futuristic technologies, and time paradoxes.",
+    "seoTitle": "Sci-Fi Movies - Space Exploration & Futuristic Cinema | CineStatic",
+    "seoDescription": "Explore mind-expanding sci-fi masterpieces with immersive visuals and theoretical concepts."
+  },
+  {
+    "slug": "drama",
+    "name": "Drama",
+    "type": "genre",
+    "description": "Emotionally moving stories, character studies, and human triumphs.",
+    "seoTitle": "Drama Movies - Powerful Emotional Stories | CineStatic",
+    "seoDescription": "Heartfelt stories, critically acclaimed performances, and gripping human drama."
+  },
+  {
+    "slug": "comedy",
+    "name": "Comedy",
+    "type": "genre",
+    "description": "Laugh-out-loud comedies, satire, family adventures, and slapstick fun.",
+    "seoTitle": "Comedy Movies - Hilarious Laughs & Family Entertainers | CineStatic",
+    "seoDescription": "Unwind with hilarious comedies, feel-good family movies, and witty satires."
+  },
+  {
+    "slug": "thriller",
+    "name": "Thriller",
+    "type": "genre",
+    "description": "Edge-of-your-seat suspense, mystery, neo-noir, and psychological twists.",
+    "seoTitle": "Thriller & Mystery Movies - Suspenseful Cinema | CineStatic",
+    "seoDescription": "Keep yourself on the edge of your seat with our gripping collection of psychological thrillers and crime mysteries."
+  },
+  {
+    "slug": "romance",
+    "name": "Romance",
+    "type": "genre",
+    "description": "Passionate love stories, romantic comedies, and heartfelt relationship tales.",
+    "seoTitle": "Romance Movies - Love Stories & Romantic Classics | CineStatic",
+    "seoDescription": "Discover captivating romantic dramas, timeless love stories, and heartwarming comedies."
+  },
+  {
+    "slug": "animation",
+    "name": "Animation",
+    "type": "genre",
+    "description": "Visually stunning animated adventures, anime, and family spectacles.",
+    "seoTitle": "Animation Movies - Spectacular Animated Cinema | CineStatic",
+    "seoDescription": "Vibrant animation, groundbreaking visual artistry, and heartfelt stories for all ages."
+  }
+]
