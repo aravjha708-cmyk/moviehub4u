@@ -1538,6 +1538,38 @@ button {
   color: var(--accent);
 }
 
+.footer-disclaimer {
+  padding: 14px 18px;
+  margin-bottom: 24px;
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  font-size: 0.78rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  text-align: left;
+}
+
+.footer-disclaimer p {
+  margin: 0;
+}
+
+.footer-disclaimer strong {
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.footer-disclaimer a {
+  color: var(--text-secondary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color var(--transition-fast);
+}
+
+.footer-disclaimer a:hover {
+  color: var(--accent);
+}
+
 .footer-bottom {
   display: flex;
   flex-direction: column;

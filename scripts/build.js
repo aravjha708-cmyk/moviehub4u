@@ -133,6 +133,9 @@ function getFooterHtml(depth) {
           </ul>
         </div>
       </div>
+      <div class="footer-disclaimer">
+        <p><strong>Disclaimer:</strong> CineStatic does not host, upload, or store any media files, videos, or copyrighted content on our servers. All links, videos, and images displayed on this website are aggregated from freely accessible third-party and public domain sources across the Internet. We are not the owners of any hosted content and only index publicly available links. If you have any copyright inquiries or wish to request link removals, please consult our <a href="${prefix}disclaimer.html">DMCA / Disclaimer</a> policy or <a href="${prefix}contact.html">Contact Us</a>.</p>
+      </div>
       <div class="footer-bottom">
         <p>&copy; ${year} CineStatic. Built for high performance on GitHub Pages.</p>
         <p>Pure Static HTML5 &bull; No Server Runtime &bull; Fast Delivery</p>
