@@ -41,7 +41,7 @@ function getHeaderHtml(activeTab, depth) {
   <header class="site-header" role="banner">
     <div class="container header-inner">
       <a href="${prefix}index.html" class="brand" aria-label="MoviesHouse4u Home">
-        <img src="${prefix}assets/images/logo.svg" alt="MoviesHouse4u Logo" class="brand-logo" width="160" height="32" />
+        <img src="${prefix}assets/images/logo.png" alt="MoviesHouse4u Logo" class="brand-logo" width="160" height="36" />
       </a>
 
       <nav class="nav-desktop" aria-label="Primary Navigation">
@@ -97,7 +97,7 @@ function getFooterHtml(depth) {
       <div class="footer-top">
         <div class="footer-brand">
           <a href="${prefix}index.html">
-            <img src="${prefix}assets/images/logo.svg" alt="MoviesHouse4u Logo" width="150" height="30" />
+            <img src="${prefix}assets/images/logo.png" alt="MoviesHouse4u Logo" class="footer-logo" width="150" height="36" />
           </a>
           <p>
             MoviesHouse4u is an ultra-fast, lightweight movie discovery portal providing verified multi-audio downloads, real screenshots, and comprehensive film details.

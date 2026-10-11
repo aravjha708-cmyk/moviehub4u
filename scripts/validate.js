@@ -161,6 +161,7 @@ const requiredStaticFiles = [
   'assets/js/catalog.js',
   'assets/js/search.js',
   'assets/js/hero-slider.js',
+  'assets/images/logo.png',
   'assets/images/logo.svg',
   'assets/images/default-poster.svg'
 ];

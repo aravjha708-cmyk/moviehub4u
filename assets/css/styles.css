@@ -143,8 +143,19 @@ button {
 }
 
 .brand-logo {
-  height: 32px;
+  height: 36px;
   width: auto;
+  max-width: 170px;
+  object-fit: contain;
+  display: block;
+}
+
+.footer-logo {
+  height: 36px;
+  width: auto;
+  max-width: 170px;
+  object-fit: contain;
+  display: block;
 }
 
 .nav-desktop {
